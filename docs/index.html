@@ -31,68 +31,81 @@
     <meta itemprop="description" content="A bony CSS framework without any guts.">
     <meta itemprop="image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
 
-    <link rel="icon" type="image/x-icon" href="img/skull-32x32.png">
-    <link rel="stylesheet" href="css/osseous.css">
-    <link rel="stylesheet" href="highlight/default.css">
+    <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
+    <link rel="stylesheet" href="css/osseous.css?v=1">
+	<link rel="stylesheet" href="icomoon/icomoon.css?v=1">
     <title>Osseous - A bony CSS framework without any guts.</title>
 </head>
 <body>
 
-<div class="container" style="margin-top:2%;">
-    <div class="row">
-        <div class="twelve columns" style="text-align:center;">
-            <img src="img/skull-200x200.png" alt="Banner" title="Photo Credit: Typography Images at Pixabay.com" style="max-width: 200px;" />
-        </div>
+<nav class="nav header container animate-top">
+  <div class="nav-group header-group">
+    <a class="nav-item  header-item-logo" href="/"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
+    <div class="nav-item header-item-menu">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
     </div>
-</div>
+    <div class="nav-item header-item-close">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
+	</div>
+  </div>
+  <div class="nav-group header-group-menu">
+    <a class="nav-item" href="#download">Download</a>
+    <a class="nav-item" href="#examples">Examples</a>
+    <a class="nav-item" href="#about">About</a>
+  </div>
+</nav>
 
-<div class="container" style="margin-bottom:10%">
-    <div class="row">
-        <div class="twelve columns" style="text-align:center;">
-            <h1 class="text-uppercase text-wide">Osseous</h1>
-            <p>
-                A bony CSS framework without any guts.
-            </p>
-            <p>
-            <a class="button button-primary" target="_blank" href="https://github.com/amdelamar/osseous/releases"><span class="icon-embed" style="font-size:1.5em;margin-right:5px"></span>Download</a>
-            <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/"><span class="icon-github" style="font-size:1.5em;margin-right:5px"></span>View on GitHub</a>
-            <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug" style="font-size:1.5em;margin-right:5px"></span>Report Issue</a>
-            </p>
+<div class="container">
+    <div class="row border-bottom text-center">
+        <div class="twelve columns">
+            <img class="u-round" src="img/skull-200x200.png?v=1" alt="Banner" title="Photo Credit: Google Images of all places." />
         </div>
         <div class="twelve columns">
-            <hr />
-            <br />
-            <h2>Getting Started</h2>
+            <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
+            <p>A bony CSS framework without any guts.</p>
             <p>
-                Add to your project using the CDN link or download the CSS file.
+                <a class="button button-primary" target="_blank" href="#download"><span class="icon-embed" style="font-size:1.5em;margin-right:5px"></span>Download</a>
+                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/"><span class="icon-github" style="font-size:1.5em;margin-right:5px"></span>View on GitHub</a>
+                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug" style="font-size:1.5em;margin-right:5px"></span>Report Issue</a>
             </p>
-
-            <h2>Usage</h2>
-
-            <p>Coming soon... sorry!</p>
-
-            <br />
+        </div>
+	</div>
+	
+    <div class="row">
+		<div id="download" class="twelve columns padding-top">
+            <h2>Download</h2>
+            <p>
+                Add to your project using the CDN link or download the CSS file.<br/>
+            </p>
+            <pre><code>&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;</code></pre>
+        </div>
+		
+		<div id="examples" class="twelve columns padding-top">
+            <h2>Examples</h2>
+            <blockquote>Coming soon... sorry!</blockquote>
+        </div>
+		
+		<div id="about" class="twelve columns padding-top">
             <h2>About</h2>
-            <p>A project by <a href="https://github.com/amdelamar">Austin Delamar</a> based off of <a href="https://github.com/dhg/Skeleton">Dave Gamache's work</a> and other <a href="https://github.com/amdelamar/osseous/graphs/contributors">contributors</a>.</p>
+            <p>A project by <a href="https://github.com/amdelamar">Austin Delamar</a> based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
-            This really started as an extension of Skeleton for my porfolio site. But as I've added new features to my personal extension, I've wanted to make an easy way to centralize and share it.
+              This really started as a stylesheet for my porfolio site. But as I've kept adding pieces to it as I created additional sites. So now, I wanted an easy way to centralize and share it.
             </p>
-
             <p>
-            If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch.
+              If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch.
             </p>
-
-            <br />
+        </div>
+		
+		<div id="license" class="twelve columns padding-top">
             <h2>License</h2>
-
-            <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a><br>
-            <br>
+            <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a>
         </div>
     </div>
+	<div class="row text-center margin-bottom animate-bottom">
+        <small><em>© AustinDelamar - 2017</em></small><br><br>
+        <a class="button button-primary" title="Back to top" href="#">Back to Top</a>
+    </div>
 </div>
-
-<script src="highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
