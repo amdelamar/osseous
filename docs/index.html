@@ -32,30 +32,52 @@
     <meta itemprop="image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
-    <link rel="stylesheet" href="css/osseous.css?v=1">
-	<link rel="stylesheet" href="icomoon/icomoon.css?v=1">
+    <link rel="stylesheet" href="css/osseous.css?v=1.0.0">
+    <link rel="stylesheet" href="icomoon/icomoon.css?v=1.0.0">
     <title>Osseous - A bony CSS framework without any guts.</title>
 </head>
 <body>
 
-<nav class="nav header container animate-top">
-  <div class="nav-group header-group">
-    <a class="nav-item  header-item-logo" href="/"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
-    <div class="nav-item header-item-menu">
-        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
+<!-- Mobile Sidebar Menu -->
+<nav id="sidebar" class="sidebar border animate-left shadow-right">
+    <div class="container">
+        <a class="padding u-pull-right" title="Close Menu" href="javascript:closeSidebar()">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
+        </a>
+        <br/>
     </div>
-    <div class="nav-item header-item-close">
-        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
-	</div>
-  </div>
-  <div class="nav-group header-group-menu">
-    <a class="nav-item" href="#download">Download</a>
-    <a class="nav-item" href="#examples">Examples</a>
-    <a class="nav-item" href="#about">About</a>
-  </div>
+    <div class="container nav-list" onclick="closeSidebar()">
+        <a class="nav-item text-regular" href="#download">Download</a>
+        <a class="nav-item text-regular" href="#examples">Examples</a>
+        <a class="nav-item text-regular" href="#about">About</a>
+    </div>
+    <div class="row text-center">
+        <br><br><small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small>
+    </div>
 </nav>
 
+<!-- Header fixed up top -->
+<div class="header-spacer"></div>
+<header class="header border-bottom">
+    <div class="nav-group nav-group margin-left">
+        <a class="nav-item  nav-item-logo" href="/"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
+    </div>
+    <div class="nav-item nav-item-menu">
+        <a class="text-large" title="Open Menu" href="javascript:openSidebar()">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
+        </a>
+    </div>
+    <div class="nav-group nav-group-menu margin-right">
+        <a class="nav-item" href="#download">Download</a>
+        <a class="nav-item" href="#examples">Examples</a>
+        <a class="nav-item" href="#about">About</a>
+    </div>
+</header>
+
+<!-- Main content container -->
 <div class="container">
+
+    <!-- Landing logo, title, and subtitle. -->
     <div class="row border-bottom text-center">
         <div class="twelve columns">
             <img class="u-round" src="img/skull-200x200.png?v=1" alt="Banner" title="Photo Credit: Google Images of all places." />
@@ -63,49 +85,68 @@
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
             <p>A bony CSS framework without any guts.</p>
+            
+            <!-- Call to action -->
             <p>
-                <a class="button button-primary" target="_blank" href="#download"><span class="icon-embed" style="font-size:1.5em;margin-right:5px"></span>Download</a>
-                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/"><span class="icon-github" style="font-size:1.5em;margin-right:5px"></span>View on GitHub</a>
-                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug" style="font-size:1.5em;margin-right:5px"></span>Report Issue</a>
+                <a class="button button-primary" target="_blank" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
+                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
+                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
             </p>
         </div>
-	</div>
-	
+    </div>
+    
+    <!-- Content -->
     <div class="row">
-		<div id="download" class="twelve columns padding-top">
+    
+        <!-- Download Section -->
+        <div id="download" class="twelve columns padding-top">
             <h2>Download</h2>
             <p>
                 Add to your project using the CDN link or download the CSS file.<br/>
             </p>
             <pre><code>&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;</code></pre>
+            <p>
+                (Optional) Add the JavaScript file for mobile menu popup (sidebar), and "jump to top" button.
+            </p>
+            <pre><code>&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
         </div>
-		
-		<div id="examples" class="twelve columns padding-top">
+        
+        <!-- Examples Section -->
+        <div id="examples" class="twelve columns padding-top">
             <h2>Examples</h2>
-            <blockquote>Coming soon... sorry!</blockquote>
+            <p>Coming soon... sorry!</p>
         </div>
-		
-		<div id="about" class="twelve columns padding-top">
+        
+        <!-- About Section -->
+        <div id="about" class="twelve columns padding-top">
             <h2>About</h2>
-            <p>A project by <a href="https://github.com/amdelamar">Austin Delamar</a> based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
+            <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
               This really started as a stylesheet for my porfolio site. But as I've kept adding pieces to it as I created additional sites. So now, I wanted an easy way to centralize and share it.
             </p>
             <p>
-              If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch.
+              If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch on <a href="https://github.com/amdelamar/osseous/">GitHub</a>.
             </p>
         </div>
-		
-		<div id="license" class="twelve columns padding-top">
+        
+        <!-- License Section -->
+        <div id="license" class="twelve columns padding-top">
             <h2>License</h2>
-            <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a>
+            <p>
+              <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and free forver.
+            </p>
         </div>
     </div>
-	<div class="row text-center margin-bottom animate-bottom">
-        <small><em>© AustinDelamar - 2017</em></small><br><br>
-        <a class="button button-primary" title="Back to top" href="#">Back to Top</a>
-    </div>
 </div>
+
+<!-- Footer at bottom -->
+<footer class="container text-center margin-bottom animate-bottom">
+    <small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small><br><br>
+    <a class="button button-primary" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
+</footer>
+
+<!-- Lazy load JavaScript, mainly for navigation -->
+<script type="text/javascript" src="js/osseous.js?v=1.0.0"></script>
 
 </body>
 </html>
