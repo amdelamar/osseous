@@ -58,24 +58,25 @@
 
 <!-- Header fixed up top -->
 <header class="header border-bottom">
+	<div class="header-body container">
     <div class="nav-group nav-group margin-left">
-        <a class="nav-item  nav-item-logo" href="/"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
+        <a class="nav-item  nav-item-logo" href="#"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
     </div>
     <div class="nav-item nav-item-menu">
         <a class="text-large" title="Open Menu" href="javascript:openSidebar()">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
         </a>
     </div>
-    <div class="nav-group nav-group-menu margin-right">
+    <div class="nav-group nav-group-menu padding-right-large">
         <a class="nav-item" href="#download">Download</a>
         <a class="nav-item" href="#examples">Examples</a>
         <a class="nav-item" href="#about">About</a>
     </div>
+	</div>
 </header>
 
-
-<div class="row padding-top border">
-    <!-- Landing logo, title, and subtitle. -->
+<!-- Landing logo, title, and subtitle. -->
+<div class="row padding-top-large margin-top-large border">
     <div class="container text-center">
         <div class="twelve columns">
             <img class="u-round" src="img/skull-200x200.png?v=1" alt="Banner" title="Photo Credit: Google Images of all places." />
@@ -94,12 +95,12 @@
     </div>
 </div>
 
-<div class="container">
-    <!-- Content -->
+<!-- Main Content -->
+<article class="container">
     <div class="row">
     
         <!-- Download Section -->
-        <div id="download" class="twelve columns padding-top">
+        <div id="download" class="twelve columns padding-top-large">
             <h2>Download</h2>
             <p>
                 Add to your project using the CDN link or download the CSS file.<br/>
@@ -112,11 +113,12 @@
         </div>
         
         <!-- Examples Section -->
-        <div id="examples" class="twelve columns padding-top">
+        <div id="examples" class="twelve columns padding-top-large">
             <h2>Examples</h2>
             <p>
-                Osseous includes formatting for all the basic elements, and some common ones too.
+                Osseous includes formatting for all the basic elements, and some common items like media cards, mobile menu, and navbar too.
                 <br/><br/>
+				Use the examples below as a reference and demonstration of this bony framework.
             </p>
             
             <hr/>
@@ -132,7 +134,7 @@
                     </p>
                     
                     <pre><code>:root { 
-    --theme1: #33c3f0;
+    --blue: #33c3f0;
     --theme2: #1eaedb;                    
     --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     --font-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,"Courier New",monospace;
@@ -144,7 +146,7 @@
             
             <div class="row">
                 <div class="six columns">
-                    <h3>Headings and Text</h3>
+                    <h3>Typography</h3>
                     <p>
                     <code>&lt;p&gt;</code>This is a paragraph.<br/>
                     <code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
@@ -152,8 +154,10 @@
                     <code>&lt;i&gt;</code>This is <i>italic</i>.<br/>
                     <code>&lt;u&gt;</code>This is <u>underlined</u>.<br/>
                     <code>&lt;small&gt;</code><small>This is a small.</small><br/>
-                    <code>&lt;sup&gt;/&lt;sub&gt;</code>This is a supersript<sup>10</sup> and subscript<sub>10</sub>.<br/>
+                    <code>&lt;sup&gt;</code>This is a supersript<sup>10</sup> and <code>&lt;sub&gt;</code> subscript<sub>10</sub>.<br/>
                     <blockquote>This is a <code>&lt;blockquote&gt;</code></blockquote>
+					<code>&lt;mark&gt;</code>This is <mark>highlighted</mark>.<br/>
+					<code>&lt;abbr&gt;</code>This is an <abbr title="abbreviation">abbr</abbr>.<br/>
                     </p>
                 </div>
                 <div class="six columns">
@@ -252,7 +256,7 @@
                 <div class="twelve columns">
                     <h3>Tables</h3>
                     <p>Tables are unstyled by default. Add the <code>table</code> class to style them. Add the <code>alternating</code>
-					class for highlighting ever other row. You can further stylize your tables with <code>border</code>, <code>shadow</code>,
+					class for highlighting ever other row. You can further stylize your tables with <code>borders</code>, <code>shadow</code>,
 					<code>margin</code>, <code>padding</code>, and more. Which are described in the utility section below.</p>
                     <table class="table alternating">
                         <caption>Table Caption goes here</caption>
@@ -273,7 +277,7 @@
                         </tbody>
                     </table>
                     
-                    <pre><code>&lt;table class="table alternating"&gt;
+                    <pre><code>&lt;table class="table alternating borders"&gt;
     &lt;caption&gt;Table Caption goes here&lt;/caption&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -381,7 +385,7 @@
             
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Header and Navigation</h3>
+                    <h3>Navigation</h3>
                     <p>Use the <code>header</code> class for a fixed navigation bar on top.</p>
                     
                     <pre><code>Coming soon...
@@ -405,7 +409,7 @@
         </div>
         
         <!-- About Section -->
-        <div id="about" class="twelve columns padding-top">
+        <div id="about" class="twelve columns padding-top-large">
             <h2>About</h2>
             <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
@@ -417,19 +421,19 @@
         </div>
         
         <!-- License Section -->
-        <div id="license" class="twelve columns padding-top">
+        <div id="license" class="twelve columns padding-top-large">
             <h2>License</h2>
             <p>
               <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and free forver.
             </p>
         </div>
     </div>
-</div>
+</article>
 
 <!-- Footer at bottom -->
-<footer class="row text-center border-top padding-bottom">
-    <br/><br/><small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small><br><br>
-    <a class="button button-blue" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
+<footer class="row text-center border-top padding-bottom-large">
+    <p><br/><br/><small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small><br><br>
+    <a class="button button-blue" title="Back to top" href="javascript:gotoTop()">Back to Top</a></p>
 </footer>
 
 <!-- Lazy load JavaScript, mainly for navigation -->
