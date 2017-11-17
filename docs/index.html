@@ -41,7 +41,7 @@
 <!-- Mobile Sidebar Menu -->
 <nav id="sidebar" class="sidebar border animate-left shadow-right">
     <div class="container">
-        <a class="padding u-pull-right" title="Close Menu" href="javascript:closeSidebar()">
+        <a class="padding u-right" title="Close Menu" href="javascript:closeSidebar()">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
         </a>
         <br/>
@@ -51,7 +51,7 @@
         <a class="nav-item text-regular" href="#examples">Examples</a>
         <a class="nav-item text-regular" href="#about">About</a>
     </div>
-    <div class="row text-center">
+    <div class="u-full-width text-center">
         <br><br><small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small>
     </div>
 </nav>
@@ -74,7 +74,7 @@
 </header>
 
 
-<div class="row padding-top border-bottom shadow-bottom">
+<div class="row padding-top border">
     <!-- Landing logo, title, and subtitle. -->
     <div class="container text-center">
         <div class="twelve columns">
@@ -86,7 +86,7 @@
             
             <!-- Call to action -->
             <p>
-                <a class="button button-primary" target="_blank" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
+                <a class="button button-blue" target="_blank" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
                 <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
                 <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
             </p>
@@ -115,160 +115,293 @@
         <div id="examples" class="twelve columns padding-top">
             <h2>Examples</h2>
             <p>
-				Osseous includes formatting for all the basic elements, and some common ones too.
-				<br/><br/>
-			</p>
-			
-			<hr/>
-			
-			<div class="row">
-				<div class="twelve columns">
-					<h3>Root Variables</h3>
-					<p>The default fonts and colors are up top. In the global <b>:root</b> object for easy editing.
-					The default font-family is <code>-apple-system,BlinkMacSystemFont</code>
-					but you can change this by editing the root variable: <code>--font-default</code>.
-					The default font-family for monospace elements is <code>SFMono-Regular</code>
-					but again, you can change this by editing the root variable: <code>--font-monospace</code>.
-					</p>
-					
-					<pre><code>:root { 
+                Osseous includes formatting for all the basic elements, and some common ones too.
+                <br/><br/>
+            </p>
+            
+            <hr/>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Root Variables</h3>
+                    <p>The default fonts and colors are up top. In the global <b>:root</b> object for easy editing.
+                    The default font-family is <code>-apple-system,BlinkMacSystemFont</code>
+                    but you can change this by editing the root variable: <code>--font-default</code>.
+                    The default font-family for monospace elements is <code>SFMono-Regular</code>
+                    but again, you can change this by editing the root variable: <code>--font-monospace</code>.
+                    </p>
+                    
+                    <pre><code>:root { 
     --theme1: #33c3f0;
-    --theme2: #1eaedb;					
+    --theme2: #1eaedb;                    
     --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     --font-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,"Courier New",monospace;
 }</code></pre>
-				</div>
-			</div>
-			
-			<hr/>
-			
-			<div class="row">
-				<div class="six columns">
-					<h3>Headings and Text</h3>
-					<p>
-					<code>&lt;p&gt;</code>This is a paragraph.<br/>
-					<code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
-					<code>&lt;b&gt;</code>This is <b>bolded</b>.<br/>
-					<code>&lt;i&gt;</code>This is <i>italic</i>.<br/>
-					<code>&lt;u&gt;</code>This is <u>underlined</u>.<br/>
-					<code>&lt;small&gt;</code><small>This is a small.</small><br/>
-					<code>&lt;sup&gt;/&lt;sub&gt;</code>This is a supersript<sup>10</sup> and subscript<sub>10</sub>.<br/>
-					<blockquote>This is a <code>&lt;blockquote&gt;</code></blockquote>
-					</p>
-				</div>
-				<div class="six columns">
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="row">
+                <div class="six columns">
+                    <h3>Headings and Text</h3>
+                    <p>
+                    <code>&lt;p&gt;</code>This is a paragraph.<br/>
+                    <code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
+                    <code>&lt;b&gt;</code>This is <b>bolded</b>.<br/>
+                    <code>&lt;i&gt;</code>This is <i>italic</i>.<br/>
+                    <code>&lt;u&gt;</code>This is <u>underlined</u>.<br/>
+                    <code>&lt;small&gt;</code><small>This is a small.</small><br/>
+                    <code>&lt;sup&gt;/&lt;sub&gt;</code>This is a supersript<sup>10</sup> and subscript<sub>10</sub>.<br/>
+                    <blockquote>This is a <code>&lt;blockquote&gt;</code></blockquote>
+                    </p>
+                </div>
+                <div class="six columns">
+                    <br/><br/>
+                    <h1 style="display:inline">Heading 1</h1><code>&lt;h1&gt;</code><br/>
+                    <h2 style="display:inline">Heading 2</h2><code>&lt;h2&gt;</code><br/>
+                    <h3 style="display:inline">Heading 3</h3><code>&lt;h3&gt;</code><br/>
+                    <h4 style="display:inline">Heading 4</h4><code>&lt;h4&gt;</code><br/>
+                    <h5 style="display:inline">Heading 5</h5><code>&lt;h5&gt;</code><br/>
+                    <h6 style="display:inline">Heading 6</h6><code>&lt;h6&gt;</code><br/>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Columns</h3>
+                    <p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
+                    The values start from one and go up to twelve across. They also resize automatically for smaller screens.</p>
+                    
+                    <div class="row text-center">
+                        <div class="twelve columns border u-round">TWELVE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="one columns border u-round">ONE</div><div class="eleven columns border u-round">ELEVEN</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="two columns border u-round">TWO</div><div class="ten columns border u-round">TEN</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="three columns border u-round">THREE</div><div class="nine columns border u-round">NINE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="four columns border u-round">FOUR</div><div class="eight columns border u-round">EIGHT</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="five columns border u-round">FIVE</div><div class="seven columns border u-round">SEVEN</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="six columns border u-round">SIX</div><div class="six columns border u-round">SIX</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="seven columns border u-round">SEVEN</div><div class="five columns border u-round">FIVE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="eight columns border u-round">EIGHT</div><div class="four columns border u-round">FOUR</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="nine columns border u-round">NINE</div><div class="three columns border u-round">THREE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="ten columns border u-round">TEN</div><div class="two columns border u-round">TWO</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="eleven columns border u-round">ELEVEN</div><div class="one columns border u-round">ONE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="twelve columns border u-round">TWELVE</div>
+                    </div>
+                    
+                    <pre><code>&lt;div class="row"&gt;
+    &lt;div class="three columns"&gt;
+        &lt;h2&gt;This is a quarter-width column.&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="six columns"&gt;
+        &lt;h2&gt;This is column is half-width.&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="three columns"&gt;
+        &lt;h2&gt;This is a quarter-width column.&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="twelve columns"&gt;
+        &lt;h2&gt;This is a full-width column.&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Cards</h3>
+                    <p>Use the <code>card</code> class for grouping content together.</p>
+                    
+                    <pre><code>Coming soon...
+                    </code></pre>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Tables</h3>
+                    <p>Tables are unstyled by default. Add the <code>table</code> class to style them. Add the <code>alternating</code>
+					class for highlighting ever other row. You can further stylize your tables with <code>border</code>, <code>shadow</code>,
+					<code>margin</code>, <code>padding</code>, and more. Which are described in the utility section below.</p>
+                    <table class="table alternating">
+                        <caption>Table Caption goes here</caption>
+                        <thead><tr>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                                <th>Column 3</th>
+                                <th>Column 4</th>
+                                <th class="text-bold">Price</th>
+                        </tr></thead>
+                        <tbody>
+                            <tr><td>Row 1</td><td>Row 1</td><td>Row 1</td><td>Row 1</td><td class="text-bold">$0.00</td></tr>
+                            <tr><td>Row 2</td><td>Row 2</td><td>Row 2</td><td>Row 2</td><td class="text-bold">$0.00</td></tr>
+                            <tr><td>Row 3</td><td>Row 3</td><td>Row 3</td><td>Row 3</td><td class="text-bold">$0.00</td></tr>
+							<tr><td>Row 4</td><td>Row 4</td><td>Row 4</td><td>Row 4</td><td class="text-bold">$0.00</td></tr>
+							<tr><td>Row 5</td><td>Row 5</td><td>Row 5</td><td>Row 5</td><td class="text-bold">$0.00</td></tr>
+							<tr><td>Row 6</td><td>Row 6</td><td>Row 6</td><td>Row 6</td><td class="text-bold">$0.00</td></tr>
+                        </tbody>
+                    </table>
+                    
+                    <pre><code>&lt;table class="table alternating"&gt;
+    &lt;caption&gt;Table Caption goes here&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Column 1&lt;/th&gt;
+            &lt;th&gt;Column 2&lt;/th&gt;
+            &lt;th&gt;Column 3&lt;/th&gt;
+            &lt;th&gt;Column 4&lt;/th&gt;
+            &lt;th class="text-bold"&gt;Price&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 1&lt;/td&gt;&lt;td&gt;Row 1&lt;/td&gt;&lt;td&gt;Row 1&lt;/td&gt;&lt;td&gt;Row 1&lt;/td&gt;&lt;td class="text-bold"&gt;$0.00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 2&lt;/td&gt;&lt;td&gt;Row 2&lt;/td&gt;&lt;td&gt;Row 2&lt;/td&gt;&lt;td&gt;Row 2&lt;/td&gt;&lt;td class="text-bold"&gt;$0.00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 3&lt;/td&gt;&lt;td&gt;Row 3&lt;/td&gt;&lt;td&gt;Row 3&lt;/td&gt;&lt;td&gt;Row 3&lt;/td&gt;&lt;td class="text-bold"&gt;$0.00&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Buttons</h3>
+                    <p>Use the <code>button</code> class for styling anchors, inputs, buttons, to look like a button. And instead of confusing sub-button names
+					like primary, success, info, warning, or danger... Osseous provides 3 simple colored buttons; red, green, and blue. Which you can also edit the default colors
+					in the <b>:root</b> variables, to match your theme.
+					The <code>button-blue</code> class could mark important actions and <code>button-red</code> could mark dangerous actions. But we're not
+					going to tell you how you should design your site.</p>
+					
+					<div class="row">
+						<a class="button">Anchor</a>
+						<button class="button">Button</button>
+						<input class="button" type="button" value="Input Button" />
+						<input class="button" type="submit" value="Input Submit" />
+						<input class="button" type="reset" value="Input Reset" />
+					</div>
 					<br/><br/>
-					<h1 style="display:inline">Heading 1</h1><code>&lt;h1&gt;</code><br/>
-					<h2 style="display:inline">Heading 2</h2><code>&lt;h2&gt;</code><br/>
-					<h3 style="display:inline">Heading 3</h3><code>&lt;h3&gt;</code><br/>
-					<h4 style="display:inline">Heading 4</h4><code>&lt;h4&gt;</code><br/>
-					<h5 style="display:inline">Heading 5</h5><code>&lt;h5&gt;</code><br/>
-					<h6 style="display:inline">Heading 6</h6><code>&lt;h6&gt;</code><br/>
-				</div>
-			</div>
+					<div class="row">
+						<button class="button button-blue">Button Blue</button>
+						<button class="button button-green">Button Green</button>
+						<button class="button button-red">Button Red</button>
+						<button class="button" disabled title="Disabled Button">Disabled</button>
+					</div>
+					<br/><br/>
+					<div class="row">
+						<button class="button button-blue u-full-width">Full Width Button</button>
+                    </div>
+					<br/><br/>
+					<div class="row">
+						<button class="button text-larger text-thinner">Larger</button>
+						<button class="button text-large text-thinner">Large</button>
+						<button class="button text-medium text-thinner">Medium</button>
+						<button class="button text-regular">Regular</button>
+						<button class="button text-small">Small</button>
+						<button class="button text-tiny">Tiny</button>
+                    </div>
+					
+                    <pre><code>&lt;div class="row"&gt;
+	&lt;a class="button"&gt;Anchor&lt;/a&gt;
+	&lt;button class="button"&gt;Button&lt;/button&gt;
+	&lt;input class="button" type="button" value="Input Button" /&gt;
+	&lt;input class="button" type="submit" value="Input Submit" /&gt;
+	&lt;input class="button" type="reset" value="Input Reset" /&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;button class="button button-blue"&gt;Button Blue&lt;/button&gt;
+	&lt;button class="button button-green"&gt;Button Green&lt;/button&gt;
+	&lt;button class="button button-red"&gt;Button Red&lt;/button&gt;
+	&lt;button class="button" disabled title="Disabled Button"&gt;Disabled&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;button class="button button-blue u-full-width"&gt;Full Width Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;button class="button text-larger text-thinner"&gt;Larger&lt;/button&gt;
+	&lt;button class="button text-large text-thinner"&gt;Large&lt;/button&gt;
+	&lt;button class="button text-medium text-thinner"&gt;Medium&lt;/button&gt;
+	&lt;button class="button text-regular"&gt;Regular&lt;/button&gt;
+	&lt;button class="button text-small"&gt;Small&lt;/button&gt;
+	&lt;button class="button text-tiny"&gt;Tiny&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
 			
 			<hr/>
-			
-			<div class="row">
-				<div class="twelve columns">
-					<h3>Columns</h3>
-					<p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
-					The values start from one and go up to twelve across.</p>
-					
-					<div class="row text-center">
-						<div class="twelve columns border u-round">TWELVE</div>
-					</div>
-					<div class="row text-center">
-						<div class="one columns border u-round">ONE</div><div class="eleven columns border u-round">ELEVEN</div>
-					</div>
-					<div class="row text-center">
-						<div class="two columns border u-round">TWO</div><div class="ten columns border u-round">TEN</div>
-					</div>
-					<div class="row text-center">
-						<div class="three columns border u-round">THREE</div><div class="nine columns border u-round">NINE</div>
-					</div>
-					<div class="row text-center">
-						<div class="four columns border u-round">FOUR</div><div class="eight columns border u-round">EIGHT</div>
-					</div>
-					<div class="row text-center">
-						<div class="five columns border u-round">FIVE</div><div class="seven columns border u-round">SEVEN</div>
-					</div>
-					<div class="row text-center">
-						<div class="six columns border u-round">SIX</div><div class="six columns border u-round">SIX</div>
-					</div>
-					<div class="row text-center">
-						<div class="seven columns border u-round">SEVEN</div><div class="five columns border u-round">FIVE</div>
-					</div>
-					<div class="row text-center">
-						<div class="eight columns border u-round">EIGHT</div><div class="four columns border u-round">FOUR</div>
-					</div>
-					<div class="row text-center">
-						<div class="nine columns border u-round">NINE</div><div class="three columns border u-round">THREE</div>
-					</div>
-					<div class="row text-center">
-						<div class="ten columns border u-round">TEN</div><div class="two columns border u-round">TWO</div>
-					</div>
-					<div class="row text-center">
-						<div class="eleven columns border u-round">ELEVEN</div><div class="one columns border u-round">ONE</div>
-					</div>
-					<div class="row text-center">
-						<div class="twelve columns border u-round">TWELVE</div>
-					</div>
-					
-					<pre><code>Coming soon...
-					</code></pre>
-				</div>
-			</div>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Forms</h3>
+                    <p>Forms can be structured with <code>row</code> and <code>columns</code> to group fields together.</p>
+                    
+                    <pre><code>Coming soon...
+                    </code></pre>
+                </div>
+            </div>
 			
 			<hr/>
-			
-			<div class="row">
-				<div class="twelve columns">
-					<h3>Cards</h3>
-					<p>Use the <code>card</code> class for grouping content together.</p>
-					
-					<pre><code>Coming soon...
-					</code></pre>
-				</div>
-			</div>
-			
-			<hr/>
-			
-			<div class="row">
-				<div class="twelve columns">
-					<h3>Tables</h3>
-					<p>Tables are unstyled by default. To style them you must add the <code>table</code> class.</p>
-					<table class="table">
-						<caption>Table Caption goes here</caption>
-						<thead>
-							<tr>
-								<th>Column 1</th>
-								<th>Column 2</th>
-								<th>Column 3</th>
-								<th>Column 4</th>
-								<th class="text-bold">Price</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Row 1</td><td>Row 1</td><td>Row 1</td><td>Row 1</td><td class="text-bold">$0.00</td>
-							</tr>
-							<tr>
-								<td>Row 2</td><td>Row 2</td><td>Row 2</td><td>Row 2</td><td class="text-bold">$0.00</td>
-							</tr>
-							<tr>
-								<td>Row 3</td><td>Row 3</td><td>Row 3</td><td>Row 3</td><td class="text-bold">$0.00</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<pre><code>Coming soon...
-					</code></pre>
-				</div>
-			</div>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Header and Navigation</h3>
+                    <p>Use the <code>header</code> class for a fixed navigation bar on top.</p>
+                    
+                    <pre><code>Coming soon...
+                    </code></pre>
+                </div>
+            </div>
 			
 			<hr/>
-			
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Code</h3>
+                    <p>Use the <code>code</code> tag for marking code. Wrap it with <code>pre</code> to make code snippets.
+					You can also add the optional plugin <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">HighlightJS</a> to highlight syntax.</p>
+                    
+                    <pre><code>Coming soon...
+                    </code></pre>
+                </div>
+            </div>
+            
         </div>
         
         <!-- About Section -->
@@ -296,7 +429,7 @@
 <!-- Footer at bottom -->
 <footer class="row text-center border-top padding-bottom">
     <br/><br/><small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small><br><br>
-    <a class="button button-primary" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
+    <a class="button button-blue" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
 </footer>
 
 <!-- Lazy load JavaScript, mainly for navigation -->
