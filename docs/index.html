@@ -34,14 +34,14 @@
     <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
     <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.0">
     <link rel="stylesheet" href="icomoon/icomoon.css?v=alpha-0.1.0">
-    <title>Osseous - A bony CSS framework without any guts.</title>
+    <title>Osseous - A bony CSS framework without guts.</title>
 </head>
 <body>
 
 <!-- Mobile Sidebar Menu -->
-<nav id="sidebar" class="sidebar border animate-left shadow-right">
+<nav id="sidebar" class="sidebar border-right animate-left shadow-right">
     <div class="container">
-        <a class="padding u-right" title="Close Menu" href="javascript:closeSidebar()">
+        <a class="padding u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
         </a>
         <br/>
@@ -97,10 +97,46 @@
 
 <!-- Main Content -->
 <article class="container">
-    <div class="row">
+
+        <!-- Description Section -->
+        <div id="description" class="row padding-top-large">
+            <h2>What is it?</h2>
+            <p>
+                Osseous is a small CSS framework that only includes some (bony) elements to grow a website. Its meant to be a starting point
+                that you can add additional features (guts) on top of, as you require them. Rather than importing a massive framework and not utilizing
+                all of the features.
+            </p>
+            <div class="row">
+              <div class="five columns offset-by-one">
+                <h4 class="text-center">What's Included?</h4>
+                <p>Essential bones included in Osseous.</p>
+                <ul class="text-left">
+                  <li>Typography</li>
+                  <li>Columns/Rows</li>
+                  <li>Cards</li>
+                  <li>Tables</li>
+                  <li>Buttons, Forms, Inputs</li>
+                  <li>Mobile Menu</li>
+                  <li>Navigation</li>
+                </ul>
+              </div>
+              <div class="five columns">
+                <h4 class="text-center">What's Missing?</h4>
+                <p>Some guts not included in Osseous.</p>
+                <ul class="text-left">
+                  <li>Alerts</li>
+                  <li>Carousel</li>
+                  <li>Dropdowns</li>
+                  <li>Icons</li>
+                  <li>Modals / Popovers</li>
+                  <li>Tooltips</li>
+                </ul>
+              </div>
+            </div>
+        </div>
 
         <!-- Download Section -->
-        <div id="download" class="twelve columns padding-top-large">
+        <div id="download" class="row padding-top-large">
             <h2>Download</h2>
             <p>
                 Add to your project using the CDN link or download the CSS file.<br/>
@@ -113,15 +149,14 @@
         </div>
 
         <!-- Examples Section -->
-        <div id="examples" class="twelve columns padding-top-large">
+        <div id="examples" class="row padding-top-large">
+            <hr/>
             <h2>Examples</h2>
             <p>
-                Osseous includes formatting for all the basic elements, and some common items like media cards, mobile menu, and navbar too.
+                Osseous includes formatting for all the basic elements, and some common features like media cards, mobile menu, and navigation.
                 <br/><br/>
                 Use the examples below as a reference and demonstration of this bony framework.
             </p>
-
-            <hr/>
 
             <div class="row">
                 <div class="twelve columns">
@@ -158,6 +193,7 @@
                     <code>&lt;b&gt;</code>This is <b>bolded</b>.<br/>
                     <code>&lt;i&gt;</code>This is <i>italic</i>.<br/>
                     <code>&lt;u&gt;</code>This is <u>underlined</u>.<br/>
+                    <code>&lt;s&gt;</code>This is <s>striked</s>.<br/>
                     <code>&lt;small&gt;</code><small>This is a small.</small><br/>
                     <code>&lt;sup&gt;</code>This is a supersript<sup>10</sup> and <code>&lt;sub&gt;</code> subscript<sub>10</sub>.<br/>
                     <blockquote>This is a <code>&lt;blockquote&gt;</code></blockquote>
@@ -795,7 +831,7 @@
                         <label for="field1">Email Address</label>
                         <input class="u-full-width" id="field1" type="email" value="help@example.com" />
 
-                        <label for="field2">Emergency Telephone</label>
+                        <label for="field2" class="padding-top">Emergency Telephone</label>
                         <input class="u-full-width" id="field2" type="text" value="517-123-1000" />
                       </fieldset>
                       </div>
@@ -805,7 +841,7 @@
                         <label for="field3">Email Address</label>
                         <input class="u-full-width" id="field3" type="email" value="humanresources@example.com" />
 
-                        <label for="field4">Daytime Telephone</label>
+                        <label for="field4" class="padding-top">Daytime Telephone</label>
                         <input class="u-full-width" id="field4" type="text" value="517-123-1489" />
                       </fieldset>
                       </div>
@@ -818,7 +854,7 @@
     &lt;label for="field1"&gt;Email Address&lt;/label&gt;
     &lt;input class="u-full-width" id="field1" type="email" value="help@example.com" /&gt;
 
-    &lt;label for="field2"&gt;Emergency Telephone&lt;/label&gt;
+    &lt;label for="field2" class="padding-top"&gt;Emergency Telephone&lt;/label&gt;
     &lt;input class="u-full-width" id="field2" type="text" value="517-123-1000" /&gt;
   &lt;/fieldset&gt;
   &lt;/div&gt;
@@ -828,7 +864,7 @@
     &lt;label for="field3"&gt;Email Address&lt;/label&gt;
     &lt;input class="u-full-width" id="field3" type="email" value="humanresources@example.com" /&gt;
 
-    &lt;label for="field4"&gt;Daytime Telephone&lt;/label&gt;
+    &lt;label for="field4" class="padding-top"&gt;Daytime Telephone&lt;/label&gt;
     &lt;input class="u-full-width" id="field4" type="text" value="517-123-1489" /&gt;
   &lt;/fieldset&gt;
   &lt;/div&gt;
@@ -869,22 +905,11 @@ public static void main(String args[]) {
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
-                <div class="twelve columns">
-                    <h3>Alerts</h3>
-                    <p>Use the <code>alert</code> class for creating small modal popovers.
-
-                    <pre><code>Coming soon...
-                    </code></pre>
-                </div>
-            </div>
-
         </div>
 
         <!-- About Section -->
-        <div id="about" class="twelve columns padding-top-large">
+        <div id="about" class="row padding-top-large">
+            <hr/>
             <h2>About</h2>
             <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
@@ -896,13 +921,13 @@ public static void main(String args[]) {
         </div>
 
         <!-- License Section -->
-        <div id="license" class="twelve columns padding-top-large">
+        <div id="license" class="row padding-top-large padding-bottom-large">
             <h2>License</h2>
             <p>
               <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and free forver.
             </p>
         </div>
-    </div>
+
 </article>
 
 <!-- Footer at bottom -->
