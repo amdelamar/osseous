@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Austin Delamar">
     <meta name="keywords" content="osseous,css,framework,bones,skeleton,skull,html,css">
-    <meta name="description" content="A bony CSS framework without any guts." />
+    <meta name="description" content="A bony CSS framework without guts." />
     <meta name="robots" content="all">
 
     <!-- Open Graph data -->
@@ -16,7 +16,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="osseous">
     <meta property="og:image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
-    <meta property="og:description" content="A bony CSS framework without any guts.">
+    <meta property="og:description" content="A bony CSS framework without guts.">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
@@ -32,15 +32,15 @@
     <meta itemprop="image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
-    <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.1">
-    <link rel="stylesheet" href="icomoon/icomoon.css?v=alpha-0.1.0">
+    <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.2">
+    <link rel="stylesheet" href="icomoon/icomoon.css?v=alpha-0.1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <title>Osseous - A bony CSS framework without guts.</title>
 </head>
 <body>
 
 <!-- Sidebar -->
-<nav id="sidebar" class="sidebar border-right shadow-right">
+<nav id="sidebarMenu" class="sidebar border-right shadow-right">
     <div class="nav-item-close">
         <a class="u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
@@ -56,10 +56,10 @@
       			<a class="nav-item" href="#columns">Columns</a>
       			<a class="nav-item" href="#tables">Tables</a>
       			<a class="nav-item" href="#buttons">Buttons</a>
+            <a class="nav-item" href="#dropdowns">Dropdowns</a>
       			<a class="nav-item" href="#forms">Forms</a>
       			<a class="nav-item" href="#navbar">Navbar</a>
             <a class="nav-item" href="#sidebar">Sidebar</a>
-      			<a class="nav-item" href="#dropdowns">Dropdowns</a>
     		  </div>
     		</div>
         <a class="nav-item" href="#about">About</a>
@@ -90,10 +90,10 @@
       			<a href="#columns">Columns</a>
       			<a href="#tables">Tables</a>
       			<a href="#buttons">Buttons</a>
+            <a href="#dropdowns">Dropdowns</a>
       			<a href="#forms">Forms</a>
             <a href="#navbar">Navbar</a>
             <a href="#sidebar">Sidebar</a>
-            <a href="#dropdowns">Dropdowns</a>
     		  </div>
     		</div>
         <a class="nav-item" href="#about">About</a>
@@ -163,22 +163,22 @@
         <!-- Download Section -->
         <div id="download" class="row padding-bottom-large">
             <h2>Download</h2>
-            <blockquote>This project is still in development. Use at your own risk!</blockquote>
+            <b>This project is still in development. Use at your own risk!</b>
             <p>
-                Add to your project using this link or download the CSS file and start building your own bony site.<br/>
+                Add to your project using this link or download the CSS file.
             </p>
-            <pre><code>&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;</code></pre>
+            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;</code></pre>
             <p>
                 (Optional) This tiny JavaScript file is only for the sidebar popup. It might not be needed in a later release.
             </p>
-            <pre><code>&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+            <pre><code class="html">&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
         </div>
 
         <!-- Examples Section -->
         <div id="examples" class="row section border-top">
             <h2>Examples</h2>
             <p>
-                Osseous includes formatting for all the basic elements, and some common features like media cards, mobile menu, and navigation.
+                Osseous includes formatting for all the basic elements, and some common features like columns, mobile menus, and dropdowns.
                 <br/><br/>
                 Use the examples below as a reference and demonstration of this bony framework.
             </p>
@@ -238,7 +238,7 @@
         				<p><code>&lt;code&gt;</code> This is some code. <code>System.out.println("Hello World");</code>
                 </p>
 
-                <pre><code>&lt;pre&gt;&lt;code&gt;
+                <pre><code class="html">&lt;pre&gt;&lt;code&gt;
 public static void main(String args[]) {
      System.out.println("Hello World");
      System.exit(0);
@@ -295,7 +295,7 @@ public static void main(String args[]) {
                         <div class="twelve columns border u-round">TWELVE</div>
                     </div>
 
-                    <pre><code>&lt;div class="row"&gt;
+                    <pre><code class="html">&lt;div class="row"&gt;
     &lt;div class="three columns"&gt;
         &lt;h2&gt;This is a quarter-width column.&lt;/h2&gt;
     &lt;/div&gt;
@@ -444,7 +444,7 @@ public static void main(String args[]) {
                         </div>
                     </div>
 
-                    <pre><code>&lt;table class="table border row-borders row-alternating text-center"&gt;
+                    <pre><code class="html">&lt;table class="table border row-borders row-alternating text-center"&gt;
     &lt;caption&gt;Row borders and Row alternating&lt;/caption&gt;
     &lt;thead&gt;
         &lt;tr&gt;&lt;th&gt;Column 1&lt;/th&gt;&lt;th&gt;Column 2&lt;/th&gt;&lt;th&gt;Column 3&lt;/th&gt;&lt;th&gt;Column 4&lt;/th&gt;&lt;/tr&gt;
@@ -496,7 +496,7 @@ public static void main(String args[]) {
                         <button class="button text-tiny">Tiny</button>
                     </div>
 
-                    <pre><code>&lt;div class="row"&gt;
+                    <pre><code class="html">&lt;div class="row"&gt;
     &lt;a class="button"&gt;Anchor&lt;/a&gt;
     &lt;button class="button"&gt;Button&lt;/button&gt;
     &lt;input class="button" type="button" value="Input Button" /&gt;
@@ -519,6 +519,89 @@ public static void main(String args[]) {
     &lt;button class="button text-regular"&gt;Regular&lt;/button&gt;
     &lt;button class="button text-small"&gt;Small&lt;/button&gt;
     &lt;button class="button text-tiny"&gt;Tiny&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="dropdowns" class="row section">
+                <div class="twelve columns">
+                    <h3>Dropdowns</h3>
+                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered over.
+                    Content that should appear is wrapped in <code>dropdown-body</code> class.
+                    And add <code>&amp;#9662;</code> to get a tiny arrow, or use anything else you like.</p>
+
+                    <div class="row">
+                      <div class="six columns">
+                        <div class="dropdown padding">Dropdown &#9662;
+                          <div class="dropdown-body border text-left">
+                            <a href="#dropdowns" class="">Link 1</a>
+                            <a href="#dropdowns" class="">Link 2</a>
+                            <a href="#dropdowns" class="">Link 3</a>
+                          </div>
+                        </div>
+                        <div class="dropdown padding">Dropdown-Tip
+                          <div class="dropdown-body border u-round">
+                            <span class="text-small text-nowrap">This is kinda like a tooltip. If you really want tooltips.</span>
+                          </div>
+                        </div>
+                        <div class="dropdown padding text-medium">&#9776;
+                          <div class="dropdown-body shadow u-round">
+                            <span class="text-small text-nowrap">Shadow outline.</span>
+                          </div>
+                        </div>
+                        <p>You can style the dropdown and the body any way you like.</p>
+                      </div>
+                      <div class="six columns">
+                        <div class="button dropdown">Dropdown &#9662;
+                          <div class="dropdown-body border">
+                            <a href="#dropdowns" class="">Action 1</a>
+                            <a href="#dropdowns" class="">Action 2</a>
+                            <a href="#dropdowns" class="">Action 3</a>
+                          </div>
+                        </div>
+                        <div class="button button-blue dropdown">
+                          <span class="padding-right border-right">Reply</span><span class="padding-left">&#9660;</span>
+                          <div class="dropdown-body border text-left">
+                            <a href="#dropdowns" class="">Reply</a>
+                            <a href="#dropdowns" class="">Reply All</a>
+                          </div>
+                        </div>
+                        <p>Add the <code>button</code> class to look like a button.</p>
+                      </div>
+                    </div>
+
+                    <pre><code class="html">&lt;div class="dropdown padding"&gt;Dropdown &amp;#9662;
+  &lt;div class="dropdown-body border text-left"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 1&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 2&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="dropdown padding"&gt;Dropdown-Tip
+  &lt;div class="dropdown-body border u-round"&gt;
+    &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip. If you really want tooltips.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="dropdown padding text-medium"&gt;&amp;#9776;
+  &lt;div class="dropdown-body shadow u-round"&gt;
+    &lt;span class="text-small text-nowrap"&gt;Shadow outline.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="button dropdown"&gt;Dropdown &amp;#9662;
+  &lt;div class="dropdown-body border"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 1&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 2&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="button button-blue dropdown"&gt;
+  &lt;span class="padding-right border-right"&gt;Reply&lt;/span&gt;&lt;span class="padding-left"&gt;&amp;#9660;&lt;/span&gt;
+  &lt;div class="dropdown-body border text-left"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Reply&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Reply All&lt;/a&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
             </div>
@@ -623,7 +706,7 @@ public static void main(String args[]) {
                       </div>
                     </div>
 
-                    <pre><code>&lt;div class="row"&gt;
+                    <pre><code class="html">&lt;div class="row"&gt;
   &lt;div class="three columns"&gt;
     &lt;label for="in1" class="padding-top"&gt;Text Input&lt;/label&gt;
     &lt;input type="text" id="in1" value="12345" /&gt;
@@ -760,7 +843,7 @@ public static void main(String args[]) {
                       </div>
                     </form>
 
-                    <pre><code>&lt;form method="post" action=""&gt;
+                    <pre><code class="html">&lt;form method="post" action=""&gt;
   &lt;div class="row"&gt;
     &lt;div class="four columns"&gt;
       &lt;label for="input1"&gt;Your Name&lt;/label&gt;
@@ -820,7 +903,7 @@ public static void main(String args[]) {
                       </div>
                     </form>
 
-                    <pre><code>&lt;form method="post" action=""&gt;
+                    <pre><code class="html">&lt;form method="post" action=""&gt;
   &lt;div class="row"&gt;
   &lt;div class="four columns offset-by-four padding-large border u-round"&gt;
     &lt;h4&gt;Login&lt;/h4&gt;
@@ -864,7 +947,7 @@ public static void main(String args[]) {
                       </div>
                     </div>
 
-                    <pre><code>&lt;div class="row"&gt;
+                    <pre><code class="html">&lt;div class="row"&gt;
   &lt;div class="six columns"&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Helpdesk Contact Information&lt;/legend&gt;
@@ -897,7 +980,7 @@ public static void main(String args[]) {
                     <br/>
                     Take a look at this page's navbar for the example.</p>
 
-                    <pre><code>&lt;nav class="navbar border-bottom"&gt;
+                    <pre><code class="html">&lt;nav class="navbar border-bottom"&gt;
     &lt;div class="navbar-body container"&gt;
         &lt;div class="nav-item-logo"&gt;
             &lt;a href="#"&gt;&lt;span class="text-medium text-thin text-uppercase text-wide"&gt;Website&lt;/span&gt;&lt;/a&gt;
@@ -929,13 +1012,13 @@ public static void main(String args[]) {
                     <h3>Sidebar</h3>
                     <p>Use the <code>sidebar</code> class for mobile navigation bar on the left side. But be sure to
                     provide an id for the sidebar, so that it can easily be opened/closed using JavaScript. The
-                    default id provided is simply, "sidebar".</p>
+                    default id provided is simply, "sidebarMenu".</p>
 
                     <button class="button" onclick="openSidebar()">Open Sidebar</button>
 
                     <button class="button" onclick="closeSidebar()">Close Sidebar</button>
 
-                    <pre><code>&lt;nav id="sidebar" class="sidebar shadow-right"&gt;
+                    <pre><code class="html">&lt;nav id="sidebarMenu" class="sidebar shadow-right"&gt;
     &lt;div class="nav-item-close"&gt;
         &lt;a class="u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close"&gt;
             &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
@@ -951,91 +1034,8 @@ public static void main(String args[]) {
 
                     <p>Showing the sidebar requires some JavaScript to work. But its only 2 lines worth.</p>
 
-                    <pre><code>function openSidebar(){document.getElementById("sidebar").style.display="block";}
-function closeSidebar(){document.getElementById("sidebar").style.display="none";}</code></pre>
-                </div>
-            </div>
-
-            <div id="dropdowns" class="row section">
-                <div class="twelve columns">
-                    <h3>Dropdowns</h3>
-                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered over.
-                    Content that should appear is wrapped in <code>dropdown-body</code> class.
-                    And add <code>&amp;#9662;</code> to get a tiny arrow, or use anything else you like.</p>
-
-                    <div class="row">
-                      <div class="six columns">
-                        <div class="dropdown padding">Dropdown &#9662;
-                          <div class="dropdown-body border text-left">
-                            <a href="#dropdowns" class="">Link 1</a>
-                            <a href="#dropdowns" class="">Link 2</a>
-                            <a href="#dropdowns" class="">Link 3</a>
-                          </div>
-                        </div>
-                        <div class="dropdown padding">Dropdown-Tip
-                          <div class="dropdown-body border u-round">
-                            <span class="text-small text-nowrap">This is kinda like a tooltip. If you really want tooltips.</span>
-                          </div>
-                        </div>
-                        <div class="dropdown padding text-medium">&#9776;
-                          <div class="dropdown-body shadow u-round">
-                            <span class="text-small text-nowrap">Shadow outline.</span>
-                          </div>
-                        </div>
-                        <p>You can style the dropdown and the body any way you like.</p>
-                      </div>
-                      <div class="six columns">
-                        <div class="button dropdown">Dropdown &#9662;
-                          <div class="dropdown-body border">
-                            <a href="#dropdowns" class="">Action 1</a>
-                            <a href="#dropdowns" class="">Action 2</a>
-                            <a href="#dropdowns" class="">Action 3</a>
-                          </div>
-                        </div>
-                        <div class="button button-blue dropdown">
-                          <span class="padding-right border-right">Reply</span><span class="padding-left">&#9660;</span>
-                          <div class="dropdown-body border text-left">
-                            <a href="#dropdowns" class="">Reply</a>
-                            <a href="#dropdowns" class="">Reply All</a>
-                          </div>
-                        </div>
-                        <p>Add the <code>button</code> class to look like a button.</p>
-                      </div>
-                    </div>
-
-                    <pre><code>&lt;div class="dropdown padding"&gt;Dropdown &amp;#9662;
-  &lt;div class="dropdown-body border text-left"&gt;
-    &lt;a href="#dropdowns" class=""&gt;Link 1&lt;/a&gt;
-    &lt;a href="#dropdowns" class=""&gt;Link 2&lt;/a&gt;
-    &lt;a href="#dropdowns" class=""&gt;Link 3&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="dropdown padding"&gt;Dropdown-Tip
-  &lt;div class="dropdown-body border u-round"&gt;
-    &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip. If you really want tooltips.&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="dropdown padding text-medium"&gt;&amp;#9776;
-  &lt;div class="dropdown-body shadow u-round"&gt;
-    &lt;span class="text-small text-nowrap"&gt;Shadow outline.&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class="button dropdown"&gt;Dropdown &amp;#9662;
-  &lt;div class="dropdown-body border"&gt;
-    &lt;a href="#dropdowns" class=""&gt;Action 1&lt;/a&gt;
-    &lt;a href="#dropdowns" class=""&gt;Action 2&lt;/a&gt;
-    &lt;a href="#dropdowns" class=""&gt;Action 3&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="button button-blue dropdown"&gt;
-  &lt;span class="padding-right border-right"&gt;Reply&lt;/span&gt;&lt;span class="padding-left"&gt;&amp;#9660;&lt;/span&gt;
-  &lt;div class="dropdown-body border text-left"&gt;
-    &lt;a href="#dropdowns" class=""&gt;Reply&lt;/a&gt;
-    &lt;a href="#dropdowns" class=""&gt;Reply All&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                    <pre><code class="javascript">function openSidebar(){document.getElementById("sidebarMenu").style.display="block";}
+function closeSidebar(){document.getElementById("sidebarMenu").style.display="none";}</code></pre>
                 </div>
             </div>
 
@@ -1070,7 +1070,7 @@ function closeSidebar(){document.getElementById("sidebar").style.display="none";
 </footer>
 
 <!-- Lazy load JavaScript, just for sidebar popup -->
-<script type="text/javascript" src="js/osseous.js?v=0.1.1"></script>
+<script type="text/javascript" src="js/osseous.js?v=0.1.2"></script>
 
 <!-- Highlightjs for color coding -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>

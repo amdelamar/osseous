@@ -4,10 +4,10 @@
  * MIT License
  */
 function openSidebar() {
-    document.getElementById("sidebar").style.display = "inline-block";
+    document.getElementById("sidebarMenu").style.display = "inline-block";
 }
 function closeSidebar() {
-    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("sidebarMenu").style.display = "none";
 }
 function gotoTop() {
   document.body.scrollTop = 0; // For Chrome, Safari and Opera

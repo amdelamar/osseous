@@ -4,13 +4,13 @@ A bony CSS framework without guts.
 
 ## Download
 
-Add to your project using the CDN link or download the CSS file.
+Add to your project using this link or download the CSS file.
 
 ```html
 <link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css">
 ```
 
-(Optional) Add the JavaScript file for navigation (mobile menu) and "jump to top" button.
+(Optional) This tiny JavaScript file is only for the sidebar popup. It might not be needed in a later release.
 
 ```html
 <script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"></script>
