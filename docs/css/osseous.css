@@ -39,11 +39,14 @@ code,kbd,pre,samp{font-family:var(--font-monospace);font-size:1.4rem;}
 code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:rgba(var(--black),0.05);border:1px solid;border-color:rgba(var(--black),0.1);border-radius:4px;}
 pre > code{display:block;padding:1rem 1.5rem;white-space:pre;overflow-x:auto;}
 pre,blockquote,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem;}
+hr{box-sizing:content-box;margin-top:4rem;margin-bottom:4rem;height:0;border-width:0;border-top:1px solid;border-color:rgba(var(--black),0.1);overflow:visible;}
 blockquote {
   margin:2.5rem 0px 2.5rem 0px;padding:0.2rem 0.5rem 0.2rem 2.5rem;
   border-left:0.5rem solid;
   border-color:rgba(var(--black),0.1);
 }
+
+/* Headings */
 h1, h2, h3, h4, h5, h6{margin-top:0;margin-bottom:2rem;font-weight:300;}
 h1{font-size:4.0rem;line-height:1.2;letter-spacing:-.1rem;}
 h2{font-size:3.6rem;line-height:1.25;letter-spacing:-.1rem;}
@@ -59,12 +62,13 @@ h6{font-size:1.5rem;line-height:1.6;letter-spacing:0;}
   h5{font-size:2.4rem;}
   h6{font-size:1.5rem;}
 }
+
+/* Lists */
 ul{list-style:circle inside;}
 ol{list-style:decimal inside;}
 ol, ul{padding-left:0;margin-top:0;}
 ul ul,ul ol,ol ol,ol ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%;}
 li{margin-bottom:1rem;}
-hr{box-sizing:content-box;margin-top:4rem;margin-bottom:4rem;height:0;border-width:0;border-top:1px solid;border-color:rgba(var(--black),0.1);overflow:visible;}
 
 /* Forms, Buttons, Inputs */
 input,textarea,select,fieldset{margin-bottom:1.5rem;}
@@ -225,18 +229,10 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
 .table.column-first tr td:first-child{background-color:rgba(var(--black),0.025);}
 .table.column-last tr td:last-child{background-color:rgba(var(--black),0.025);}
 
-/* Containers */
+/* Container and Section */
 .container{position:relative;width:100%;max-width:960px;margin:0 auto;padding:0 20px;box-sizing:border-box;}
 @media (min-width:400px){.container{width:85%;padding:0;}}
-
-/* Cards */
-.card {/* coming soon */}
-.card-head {/* coming soon */}
-.card-body {/* coming soon */}
-.card-img-top {/* coming soon */}
-.card-img-bottom {/* coming soon */}
-.card-img-left {/* coming soon */}
-.card-img-right {/* coming soon */}
+.section{padding-top:6.5rem;padding-bottom:4rem;}
 
 /* Columns */
 .column,.columns{width:100%;float:left;box-sizing:border-box;}
@@ -276,42 +272,8 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
   .offset-by-one-half.column, .offset-by-one-half.columns{margin-left:52%;}
 }
 
-/* Formatting */
-.margin{margin:1rem}
-.margin-top{margin-top:1rem}
-.margin-bottom{margin-bottom:1rem}
-.margin-left{margin-left:1rem}
-.margin-right{margin-right:1rem}
-.margin-large{margin:4rem}
-.margin-top-large{margin-top:4rem}
-.margin-bottom-large{margin-bottom:4rem}
-.margin-left-large{margin-left:4rem}
-.margin-right-large{margin-right:4rem}
-.padding{padding:1rem}
-.padding-top{padding-top:1rem}
-.padding-bottom{padding-bottom:1rem}
-.padding-left{padding-left:1rem}
-.padding-right{padding-right:1rem}
-.padding-large{padding:4rem}
-.padding-top-large{padding-top:4rem}
-.padding-bottom-large{padding-bottom:4rem}
-.padding-left-large{padding-left:4rem}
-.padding-right-large{padding-right:4rem}
-.border{border:1px solid;border-color:rgba(var(--black),0.2);}
-.border-top{border-top:1px solid;border-color:rgba(var(--black),0.2);}
-.border-bottom{border-bottom:1px solid;border-color:rgba(var(--black),0.2);}
-.border-left{border-left:1px solid;border-color:rgba(var(--black),0.2);}
-.border-right{border-right:1px solid;border-color:rgba(var(--black),0.2);}
-.border-none{border:0;}
-.shadow{box-shadow: 0 0 16px 10px rgba(0,0,0,.33);}
-.shadow-top{box-shadow: 0 -8px 10px rgba(0,0,0,.33);}
-.shadow-bottom{box-shadow: 0 8px 10px rgba(0,0,0,.33);}
-.shadow-left{box-shadow: -8px 0 10px rgba(0,0,0,.33);}
-.shadow-right{box-shadow: 8px 0 10px rgba(0,0,0,.33);}
-
 /* Header and Sidebar */
 .sidebar{height:100%;width:200px;z-index:100;background-color:#fff;position:fixed!important;overflow:auto;display:none;}
-.navbar-spacer {display:block;width:100%;height:7rem;background:transparent;}
 .navbar{position:fixed;top:0;left:0;width:100%;height:6.5rem;z-index:99;background:#fff;}
 .navbar-body{height:100%;display:flex;align-items:center;justify-content:space-between;background:transparent;}
 .navbar a,.sidebar a{color:rgba(var(--black),0.8);transition:all .08s;}
@@ -365,9 +327,41 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
 .text-bolder{font-weight:800;}
 .text-wide{letter-spacing:4px;}
 .text-wider{letter-spacing:6px;}
-.text-shadow{text-shadow:3px 0.2rem rgb(var(--grey));}
 .text-uppercase{text-transform:uppercase;}
 .text-lowercase{text-transform:lowercase;}
 .text-center{text-align:center;}
 .text-right{text-align:right;}
 .text-left{text-align:left;}
+
+/* Formatting */
+.margin{margin:1rem}
+.margin-top{margin-top:1rem}
+.margin-bottom{margin-bottom:1rem}
+.margin-left{margin-left:1rem}
+.margin-right{margin-right:1rem}
+.margin-large{margin:4rem}
+.margin-top-large{margin-top:4rem}
+.margin-bottom-large{margin-bottom:4rem}
+.margin-left-large{margin-left:4rem}
+.margin-right-large{margin-right:4rem}
+.padding{padding:1rem}
+.padding-top{padding-top:1rem}
+.padding-bottom{padding-bottom:1rem}
+.padding-left{padding-left:1rem}
+.padding-right{padding-right:1rem}
+.padding-large{padding:4rem}
+.padding-top-large{padding-top:4rem}
+.padding-bottom-large{padding-bottom:4rem}
+.padding-left-large{padding-left:4rem}
+.padding-right-large{padding-right:4rem}
+.border{border:1px solid;border-color:rgba(var(--black),0.2);}
+.border-top{border-top:1px solid;border-color:rgba(var(--black),0.2);}
+.border-bottom{border-bottom:1px solid;border-color:rgba(var(--black),0.2);}
+.border-left{border-left:1px solid;border-color:rgba(var(--black),0.2);}
+.border-right{border-right:1px solid;border-color:rgba(var(--black),0.2);}
+.border-none{border:0;}
+.shadow{box-shadow: 0 0 8px 5px rgba(0,0,0,.33);}
+.shadow-top{box-shadow: 0 -4px 5px rgba(0,0,0,.33);}
+.shadow-bottom{box-shadow: 0 4px 5px rgba(0,0,0,.33);}
+.shadow-left{box-shadow: -4px 0 5px rgba(0,0,0,.33);}
+.shadow-right{box-shadow: 4px 0 5px rgba(0,0,0,.33);}

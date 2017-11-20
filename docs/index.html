@@ -125,7 +125,7 @@
 <article class="container">
 
         <!-- Description Section -->
-        <div id="description" class="row padding-top-large">
+        <div id="description" class="row section">
             <h2>What is it?</h2>
             <p>
                 Osseous is a small CSS framework that only includes some (bony) elements to grow a website. Its meant to be a starting point
@@ -161,7 +161,7 @@
         </div>
 
         <!-- Download Section -->
-        <div id="download" class="row padding-top-large">
+        <div id="download" class="row padding-bottom-large">
             <h2>Download</h2>
             <blockquote>This project is still in development. Use at your own risk!</blockquote>
             <p>
@@ -175,8 +175,7 @@
         </div>
 
         <!-- Examples Section -->
-        <div id="examples" class="row padding-top-large">
-            <hr/>
+        <div id="examples" class="row section border-top">
             <h2>Examples</h2>
             <p>
                 Osseous includes formatting for all the basic elements, and some common features like media cards, mobile menu, and navigation.
@@ -184,9 +183,9 @@
                 Use the examples below as a reference and demonstration of this bony framework.
             </p>
 
-            <div class="row">
+            <div id="root" class="row section">
                 <div class="twelve columns">
-                    <h3 id="root">Root Variables</h3>
+                    <h3>Root Variables</h3>
                     <p>The default fonts and colors are up top. In the global <b>:root</b> object for easy editing.
                     The default font-family is <code>-apple-system,BlinkMacSystemFont</code>
                     but you can change this by editing the root variable: <code>--font-default</code>.
@@ -208,11 +207,9 @@
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="typography" class="row section">
                 <div class="six columns">
-                    <h3 id="typography">Typography</h3>
+                    <h3>Typography</h3>
                     <p>
                     <code>&lt;p&gt;</code>This is a paragraph.<br/>
                     <code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
@@ -241,8 +238,6 @@
         				<p><code>&lt;code&gt;</code> This is some code. <code>System.out.println("Hello World");</code>
                 </p>
 
-
-
                 <pre><code>&lt;pre&gt;&lt;code&gt;
 public static void main(String args[]) {
      System.out.println("Hello World");
@@ -254,11 +249,9 @@ public static void main(String args[]) {
         				</div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="columns" class="row section">
                 <div class="twelve columns">
-                    <h3 id="columns">Columns</h3>
+                    <h3>Columns</h3>
                     <p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
                     The values start from one and go up to twelve across. They also resize automatically for smaller screens.</p>
 
@@ -321,11 +314,9 @@ public static void main(String args[]) {
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="tables" class="row section">
                 <div class="twelve columns">
-                    <h3 id="tables">Tables</h3>
+                    <h3>Tables</h3>
                     <p>Tables are unstyled by default. Add the <code>table</code> class to style them.
                     <br/><br/>
                     You can further style tables with
@@ -468,11 +459,9 @@ public static void main(String args[]) {
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="buttons" class="row section">
                 <div class="twelve columns">
-                    <h3 id="buttons">Buttons</h3>
+                    <h3>Buttons</h3>
                     <p>Use the <code>button</code> class for styling anchors, inputs, buttons, to look like a button. And instead of confusing sub-button names
                     like primary, success, info, warning, or danger... Osseous provides 3 simple colored buttons; red, green, and blue. Which you can also edit the default colors
                     in the <b>:root</b> variables, to match your theme.
@@ -534,11 +523,9 @@ public static void main(String args[]) {
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="forms" class="row section">
                 <div class="twelve columns">
-                    <h3 id="forms">Forms</h3>
+                    <h3>Forms</h3>
                     <p>Forms are essential to any website. Osseous gives you enough styling for each input type, but not too much.</p>
 
                     <div class="row">
@@ -903,11 +890,9 @@ public static void main(String args[]) {
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="navbar" class="row section">
                 <div class="twelve columns">
-                    <h3 id="navbar">Navbar</h3>
+                    <h3>Navbar</h3>
                     <p>Use the <code>navbar</code> class for a fixed navigation bar on the top of the page.<br/>
                     <br/>
                     Take a look at this page's navbar for the example.</p>
@@ -939,11 +924,9 @@ public static void main(String args[]) {
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="sidebar" class="row section">
                 <div class="twelve columns">
-                    <h3 id="sidebar">Sidebar</h3>
+                    <h3>Sidebar</h3>
                     <p>Use the <code>sidebar</code> class for mobile navigation bar on the left side. But be sure to
                     provide an id for the sidebar, so that it can easily be opened/closed using JavaScript. The
                     default id provided is simply, "sidebar".</p>
@@ -973,11 +956,9 @@ function closeSidebar(){document.getElementById("sidebar").style.display="none";
                 </div>
             </div>
 
-            <hr/>
-
-            <div class="row">
+            <div id="dropdowns" class="row section">
                 <div class="twelve columns">
-                    <h3 id="dropdowns">Dropdowns</h3>
+                    <h3>Dropdowns</h3>
                     <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered over.
                     Content that should appear is wrapped in <code>dropdown-body</code> class.
                     And add <code>&amp;#9662;</code> to get a tiny arrow, or use anything else you like.</p>
@@ -1061,8 +1042,7 @@ function closeSidebar(){document.getElementById("sidebar").style.display="none";
         </div>
 
         <!-- About Section -->
-        <div id="about" class="row padding-top-large">
-            <hr/>
+        <div id="about" class="row section border-top">
             <h2>About</h2>
             <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
@@ -1074,7 +1054,7 @@ function closeSidebar(){document.getElementById("sidebar").style.display="none";
         </div>
 
         <!-- License Section -->
-        <div id="license" class="row padding-top-large padding-bottom-large">
+        <div id="license" class="row section">
             <h2>License</h2>
             <p>
               <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and free forver.
@@ -1084,14 +1064,15 @@ function closeSidebar(){document.getElementById("sidebar").style.display="none";
 </article>
 
 <!-- Footer at bottom -->
-<footer class="row text-center border-top padding-bottom-large">
-    <p><br/><br/><small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small><br><br>
-    <a class="button button-blue" title="Back to top" href="javascript:gotoTop()">Back to Top</a></p>
+<footer class="row section text-center">
+    <p><small><em>&#169; <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small></p>
+    <a class="button button-blue u-right margin-right-large" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
 </footer>
 
-<!-- Lazy load JavaScript, mainly for mobile menu -->
+<!-- Lazy load JavaScript, just for sidebar popup -->
 <script type="text/javascript" src="js/osseous.js?v=0.1.1"></script>
-<!-- Highlightjs for color code -->
+
+<!-- Highlightjs for color coding -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
