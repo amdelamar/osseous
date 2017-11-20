@@ -34,6 +34,7 @@
     <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
     <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.1">
     <link rel="stylesheet" href="icomoon/icomoon.css?v=alpha-0.1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <title>Osseous - A bony CSS framework without guts.</title>
 </head>
 <body>
@@ -164,11 +165,11 @@
             <h2>Download</h2>
             <blockquote>This project is still in development. Use at your own risk!</blockquote>
             <p>
-                Add to your project using the CDN link or download the CSS file.<br/>
+                Add to your project using this link or download the CSS file and start building your own bony site.<br/>
             </p>
             <pre><code>&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;</code></pre>
             <p>
-                (Optional) Add the JavaScript file for mobile menu popup (sidebar), and "jump to top" button.
+                (Optional) This tiny JavaScript file is only for the sidebar popup. It might not be needed in a later release.
             </p>
             <pre><code>&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
         </div>
@@ -193,7 +194,7 @@
                     but again, you can change this by editing the root variable: <code>--font-monospace</code>.
                     </p>
 
-                    <pre><code>:root {
+                    <pre><code class="css">:root {
     --red: 239, 50, 91; /* RGB colors instead of HEX, so opacity can be applied. */
     --green: 50, 239, 135;
     --blue: 51, 195, 240;
@@ -1021,39 +1022,39 @@ function closeSidebar(){document.getElementById("sidebar").style.display="none";
                       </div>
                     </div>
 
-                    <pre><code>    &lt;div class="dropdown padding"&gt;Dropdown &amp;#9662;
-      &lt;div class="dropdown-body border text-left"&gt;
-        &lt;a href="#dropdowns" class=""&gt;Link 1&lt;/a&gt;
-        &lt;a href="#dropdowns" class=""&gt;Link 2&lt;/a&gt;
-        &lt;a href="#dropdowns" class=""&gt;Link 3&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="dropdown padding"&gt;Dropdown-Tip
-      &lt;div class="dropdown-body border u-round"&gt;
-        &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip. If you really want tooltips.&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="dropdown padding text-medium"&gt;&amp;#9776;
-      &lt;div class="dropdown-body shadow u-round"&gt;
-        &lt;span class="text-small text-nowrap"&gt;Shadow outline.&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+                    <pre><code>&lt;div class="dropdown padding"&gt;Dropdown &amp;#9662;
+  &lt;div class="dropdown-body border text-left"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 1&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 2&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="dropdown padding"&gt;Dropdown-Tip
+  &lt;div class="dropdown-body border u-round"&gt;
+    &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip. If you really want tooltips.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="dropdown padding text-medium"&gt;&amp;#9776;
+  &lt;div class="dropdown-body shadow u-round"&gt;
+    &lt;span class="text-small text-nowrap"&gt;Shadow outline.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
 
-    &lt;div class="button dropdown"&gt;Dropdown &amp;#9662;
-      &lt;div class="dropdown-body border"&gt;
-        &lt;a href="#dropdowns" class=""&gt;Action 1&lt;/a&gt;
-        &lt;a href="#dropdowns" class=""&gt;Action 2&lt;/a&gt;
-        &lt;a href="#dropdowns" class=""&gt;Action 3&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="button button-blue dropdown"&gt;
-      &lt;span class="padding-right border-right"&gt;Reply&lt;/span&gt;&lt;span class="padding-left"&gt;&amp;#9660;&lt;/span&gt;
-      &lt;div class="dropdown-body border text-left"&gt;
-        &lt;a href="#dropdowns" class=""&gt;Reply&lt;/a&gt;
-        &lt;a href="#dropdowns" class=""&gt;Reply All&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;</code></pre>
+&lt;div class="button dropdown"&gt;Dropdown &amp;#9662;
+  &lt;div class="dropdown-body border"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 1&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 2&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="button button-blue dropdown"&gt;
+  &lt;span class="padding-right border-right"&gt;Reply&lt;/span&gt;&lt;span class="padding-left"&gt;&amp;#9660;&lt;/span&gt;
+  &lt;div class="dropdown-body border text-left"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Reply&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Reply All&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </div>
             </div>
 
@@ -1090,6 +1091,9 @@ function closeSidebar(){document.getElementById("sidebar").style.display="none";
 
 <!-- Lazy load JavaScript, mainly for mobile menu -->
 <script type="text/javascript" src="js/osseous.js?v=0.1.1"></script>
+<!-- Highlightjs for color code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
