@@ -38,13 +38,12 @@
 </head>
 <body>
 
-<!-- Mobile Sidebar Menu -->
-<nav id="sidebar" class="sidebar border-right animate-left shadow-right">
-    <div class="row">
-        <a class="nav-item-close padding margin u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
+<!-- Sidebar -->
+<nav id="sidebar" class="sidebar border-right shadow-right">
+    <div class="nav-item-close">
+        <a class="u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
         </a>
-        <br/>
     </div>
     <div class="nav-list text-center" onclick="closeSidebar()">
         <a class="nav-item" href="#download">Download</a>
@@ -58,6 +57,7 @@
       			<a class="nav-item" href="#buttons">Buttons</a>
       			<a class="nav-item" href="#forms">Forms</a>
       			<a class="nav-item" href="#navbar">Navbar</a>
+            <a class="nav-item" href="#sidebar">Sidebar</a>
       			<a class="nav-item" href="#dropdowns">Dropdowns</a>
     		  </div>
     		</div>
@@ -68,18 +68,18 @@
     </div>
 </nav>
 
-<!-- Navbar fixed up top -->
+<!-- Navbar -->
 <nav class="navbar border-bottom">
     <div class="navbar-body container">
-    <div class="nav-group">
-        <a class="nav-item-logo" href="#"><span class="text-medium text-thin text-uppercase text-wide">Osseous</span></a>
+    <div class="nav-item-logo">
+        <a href="#"><span class="text-medium text-thin text-uppercase text-wide">Osseous</span></a>
     </div>
-    <div class="nav-item-menu">
+    <div class="nav-small-menu">
         <a class="nav-item" title="Open Menu" href="javascript:openSidebar()">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
         </a>
     </div>
-    <div class="nav-group nav-group-menu">
+    <div class="nav-group nav-large-menu">
         <a class="nav-item" href="#download">Download</a>
     		<div class="nav-item dropdown">
     		  <a href="#examples">Examples &#9662;</a>
@@ -91,6 +91,7 @@
       			<a href="#buttons">Buttons</a>
       			<a href="#forms">Forms</a>
             <a href="#navbar">Navbar</a>
+            <a href="#sidebar">Sidebar</a>
             <a href="#dropdowns">Dropdowns</a>
     		  </div>
     		</div>
@@ -135,12 +136,11 @@
                 <h4 class="text-center">What's Included?</h4>
                 <ul class="text-left">
                   <li>Typography</li>
-                  <li>Columns/Rows</li>
-                  <li>Cards</li>
+                  <li>Columns, Rows, Grid</li>
                   <li>Tables</li>
                   <li>Buttons, Forms, Inputs</li>
-                  <li>Mobile Menu</li>
                   <li>Navbar</li>
+                  <li>Sidebar</li>
                   <li>Dropdowns</li>
                 </ul>
               </div>
@@ -162,6 +162,7 @@
         <!-- Download Section -->
         <div id="download" class="row padding-top-large">
             <h2>Download</h2>
+            <blockquote>This project is still in development. Use at your own risk!</blockquote>
             <p>
                 Add to your project using the CDN link or download the CSS file.<br/>
             </p>
@@ -906,10 +907,68 @@ public static void main(String args[]) {
             <div class="row">
                 <div class="twelve columns">
                     <h3 id="navbar">Navbar</h3>
-                    <p>Use the <code>header</code> class for a fixed navigation bar on top.</p>
+                    <p>Use the <code>navbar</code> class for a fixed navigation bar on the top of the page.<br/>
+                    <br/>
+                    Take a look at this page's navbar for the example.</p>
 
-                    <pre><code>Coming soon...
-                    </code></pre>
+                    <pre><code>&lt;nav class="navbar border-bottom"&gt;
+    &lt;div class="navbar-body container"&gt;
+        &lt;div class="nav-item-logo"&gt;
+            &lt;a href="#"&gt;&lt;span class="text-medium text-thin text-uppercase text-wide"&gt;Website&lt;/span&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="nav-small-menu"&gt;
+            &lt;a class="nav-item" title="Open Menu" href="javascript:openSidebar()"&gt;
+                &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="nav-group nav-large-menu"&gt;
+            &lt;a class="nav-item" href="#download"&gt;Download&lt;/a&gt;
+            &lt;a class="nav-item" href="#examples"&gt;Examples&lt;/a&gt;
+            &lt;a class="nav-item" href="#about"&gt;About&lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                  <p>The <code>nav-large-menu</code> will hide on small screens. While the <code>nav-small-menu</code> will show up in its place.
+                  <br/><br/>
+                  In this example, the small menu just contains one element; A menu icon that opens the Sidebar.</p>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sidebar">Sidebar</h3>
+                    <p>Use the <code>sidebar</code> class for mobile navigation bar on the left side. But be sure to
+                    provide an id for the sidebar, so that it can easily be opened/closed using JavaScript. The
+                    default id provided is simply, "sidebar".</p>
+
+                    <button class="button" onclick="openSidebar()">Open Sidebar</button>
+
+                    <button class="button" onclick="closeSidebar()">Close Sidebar</button>
+
+                    <pre><code>&lt;nav id="sidebar" class="sidebar shadow-right"&gt;
+    &lt;div class="nav-item-close"&gt;
+        &lt;a class="u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close"&gt;
+            &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="nav-list text-center" onclick="closeSidebar()"&gt;
+        &lt;a class="nav-item" href="#link1"&gt;Link 1&lt;/a&gt;
+        &lt;a class="nav-item" href="#link2"&gt;Link 2&lt;/a&gt;
+        &lt;a class="nav-item" href="#link3"&gt;Link 3&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                    <p>Showing the sidebar requires some JavaScript to work. But its only 2 lines worth.</p>
+
+                    <pre><code>function openSidebar(){document.getElementById("sidebar").style.display="block";}
+function closeSidebar(){document.getElementById("sidebar").style.display="none";}</code></pre>
                 </div>
             </div>
 
@@ -936,7 +995,7 @@ public static void main(String args[]) {
                             <span class="text-small text-nowrap">This is kinda like a tooltip. If you really want tooltips.</span>
                           </div>
                         </div>
-                        <div class="dropdown padding text-large">&#9776;
+                        <div class="dropdown padding text-medium">&#9776;
                           <div class="dropdown-body shadow u-round">
                             <span class="text-small text-nowrap">Shadow outline.</span>
                           </div>
@@ -974,7 +1033,7 @@ public static void main(String args[]) {
         &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip. If you really want tooltips.&lt;/span&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="dropdown padding text-large"&gt;&amp;#9776;
+    &lt;div class="dropdown padding text-medium"&gt;&amp;#9776;
       &lt;div class="dropdown-body shadow u-round"&gt;
         &lt;span class="text-small text-nowrap"&gt;Shadow outline.&lt;/span&gt;
       &lt;/div&gt;
@@ -1030,7 +1089,7 @@ public static void main(String args[]) {
 </footer>
 
 <!-- Lazy load JavaScript, mainly for mobile menu -->
-<script type="text/javascript" src="js/osseous.js?v=1.0.0"></script>
+<script type="text/javascript" src="js/osseous.js?v=0.1.1"></script>
 
 </body>
 </html>
