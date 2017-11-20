@@ -32,7 +32,7 @@
     <meta itemprop="image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
-    <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.0">
+    <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.1">
     <link rel="stylesheet" href="icomoon/icomoon.css?v=alpha-0.1.0">
     <title>Osseous - A bony CSS framework without guts.</title>
 </head>
@@ -40,50 +40,76 @@
 
 <!-- Mobile Sidebar Menu -->
 <nav id="sidebar" class="sidebar border-right animate-left shadow-right">
-    <div class="container">
-        <a class="padding u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
+    <div class="row">
+        <a class="nav-item-close padding margin u-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
         </a>
         <br/>
     </div>
-    <div class="container nav-list" onclick="closeSidebar()">
-        <a class="nav-item text-regular" href="#download">Download</a>
-        <a class="nav-item text-regular" href="#examples">Examples</a>
-        <a class="nav-item text-regular" href="#about">About</a>
+    <div class="nav-list text-center" onclick="closeSidebar()">
+        <a class="nav-item" href="#download">Download</a>
+        <div class="nav-item">
+    		  <a href="#examples">Examples &#9662;</a>
+    		  <div class="nav-list padding margin-top border-top border-bottom">
+      			<a class="nav-item" href="#root">Root Variables</a>
+      			<a class="nav-item" href="#typography">Typography</a>
+      			<a class="nav-item" href="#columns">Columns</a>
+      			<a class="nav-item" href="#cards">Cards</a>
+      			<a class="nav-item" href="#tables">Tables</a>
+      			<a class="nav-item" href="#buttons">Buttons</a>
+      			<a class="nav-item" href="#forms">Forms</a>
+      			<a class="nav-item" href="#navbar">Navbar</a>
+      			<a class="nav-item" href="#dropdowns">Dropdowns</a>
+    		  </div>
+    		</div>
+        <a class="nav-item" href="#about">About</a>
     </div>
-    <div class="u-full-width text-center">
-        <br><br><small><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></small>
+    <div class="padding-top-large u-full-width text-center">
+        <p class="text-small"><em>© <a href="https://austindelamar.com">AustinDelamar</a> - 2017</em></p>
     </div>
 </nav>
 
-<!-- Header fixed up top -->
-<header class="header border-bottom">
-    <div class="header-body container">
-    <div class="nav-group nav-group margin-left">
-        <a class="nav-item  nav-item-logo" href="#"><span class="text-medium text-thin text-uppercase text-wide">Osseous</span></a>
+<!-- Navbar fixed up top -->
+<nav class="navbar border-bottom">
+    <div class="navbar-body container">
+    <div class="nav-group">
+        <a class="nav-item-logo" href="#"><span class="text-medium text-thin text-uppercase text-wide">Osseous</span></a>
     </div>
-    <div class="nav-item nav-item-menu">
-        <a class="text-large" title="Open Menu" href="javascript:openSidebar()">
+    <div class="nav-item-menu">
+        <a class="nav-item" title="Open Menu" href="javascript:openSidebar()">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
         </a>
     </div>
-    <div class="nav-group nav-group-menu padding-right-large">
+    <div class="nav-group nav-group-menu">
         <a class="nav-item" href="#download">Download</a>
-        <a class="nav-item" href="#examples">Examples</a>
+    		<div class="nav-item dropdown">
+    		  <a href="#examples">Examples &#9662;</a>
+    		  <div class="dropdown-body border text-left">
+    			<a href="#root">Root Variables</a>
+    			<a href="#typography">Typography</a>
+    			<a href="#columns">Columns</a>
+    			<a href="#cards">Cards</a>
+    			<a href="#tables">Tables</a>
+    			<a href="#buttons">Buttons</a>
+    			<a href="#forms">Forms</a>
+          <a href="#navbar">Navbar</a>
+          <a href="#dropdowns">Dropdowns</a>
+    		  </div>
+    		</div>
         <a class="nav-item" href="#about">About</a>
     </div>
     </div>
-</header>
+</nav>
 
 <!-- Landing logo, title, and subtitle. -->
-<div class="row padding-top-large margin-top-large border-bottom">
+<header class="row padding-top-large margin-top-large border-bottom">
     <div class="container text-center">
         <div class="twelve columns">
             <img class="u-round" src="img/skull-200x200.png?v=1" alt="Banner" title="Photo Credit: Google Images of all places." />
         </div>
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
-            <p>A bony CSS framework without any guts.</p>
+            <p>A bony CSS framework without guts.</p>
 
             <!-- Call to action -->
             <p>
@@ -93,7 +119,7 @@
             </p>
         </div>
     </div>
-</div>
+</header>
 
 <!-- Main Content -->
 <article class="container">
@@ -109,7 +135,6 @@
             <div class="row">
               <div class="five columns offset-by-one">
                 <h4 class="text-center">What's Included?</h4>
-                <p>Essential bones included in Osseous.</p>
                 <ul class="text-left">
                   <li>Typography</li>
                   <li>Columns/Rows</li>
@@ -117,19 +142,19 @@
                   <li>Tables</li>
                   <li>Buttons, Forms, Inputs</li>
                   <li>Mobile Menu</li>
-                  <li>Navigation</li>
+                  <li>Navbar</li>
+                  <li>Dropdowns</li>
                 </ul>
               </div>
               <div class="five columns">
                 <h4 class="text-center">What's Missing?</h4>
-                <p>Some guts not included in Osseous.</p>
                 <ul class="text-left">
                   <li>Alerts</li>
                   <li>Carousel</li>
-                  <li>Dropdowns</li>
                   <li>Icons</li>
                   <li>Modals / Popovers</li>
                   <li>Tooltips</li>
+                  <li>Animations</li>
                 </ul>
               </div>
             </div>
@@ -160,7 +185,7 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Root Variables</h3>
+                    <h3 id="root">Root Variables</h3>
                     <p>The default fonts and colors are up top. In the global <b>:root</b> object for easy editing.
                     The default font-family is <code>-apple-system,BlinkMacSystemFont</code>
                     but you can change this by editing the root variable: <code>--font-default</code>.
@@ -186,7 +211,7 @@
 
             <div class="row">
                 <div class="six columns">
-                    <h3>Typography</h3>
+                    <h3 id="typography">Typography</h3>
                     <p>
                     <code>&lt;p&gt;</code>This is a paragraph.<br/>
                     <code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
@@ -210,13 +235,29 @@
                     <h5 style="display:inline">Heading 5</h5><code>&lt;h5&gt;</code><br/>
                     <h6 style="display:inline">Heading 6</h6><code>&lt;h6&gt;</code><br/>
                 </div>
+
+        				<div class="twelve columns">
+        				<p><code>&lt;code&gt;</code> This is some code. <code>System.out.println("Hello World");</code>
+                </p>
+
+
+
+                <pre><code>&lt;pre&gt;&lt;code&gt;
+public static void main(String args[]) {
+     System.out.println("Hello World");
+     System.exit(0);
+}
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+                            <p><b>Suggestion:</b> Add the third-party library <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">HighlightJS</a>, to easily colorize the code syntax.</p>
+        				</div>
             </div>
 
             <hr/>
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Columns</h3>
+                    <h3 id="columns">Columns</h3>
                     <p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
                     The values start from one and go up to twelve across. They also resize automatically for smaller screens.</p>
 
@@ -283,7 +324,7 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Cards</h3>
+                    <h3 id="cards">Cards</h3>
                     <p>Use the <code>card</code> class for grouping content together.</p>
 
                     <pre><code>Coming soon...
@@ -295,7 +336,7 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Tables</h3>
+                    <h3 id="tables">Tables</h3>
                     <p>Tables are unstyled by default. Add the <code>table</code> class to style them.
                     <br/><br/>
                     You can further style tables with
@@ -442,7 +483,7 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Buttons</h3>
+                    <h3 id="buttons">Buttons</h3>
                     <p>Use the <code>button</code> class for styling anchors, inputs, buttons, to look like a button. And instead of confusing sub-button names
                     like primary, success, info, warning, or danger... Osseous provides 3 simple colored buttons; red, green, and blue. Which you can also edit the default colors
                     in the <b>:root</b> variables, to match your theme.
@@ -508,7 +549,7 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Forms</h3>
+                    <h3 id="forms">Forms</h3>
                     <p>Forms are essential to any website. Osseous gives you enough styling for each input type, but not too much.</p>
 
                     <div class="row">
@@ -877,7 +918,7 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Navigation</h3>
+                    <h3 id="navbar">Navbar</h3>
                     <p>Use the <code>header</code> class for a fixed navigation bar on top.</p>
 
                     <pre><code>Coming soon...
@@ -889,19 +930,11 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h3>Code</h3>
-                    <p>Use the <code>code</code> tag for marking code. Wrap it with <code>pre</code> to make code snippets.</p>
+                    <h3 id="dropdowns">Dropdowns</h3>
+                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered over.</p>
 
-                    <pre><code>&lt;code&gt;System.out.println("Hello World");&lt;/code&gt;
-
-&lt;pre&gt;&lt;code&gt;
-public static void main(String args[]) {
-     System.out.println("Hello World");
-     System.exit(0);
-}
-&lt;/code&gt;&lt;/pre&gt;</code></pre>
-
-                    <p>Add the optional plugin <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">HighlightJS</a>, to highlight code syntax.</p>
+                    <pre><code>Coming soon...
+                    </code></pre>
                 </div>
             </div>
 
@@ -936,7 +969,7 @@ public static void main(String args[]) {
     <a class="button button-blue" title="Back to top" href="javascript:gotoTop()">Back to Top</a></p>
 </footer>
 
-<!-- Lazy load JavaScript, mainly for navigation -->
+<!-- Lazy load JavaScript, mainly for mobile menu -->
 <script type="text/javascript" src="js/osseous.js?v=1.0.0"></script>
 
 </body>

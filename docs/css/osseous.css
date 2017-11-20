@@ -82,8 +82,8 @@ progress{display:inline-block;vertical-align:baseline;}
 ::-webkit-input-placeholder{color:inherit;opacity:0.54;}
 .button{
   display:inline-block;height:38px;padding:0 1.2em;color:rgba(var(--black),0.7);text-align:center;font-size:1.1rem;font-weight:700;
-  line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;
-  background-color:transparent;border-radius:0.5rem;border:1px solid;border-color:rgba(var(--black),0.5);cursor:pointer;box-sizing:border-box;
+  line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;box-sizing:border-box;white-space:nowrap;
+  background-color:transparent;border-radius:0.5rem;border:1px solid;border-color:rgba(var(--black),0.5);cursor:pointer;
 }
 .button:hover,.button:focus{
   color:rgba(var(--black),0.8);border-color:rgba(var(--black),0.8);outline:0;text-decoration:none;
@@ -312,27 +312,32 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
 
 /* Header and Sidebar */
 .sidebar{height:100%;width:200px;z-index:100;background-color:#fff;position:fixed!important;overflow:auto;display:none;}
-.header-spacer {display: block;width: 100%;height: 7rem;background:transparent;}
-.header{position:fixed;top:0;left:0;width:100%;z-index:99;background:#fff;}
-.header-body{height:6.5rem;display:flex;align-items:center;justify-content:space-between;background:transparent;}
-.header a,.sidebar a{color:rgba(var(--black),0.8);transition:all .08s;}
-.nav-group{display:flex;align-items:center;}
-.nav-list{display:flex;flex-direction:column;align-items:center;}
-.nav-item{display:flex;margin:0 3.2rem;line-height:1.6;padding:8px 0;text-align:center;text-transform:uppercase;font-size:1.2rem;font-weight:600;text-decoration:none;}
+.navbar-spacer {display:block;width:100%;height:7rem;background:transparent;}
+.navbar{position:fixed;top:0;left:0;width:100%;height:6.5rem;z-index:99;background:#fff;}
+.navbar-body{height:100%;display:flex;align-items:center;justify-content:space-between;background:transparent;}
+.navbar a,.sidebar a{color:rgba(var(--black),0.8);transition:all .08s;}
+.nav-group{display:flex;align-items:center;height:100%;}
+.nav-list{display:flex;flex-direction:column;align-items:center;width:100%}
+.nav-item{display:flex;}
+.nav-group .nav-item{height:100%;margin:0 1rem;padding:2rem 1.2rem;}
+.nav-list .nav-item{display:inline-block;width:100%;margin:1rem 0;padding:0rem 1.2rem;}
 @media (min-width:640px) and (max-width:919px;){.nav-item{margin:0 24px;}}
-.nav-item:first-child{margin-left:0;}
-.nav-item:last-child{margin-right:0;}
+.nav-group .nav-item:first-child{margin-left:0;}
+.nav-group .nav-item:last-child{margin-right:0;}
+.nav-list .nav-item:first-child{margin-top:0;}
+.nav-list .nav-item:last-child{margin-bottom:0;}
 @media (min-width:640px){.nav-item-close,.nav-item-menu{display:none;}}
-@media (max-width:640px){
-.nav-item-logo{padding:16px 0;}
-.nav-group{justify-content:space-between;height:64px;width:100%;z-index:101;}
-.nav-group-menu{position:fixed;height:100%;width:100%;padding:0 48px;z-index:100;display:flex;justify-content:center;align-items:left;flex-direction:column;background:#fff;transform:translateX(110%);transition:transform .4s cubic-bezier(.19,1,.22,1);}
-.nav-group-menu .nav-item{text-transform:none!important;font-size:32px;font-weight:300;line-height:40px;padding:16px 0;margin:0;}
-.nav-item{margin:0;}
-.nav-item.nav-item-close,.nav-item.nav-item-menu{align-items:center;justify-content:center;width:32px;height:32px;user-select:none;}
-.nav-item.nav-item-close svg,.nav-item.nav-item-menu svg{margin-left:auto;}
-.nav-item.nav-item-menu{display:flex;margin:0 24px;}
+@media (max-width:640px){.nav-group-menu{display:none;}}
+
+/* Dropdowns */
+.dropdown{position:relative;display:inline-block;}
+.dropdown-body {
+  display:none;z-index:1;position:absolute;min-width:16rem;padding:1.6rem;background:#fff;
 }
+.dropdown-body > a {
+  display:inline-block;width:100%;height:32px;line-height:32px;padding:0 1.2rem;box-sizing:border-box;white-space:nowrap;
+}
+.dropdown:hover .dropdown-body,.dropdown:focus .dropdown-body {display: block;}
 
 /* Utilities */
 .u-full-width{width:100%;box-sizing:border-box;}
@@ -344,8 +349,6 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
 .u-show{display:visible!important;}
 .u-anchor{display:block;position:relative;visibility:hidden;}
 .text-transform-initial{text-transform:none;}
-.text-short{line-height:0.8;}
-.text-shorter{line-height:0.6;}
 .text-larger{font-size:3em;height:2em;}
 .text-large{font-size:2em;height:1.9em;}
 .text-medium{font-size:1.5em;height:1.8em;}
@@ -361,30 +364,6 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
 .text-shadow{text-shadow:3px 0.2rem rgb(var(--grey));}
 .text-uppercase{text-transform:uppercase;}
 .text-lowercase{text-transform:lowercase;}
-.text-capitalize{text-transform:capitalize;}
 .text-center{text-align:center;}
 .text-right{text-align:right;}
 .text-left{text-align:left;}
-
-/* Animation */
-.animate-opacity{-webkit-animation:opac 1.5s;animation:opac 1.5s}
-@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
-@keyframes opac{from{opacity:0} to{opacity:1}}
-.animate-slow{-webkit-animation:opac 4s;animation:opac 4s}
-@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
-@keyframes opac{from{opacity:0} to{opacity:1}}
-.animate-top{position:relative;-webkit-animation:animatetop 0.4s;animation:animatetop 0.4s}
-@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
-@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
-@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
-@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
-@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
-@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
-@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
