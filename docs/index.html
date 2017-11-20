@@ -84,14 +84,14 @@
     		<div class="nav-item dropdown">
     		  <a href="#examples">Examples &#9662;</a>
     		  <div class="dropdown-body border text-left">
-    			<a href="#root">Root Variables</a>
-    			<a href="#typography">Typography</a>
-    			<a href="#columns">Columns</a>
-    			<a href="#tables">Tables</a>
-    			<a href="#buttons">Buttons</a>
-    			<a href="#forms">Forms</a>
-          <a href="#navbar">Navbar</a>
-          <a href="#dropdowns">Dropdowns</a>
+      			<a href="#root">Root Variables</a>
+      			<a href="#typography">Typography</a>
+      			<a href="#columns">Columns</a>
+      			<a href="#tables">Tables</a>
+      			<a href="#buttons">Buttons</a>
+      			<a href="#forms">Forms</a>
+            <a href="#navbar">Navbar</a>
+            <a href="#dropdowns">Dropdowns</a>
     		  </div>
     		</div>
         <a class="nav-item" href="#about">About</a>
@@ -918,10 +918,83 @@ public static void main(String args[]) {
             <div class="row">
                 <div class="twelve columns">
                     <h3 id="dropdowns">Dropdowns</h3>
-                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered over.</p>
+                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered over.
+                    Content that should appear is wrapped in <code>dropdown-body</code> class.
+                    And add <code>&amp;#9662;</code> to get a tiny arrow, or use anything else you like.</p>
 
-                    <pre><code>Coming soon...
-                    </code></pre>
+                    <div class="row">
+                      <div class="six columns">
+                        <div class="dropdown padding">Dropdown &#9662;
+                          <div class="dropdown-body border text-left">
+                            <a href="#dropdowns" class="">Link 1</a>
+                            <a href="#dropdowns" class="">Link 2</a>
+                            <a href="#dropdowns" class="">Link 3</a>
+                          </div>
+                        </div>
+                        <div class="dropdown padding">Dropdown-Tip
+                          <div class="dropdown-body border u-round">
+                            <span class="text-small text-nowrap">This is kinda like a tooltip. If you really want tooltips.</span>
+                          </div>
+                        </div>
+                        <div class="dropdown padding text-large">&#9776;
+                          <div class="dropdown-body shadow u-round">
+                            <span class="text-small text-nowrap">Shadow outline.</span>
+                          </div>
+                        </div>
+                        <p>You can style the dropdown and the body any way you like.</p>
+                      </div>
+                      <div class="six columns">
+                        <div class="button dropdown">Dropdown &#9662;
+                          <div class="dropdown-body border">
+                            <a href="#dropdowns" class="">Action 1</a>
+                            <a href="#dropdowns" class="">Action 2</a>
+                            <a href="#dropdowns" class="">Action 3</a>
+                          </div>
+                        </div>
+                        <div class="button button-blue dropdown">
+                          <span class="padding-right border-right">Reply</span><span class="padding-left">&#9660;</span>
+                          <div class="dropdown-body border text-left">
+                            <a href="#dropdowns" class="">Reply</a>
+                            <a href="#dropdowns" class="">Reply All</a>
+                          </div>
+                        </div>
+                        <p>Add the <code>button</code> class to look like a button.</p>
+                      </div>
+                    </div>
+
+                    <pre><code>    &lt;div class="dropdown padding"&gt;Dropdown &amp;#9662;
+      &lt;div class="dropdown-body border text-left"&gt;
+        &lt;a href="#dropdowns" class=""&gt;Link 1&lt;/a&gt;
+        &lt;a href="#dropdowns" class=""&gt;Link 2&lt;/a&gt;
+        &lt;a href="#dropdowns" class=""&gt;Link 3&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="dropdown padding"&gt;Dropdown-Tip
+      &lt;div class="dropdown-body border u-round"&gt;
+        &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip. If you really want tooltips.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="dropdown padding text-large"&gt;&amp;#9776;
+      &lt;div class="dropdown-body shadow u-round"&gt;
+        &lt;span class="text-small text-nowrap"&gt;Shadow outline.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="button dropdown"&gt;Dropdown &amp;#9662;
+      &lt;div class="dropdown-body border"&gt;
+        &lt;a href="#dropdowns" class=""&gt;Action 1&lt;/a&gt;
+        &lt;a href="#dropdowns" class=""&gt;Action 2&lt;/a&gt;
+        &lt;a href="#dropdowns" class=""&gt;Action 3&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="button button-blue dropdown"&gt;
+      &lt;span class="padding-right border-right"&gt;Reply&lt;/span&gt;&lt;span class="padding-left"&gt;&amp;#9660;&lt;/span&gt;
+      &lt;div class="dropdown-body border text-left"&gt;
+        &lt;a href="#dropdowns" class=""&gt;Reply&lt;/a&gt;
+        &lt;a href="#dropdowns" class=""&gt;Reply All&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
                 </div>
             </div>
 
