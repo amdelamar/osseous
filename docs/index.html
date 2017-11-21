@@ -130,9 +130,9 @@
         <div id="description" class="row section">
             <h2>What is it?</h2>
             <p>
-                Osseous is a small CSS framework that only includes some (bony) elements to grow a website. Its meant to be a starting point
-                that you can add additional features (guts) on top of, as you require them. Rather than importing a massive framework and not utilizing
-                all of the features.
+                Osseous is a small CSS framework that only includes some (bony) elements to grow a website. Its meant to be a skeleton
+                that you can add additional guts (features) on top of, as you require them. Rather than importing a massive framework
+                and not utilizing all of the features.
             </p>
             <div class="row">
               <div class="five columns offset-by-one">
@@ -160,20 +160,24 @@
                 </ul>
               </div>
             </div>
+            <h4>Osseous is Best used for...</h4>
+            <p>Small projects, portfolios, blogs, wikis, and prototypes. By itself, it wouldn't be a good fit for large projects, such as
+            e-commerce, news, SPAs, and responsive webapps. However you could add on to this framework to fit your specific needs!</p>
         </div>
 
         <!-- Download Section -->
         <div id="download" class="row padding-bottom-large">
             <h2>Download</h2>
-            <b>This project is still in development. Use at your own risk!</b>
             <p>
-                Add to your project using this link or download the CSS file.
+                Add Osseous to your project using this link or download the CSS file.
             </p>
             <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;</code></pre>
             <p>
                 (Optional) This tiny JavaScript file is only for the sidebar popup. It might not be needed in a later release.
             </p>
             <pre><code class="html">&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+
+            <a href="" class="button button-blue">Download ZIP</a>
         </div>
 
         <!-- Examples Section -->
@@ -237,17 +241,17 @@
                 </div>
 
         				<div class="twelve columns">
-        				<p><code>&lt;code&gt;</code> This is some code. <code>System.out.println("Hello World");</code>
+        				<p><code>&lt;code&gt;</code> This is some code. <code>System.out.println("Code!");</code>
                 </p>
 
                 <pre><code class="html">&lt;pre&gt;&lt;code&gt;
 public static void main(String args[]) {
-     System.out.println("Hello World");
+     System.out.println("This is a code block.");
      System.exit(0);
 }
 &lt;/code&gt;&lt;/pre&gt;</code></pre>
 
-                            <p><b>Suggestion:</b> Add the third-party library <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">HighlightJS</a>, to easily colorize the code syntax.</p>
+                            <p>Add the third-party library <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">HighlightJS</a>, to easily colorize the code syntax.</p>
         				</div>
             </div>
 
@@ -255,7 +259,8 @@ public static void main(String args[]) {
                 <div class="twelve columns">
                     <h3>Columns</h3>
                     <p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
-                    The values start from one and go up to twelve across. They also resize automatically for smaller screens.</p>
+                    The values start from one and go up to twelve across. They also resize automatically for smaller screens.
+                    at the 640px mark.</p>
 
                     <div class="row text-center">
                         <div class="twelve columns border round">TWELVE</div>
@@ -465,7 +470,7 @@ public static void main(String args[]) {
                 <div class="twelve columns">
                     <h3>Buttons</h3>
                     <p>Use the <code>button</code> class for styling anchors, inputs, buttons, to look like a button. And instead of confusing sub-button names
-                    like primary, success, info, warning, or danger... Osseous provides 3 simple colored buttons; red, green, and blue. Which you can also edit the default colors
+                    like primary, info, warning, or danger... Osseous provides 3 simple colored buttons; red, green, and blue. Which you can also edit the default colors
                     in the <b>:root</b> variables, to match your theme.
                     The <code>button-blue</code> class could mark important actions and <code>button-red</code> could mark dangerous actions. But we're not
                     going to tell you how you should design your site.</p>
@@ -528,9 +533,8 @@ public static void main(String args[]) {
             <div id="dropdowns" class="row section">
                 <div class="twelve columns">
                     <h3>Dropdowns</h3>
-                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered over.
-                    Content that should appear is wrapped in <code>dropdown-body</code> class.
-                    And add <code>&amp;#9662;</code> to get a tiny arrow, or use anything else you like.</p>
+                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered or clicked.
+                    Content that should appear should be wrapped in the <code>dropdown-body</code> class.</p>
 
                     <div class="row">
                       <div class="six columns">
@@ -541,17 +545,17 @@ public static void main(String args[]) {
                             <a href="#dropdowns" class="">Link 3</a>
                           </div>
                         </div>
-                        <div class="dropdown padding">Dropdown-Tip
+                        <div class="dropdown padding">Dropdown-Tooltip
                           <div class="dropdown-body border round">
-                            <span class="text-small text-nowrap">This is kinda like a tooltip. If you really want tooltips.</span>
+                            <span class="text-small text-nowrap">This is kinda like a tooltip!</span>
                           </div>
                         </div>
-                        <div class="dropdown padding text-medium">&#9776;
+                        <div class="dropdown padding"><span class="text-medium">&#9776;</span>
                           <div class="dropdown-body shadow round">
-                            <span class="text-small text-nowrap">Shadow outline.</span>
+                            <span class="text-small text-nowrap">Shadow outline instead of border.</span>
                           </div>
                         </div>
-                        <p>You can style the dropdown and the body any way you like.</p>
+                        <p>You can style the dropdown and the body any way you like. Add <code>&amp;#9662;</code> for a tiny arrow, or anything else you like.</p>
                       </div>
                       <div class="six columns">
                         <div class="button dropdown">Dropdown &#9662;
@@ -611,50 +615,50 @@ public static void main(String args[]) {
             <div id="forms" class="row section">
                 <div class="twelve columns">
                     <h3>Forms</h3>
-                    <p>Forms are essential to any website. Osseous gives you enough styling for each input type, but not too much.</p>
+                    <p>Forms are essential to any website. Osseous gives you enough styling for each input type, and using columns.</p>
 
                     <div class="row">
                       <div class="three columns">
-                        <label for="in1" class="padding-top">Text Input</label>
+                        <label for="in1" class="">Text Input</label>
                         <input type="text" id="in1" value="12345" />
                       </div>
                       <div class="three columns">
-                        <label for="in2" class="padding-top">Password Input</label>
+                        <label for="in2" class="">Password Input</label>
                         <input type="password" id="in2" value="12345" />
                       </div>
                       <div class="three columns">
-                        <label for="in3" class="padding-top">Email Input</label>
+                        <label for="in3" class="">Email Input</label>
                         <input type="email" id="in3" placeholder="email@example.com" />
                       </div>
                       <div class="three columns">
-                        <label for="ind1" class="padding-top">Disabled Input</label>
+                        <label for="ind1" class="">Disabled Input</label>
                         <input type="text" id="ind1" value="disabled" disabled />
                       </div>
                     </div>
                     <div class="row padding-top">
                       <div class="three columns">
-                        <label for="in4" class="padding-top">Date Input</label>
+                        <label for="in4" class="">Date Input</label>
                         <input type="date" id="in4" value="12/01/2017" />
                       </div>
                       <div class="three columns">
-                        <label for="in5" class="padding-top">Time Input</label>
+                        <label for="in5" class="">Time Input</label>
                         <input type="time" id="in5" value="12:30 AM" />
                       </div>
                       <div class="three columns">
-                        <label for="in6" class="padding-top">Telephone Input</label>
+                        <label for="in6" class="">Telephone Input</label>
                         <input type="tel" id="in6" placeholder="xxx-xxx-xxxx" />
                       </div>
                       <div class="three columns">
-                        <label for="ind2" class="padding-top">Readonly Input</label>
+                        <label for="ind2" class="">Readonly Input</label>
                         <input type="text" id="ind2" value="readonly" readonly />
                       </div>
                     </div>
                     <div class="row padding-top">
-                      <label for="in8" class="padding-top">Text Input with Full Width</label>
+                      <label for="in8" class="">Text Input with Full Width</label>
                       <input type="text" id="in8" class="full-width" value="1234567890" />
                     </div>
                     <div class="row padding-top">
-                      <label for="t1" class="padding-top">Textarea with Full Width</label>
+                      <label for="t1" class="">Textarea with Full Width</label>
                       <textarea id="t1" class="full-width" placeholder="Hello..."></textarea>
                     </div>
                     <div class="row padding-top">
@@ -708,48 +712,50 @@ public static void main(String args[]) {
                       </div>
                     </div>
 
+                    <p>Forms can be structured with <code>row</code> and <code>columns</code> to easily group fields together.</p>
+
                     <pre><code class="html">&lt;div class="row"&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="in1" class="padding-top"&gt;Text Input&lt;/label&gt;
+    &lt;label for="in1" class=""&gt;Text Input&lt;/label&gt;
     &lt;input type="text" id="in1" value="12345" /&gt;
   &lt;/div&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="in2" class="padding-top"&gt;Password Input&lt;/label&gt;
+    &lt;label for="in2" class=""&gt;Password Input&lt;/label&gt;
     &lt;input type="password" id="in2" value="12345" /&gt;
   &lt;/div&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="in3" class="padding-top"&gt;Email Input&lt;/label&gt;
+    &lt;label for="in3" class=""&gt;Email Input&lt;/label&gt;
     &lt;input type="email" id="in3" placeholder="email@example.com" /&gt;
   &lt;/div&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="ind1" class="padding-top"&gt;Disabled Input&lt;/label&gt;
+    &lt;label for="ind1" class=""&gt;Disabled Input&lt;/label&gt;
     &lt;input type="text" id="ind1" value="disabled" disabled /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="row padding-top"&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="in4" class="padding-top"&gt;Date Input&lt;/label&gt;
+    &lt;label for="in4" class=""&gt;Date Input&lt;/label&gt;
     &lt;input type="date" id="in4" value="12/01/2017" /&gt;
   &lt;/div&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="in5" class="padding-top"&gt;Time Input&lt;/label&gt;
+    &lt;label for="in5" class=""&gt;Time Input&lt;/label&gt;
     &lt;input type="time" id="in5" value="12:30 AM" /&gt;
   &lt;/div&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="in6" class="padding-top"&gt;Telephone Input&lt;/label&gt;
+    &lt;label for="in6" class=""&gt;Telephone Input&lt;/label&gt;
     &lt;input type="tel" id="in6" placeholder="xxx-xxx-xxxx" /&gt;
   &lt;/div&gt;
   &lt;div class="three columns"&gt;
-    &lt;label for="ind2" class="padding-top"&gt;Readonly Input&lt;/label&gt;
+    &lt;label for="ind2" class=""&gt;Readonly Input&lt;/label&gt;
     &lt;input type="text" id="ind2" value="readonly" readonly /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="row padding-top"&gt;
-  &lt;label for="in8" class="padding-top"&gt;Text Input with Full Width&lt;/label&gt;
+  &lt;label for="in8" class=""&gt;Text Input with Full Width&lt;/label&gt;
   &lt;input type="text" id="in8" class="full-width" value="1234567890" /&gt;
 &lt;/div&gt;
 &lt;div class="row padding-top"&gt;
-  &lt;label for="t1" class="padding-top"&gt;Textarea with Full Width&lt;/label&gt;
+  &lt;label for="t1" class=""&gt;Textarea with Full Width&lt;/label&gt;
   &lt;textarea id="t1" class="full-width" placeholder="Hello..."&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 &lt;div class="row padding-top"&gt;
@@ -804,88 +810,8 @@ public static void main(String args[]) {
 &lt;/div&gt;</code></pre>
 
                     <br/>
-                    <p>Forms can be structured with <code>row</code> and <code>columns</code> to easily group fields together.</p>
-
-                    <form method="post" action="">
-                      <div class="row">
-                        <div class="four columns">
-                          <label for="input1">Your Name</label>
-                          <input class="full-width" placeholder="First Last..." id="input1" type="text" />
-                        </div>
-                        <div class="four columns">
-                          <label for="input2">Your email</label>
-                          <input class="full-width" placeholder="email@example.com" id="input2" type="email" />
-                        </div>
-                        <div class="four columns">
-                          <label for="select1">How'd you find us?</label>
-                          <select class="full-width" id="select1">
-                            <option value="1">Seen online ad</option>
-                            <option value="2">Friend Recommended</option>
-                            <option value="3">News Article</option>
-                            <option value="4">Search / Google</option>
-                            <option value="5">Other</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="twelve columns">
-                          <label for="textarea1">Comment</label>
-                          <textarea class="full-width" placeholder="Hello..." id="textarea1"></textarea>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="six columns">
-                          <input type="checkbox" id="checkbox1" />
-                          <label for="checkbox1" class="full-width">Email me if someone replies</label>
-                        </div>
-                        <div class="six columns text-right">
-                          <input class="button" type="reset" value="Cancel" />
-                          <input class="button button-green" type="submit" value="Comment" />
-                        </div>
-                      </div>
-                    </form>
-
-                    <pre><code class="html">&lt;form method="post" action=""&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="four columns"&gt;
-      &lt;label for="input1"&gt;Your Name&lt;/label&gt;
-      &lt;input class="full-width" placeholder="First Last..." id="input1" type="text" /&gt;
-    &lt;/div&gt;
-    &lt;div class="four columns"&gt;
-      &lt;label for="input2"&gt;Your email&lt;/label&gt;
-      &lt;input class="full-width" placeholder="email@example.com" id="input2" type="email" /&gt;
-    &lt;/div&gt;
-    &lt;div class="four columns"&gt;
-      &lt;label for="select1"&gt;How'd you find us?&lt;/label&gt;
-      &lt;select class="full-width" id="select1"&gt;
-        &lt;option value="1"&gt;Seen online ad&lt;/option&gt;
-        &lt;option value="2"&gt;Friend Recommended&lt;/option&gt;
-        &lt;option value="3"&gt;News Article&lt;/option&gt;
-        &lt;option value="4"&gt;Search / Google&lt;/option&gt;
-        &lt;option value="5"&gt;Other&lt;/option&gt;
-      &lt;/select&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="twelve columns"&gt;
-      &lt;label for="textarea1"&gt;Comment&lt;/label&gt;
-      &lt;textarea class="full-width" placeholder="Hello..." id="textarea1"&gt;&lt;/textarea&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="six columns"&gt;
-      &lt;input type="checkbox" id="checkbox1" /&gt;
-      &lt;label for="checkbox1" class="full-width"&gt;Email me if someone replies&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div class="six columns text-right"&gt;
-      &lt;input class="button" type="reset" value="Cancel" /&gt;
-      &lt;input class="button button-green" type="submit" value="Comment" /&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/form&gt;</code></pre>
-
-                    <br/>
-                    <p>You can make nice login forms with offset columns and borders, like so:</p>
+                    <p>You can make nice box forms with additional layout classes, such as offset-by columns, borders, and padding.
+                    More utility classes are explained in the <a href="#utility">Utility</a> section.</p>
 
                     <form method="post" action="">
                       <div class="row">
@@ -933,7 +859,7 @@ public static void main(String args[]) {
                         <label for="field1">Email Address</label>
                         <input class="full-width" id="field1" type="email" value="help@example.com" />
 
-                        <label for="field2" class="padding-top">Emergency Telephone</label>
+                        <label for="field2" class="">Emergency Telephone</label>
                         <input class="full-width" id="field2" type="text" value="517-123-1000" />
                       </fieldset>
                       </div>
@@ -943,7 +869,7 @@ public static void main(String args[]) {
                         <label for="field3">Email Address</label>
                         <input class="full-width" id="field3" type="email" value="humanresources@example.com" />
 
-                        <label for="field4" class="padding-top">Daytime Telephone</label>
+                        <label for="field4" class="">Daytime Telephone</label>
                         <input class="full-width" id="field4" type="text" value="517-123-1489" />
                       </fieldset>
                       </div>
@@ -956,7 +882,7 @@ public static void main(String args[]) {
     &lt;label for="field1"&gt;Email Address&lt;/label&gt;
     &lt;input class="full-width" id="field1" type="email" value="help@example.com" /&gt;
 
-    &lt;label for="field2" class="padding-top"&gt;Emergency Telephone&lt;/label&gt;
+    &lt;label for="field2" class=""&gt;Emergency Telephone&lt;/label&gt;
     &lt;input class="full-width" id="field2" type="text" value="517-123-1000" /&gt;
   &lt;/fieldset&gt;
   &lt;/div&gt;
@@ -966,7 +892,7 @@ public static void main(String args[]) {
     &lt;label for="field3"&gt;Email Address&lt;/label&gt;
     &lt;input class="full-width" id="field3" type="email" value="humanresources@example.com" /&gt;
 
-    &lt;label for="field4" class="padding-top"&gt;Daytime Telephone&lt;/label&gt;
+    &lt;label for="field4" class=""&gt;Daytime Telephone&lt;/label&gt;
     &lt;input class="full-width" id="field4" type="text" value="517-123-1489" /&gt;
   &lt;/fieldset&gt;
   &lt;/div&gt;
@@ -1004,6 +930,7 @@ public static void main(String args[]) {
 &lt;/nav&gt;</code></pre>
 
                   <p>The <code>nav-large-menu</code> will hide on small screens. While the <code>nav-small-menu</code> will show up in its place.
+                  You can even add <a href="#dropdowns">dropdown items</a> to add sub-menus.
                   <br/><br/>
                   In this example, the small menu just contains one element; A menu icon that opens the Sidebar.</p>
                 </div>
@@ -1120,19 +1047,30 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
                         </div>
 
                         <div class="container border round padding">
-                          <span class="left">Pull <code>left</code></span>&nbsp;
-                          <span class="right">Pull <code>right</code></span>
+                          <span class="left">Float <code>left</code></span>&nbsp;
+                          <span class="right">Float <code>right</code></span>
                         </div>
-                        <p><i>Note: Floating is different than aligning text-left, text-right.</i></p>
+                        <p>Note: Floating is different than aligning text-left, text-right. Use floats when you are pushing content
+                        to one side of an element. And use text alignment when you are just adjusting text.</p>
 
                         <p>
-                          The <code>container</code> class simply reduces width a little. Giving the illusion of a box. An example
-                          is the "Pull" box above.
+                          The <code>container</code> class simply reduces max-width a little on large screens.
                           <br/>
                           <br/>
-                          The <code>section</code> class helps separate large containers from each other with padding. An example
-                          is the section "About" below. And ever other section on this page.
+                          The <code>section</code> class helps separate large containers from each other with padding on top and bottom.
                         </p>
+                        <pre><code class="html">&lt;!-- Container --&gt;
+&lt;article class="container"&gt;
+
+    &lt;!-- Section --&gt;
+    &lt;div class="row section"&gt;
+        &lt;h2&gt;What is it?&lt;/h2&gt;
+        &lt;p&gt;
+            Osseous is a small CSS framework...
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/article&gt;</code></pre>
 
                       </div>
                 </div>
@@ -1146,7 +1084,8 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
             <h2>About</h2>
             <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
-              This really started as a stylesheet for my porfolio site. But as I've kept adding pieces to it as I created additional sites. So now, I wanted an easy way to centralize and share it.
+              This really started as a stylesheet for my porfolio site. But as I've kept adding pieces to it as I created additional sites.
+              So now, I wanted an easy way to centralize and share it. Maybe you'll find it useful for your next project!
             </p>
             <p>
               If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch on <a href="https://github.com/amdelamar/osseous/">GitHub</a>.
@@ -1157,7 +1096,7 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
         <div id="license" class="row section">
             <h2>License</h2>
             <p>
-              <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and free forver.
+              <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and <i>free forever</i>.
             </p>
         </div>
 
