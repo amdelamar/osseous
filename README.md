@@ -1,5 +1,8 @@
 # Osseous CSS
 
+[![CDN](https://img.shields.io/badge/cdn-cloudflare-orange.svg)](https://austindelamar.com/osseous/)
+[![License](https://img.shields.io/:license-MIT-blue.svg)](https://github.com/amdelamar/osseous/blob/master/LICENSE)
+
 A bony CSS framework without guts.
 
 ## Download
@@ -7,14 +10,13 @@ A bony CSS framework without guts.
 Add to your project using this link or download the CSS file.
 
 ```html
-<link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css">
+<link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.0/osseous.min.css">
+
+<!--This tiny JavaScript file is just for the sidebar (mobile menu).-->
+<script type="text/javascript" src="https://austindelamar.com/osseous/1.0.0/osseous.min.js"></script>
 ```
 
-(Optional) This tiny JavaScript file is only for the sidebar popup. It might not be needed in a later release.
-
-```html
-<script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"></script>
-```
+(The links are using Cloudflare CDN for delivery.)
 
 ## Examples
 
@@ -28,4 +30,4 @@ If you'd like to contribute, feel free to fork and make changes, then open a pul
 
 ## License
 
-[MIT](/LICENSE)
+[MIT](/LICENSE) and free forever.

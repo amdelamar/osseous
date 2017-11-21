@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="osseous">
-    <meta property="og:image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
+    <meta property="og:image" content="https://austindelamar.com/osseous/assets/img/skull-200x200.png">
     <meta property="og:description" content="A bony CSS framework without guts.">
 
     <!-- Twitter Card data -->
@@ -24,17 +24,17 @@
     <meta name="twitter:creator" content="amdelamar">
     <meta name="twitter:title" content="osseous">
     <meta name="twitter:description" content="A bony CSS framework without guts.">
-    <meta name="twitter:image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
+    <meta name="twitter:image" content="https://austindelamar.com/osseous/assets/img/skull-200x200.png">
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="osseous">
     <meta itemprop="description" content="A bony CSS framework without guts.">
-    <meta itemprop="image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
+    <meta itemprop="image" content="https://austindelamar.com/osseous/assets/img/skull-200x200.png">
 
-    <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
-    <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.4">
-    <link rel="stylesheet" href="icomoon/icomoon.css?v=alpha-0.1.2">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/skull-32x32.png">
+    <link rel="stylesheet" href="1.0.0/osseous.min.css">
+    <link rel="stylesheet" href="assets/icomoon/icomoon.css">
+    <link rel="stylesheet" href="assets/highlightjs/default.min.css">
     <title>Osseous - A bony CSS framework without guts.</title>
 </head>
 <body>
@@ -107,7 +107,7 @@
 <header class="row padding-top-large margin-top-large border-bottom">
     <div class="container text-center">
         <div class="twelve columns">
-            <img class="round" src="img/skull-382x382.png" width="200" height="200" alt="Banner" title="Photo Credit: Google Images of all places." />
+            <img class="round" src="assets/img/skull-382x382.png" width="200" height="200" alt="Banner" title="Photo Credit: Google Images of all places." />
         </div>
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
@@ -171,10 +171,12 @@
             <p>
                 Add Osseous to your project using this link or download the CSS file.
             </p>
-            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;
+            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.0/osseous.min.css"&gt;
 
 &lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
-&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script type="text/javascript" src="https://austindelamar.com/osseous/1.0.0/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+
+            <p>(The links are using Cloudflare CDN for delivery.)</p>
 
             <div class="text-center">
               <a href="https://github.com/amdelamar/osseous/archive/master.zip" class="button button-blue"><span class="icon-embed text-medium margin-right"></span>Download</a>
@@ -1135,10 +1137,10 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 </footer>
 
 <!-- Lazy load JavaScript, just for sidebar popup -->
-<script type="text/javascript" src="js/osseous.js?v=0.1.2"></script>
+<script type="text/javascript" src="1.0.0/osseous.js"></script>
 
 <!-- Highlightjs for color coding -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/highlightjs/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
