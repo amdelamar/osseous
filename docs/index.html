@@ -32,7 +32,7 @@
     <meta itemprop="image" content="https://austindelamar.com/osseous/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="img/skull-32x32.png?v=1">
-    <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.3">
+    <link rel="stylesheet" href="css/osseous.css?v=alpha-0.1.4">
     <link rel="stylesheet" href="icomoon/icomoon.css?v=alpha-0.1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <title>Osseous - A bony CSS framework without guts.</title>
@@ -115,9 +115,9 @@
 
             <!-- Call to action -->
             <p>
-                <a class="button button-blue" target="_blank" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
-                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
-                <a class="button" target="_blank" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
+                <a class="button button-blue" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
+                <a class="button" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
+                <a class="button" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
             </p>
         </div>
     </div>
@@ -166,22 +166,23 @@
         </div>
 
         <!-- Download Section -->
-        <div id="download" class="row padding-bottom-large">
+        <div id="download" class="row section">
             <h2>Download</h2>
             <p>
                 Add Osseous to your project using this link or download the CSS file.
             </p>
-            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;</code></pre>
-            <p>
-                (Optional) This tiny JavaScript file is only for the sidebar popup. It might not be needed in a later release.
-            </p>
-            <pre><code class="html">&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/css/osseous.min.css"&gt;
 
-            <a href="" class="button button-blue">Download ZIP</a>
+&lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
+&lt;script type="text/javascript" src="https://austindelamar.com/osseous/js/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+
+            <div class="text-center">
+              <a href="https://github.com/amdelamar/osseous/archive/master.zip" class="button button-blue"><span class="icon-embed text-medium margin-right"></span>Download</a>
+            </div>
         </div>
 
         <!-- Examples Section -->
-        <div id="examples" class="row section border-top">
+        <div id="examples" class="row section">
             <h2>Examples</h2>
             <p>
                 Osseous includes formatting for all the basic elements, and some common features like columns, mobile menus, and dropdowns.
@@ -192,24 +193,38 @@
             <div id="root" class="row section">
                 <div class="twelve columns">
                     <h3>Root Variables</h3>
-                    <p>The default fonts and colors are up top. In the global <b>:root</b> object for easy editing.
-                    The default font-family is <code>-apple-system,BlinkMacSystemFont</code>
-                    but you can change this by editing the root variable: <code>--font-default</code>.
-                    The default font-family for monospace elements is <code>SFMono-Regular</code>
-                    but again, you can change this by editing the root variable: <code>--font-monospace</code>.
+                    <p>The default fonts and colors are in the global <b>root</b> for easy editing.
+                    The default font is <code>-apple-system,BlinkMacSystemFont</code> but you can change this
+                    by overriding the root variable: <code>--font-default</code>. The default font for monospace
+                    elements is <code>SFMono-Regular</code>. And the default background color is white. but again,
+                    you can override these easily to your own liking.
                     </p>
 
                     <pre><code class="css">:root {
-    --red: 239, 50, 91; /* RGB colors instead of HEX, so opacity can be applied. */
-    --green: 50, 239, 135;
-    --blue: 51, 195, 240;
-    --yellow: 239, 239, 50;
-    --grey: 255, 255, 255;
-    --black: 34, 34, 34;
+    --red:239,50,91; /*#ef325b; RGB colors instead of HEX, so opacity can be applied. */
+    --green:50,239,135; /*#32ef87;*/
+    --blue:51,195,240; /*#33c3f0;*/
+    --yellow:239,239,50; /*#efef32;*/
+    --black:34,34,34; /*#222;*/
+    --white:255,255,255; /*#fff;*/
+    --grey:242,242,242; /*#f2f2f2;*/
+
+    --background-color:rgb(var(--white)); /* Default background color */
+    --border-color:rgb(var(--grey)); /* Default borders color */
+    --font-color:rgb(var(--black)); /* Default font color */
 
     --font-default:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     --font-monospace:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,"Courier New",monospace;
 }</code></pre>
+                    <p>Override the defaults by providing a new variable values.</p>
+                    <pre><code class="html">&lt;style&gt;:root {
+    --bgcolor:rgb(200,50,80); /* New Background Color */
+
+    --font-default:"Comic Sans"; /* New font */
+}&lt;/style&gt;</code></pre>
+
+                    <p>If you decide to set a background color on the <code>body</code> directly, just know that
+                      other elements might not appear correctly, such as Dropdowns.</p>
                 </div>
             </div>
 
@@ -452,6 +467,8 @@ public static void main(String args[]) {
                     </div>
 
                     <pre><code class="html">&lt;table class="table border row-borders row-alternating text-center"&gt;
+    &lt;!-- column-borders column-alternating --&gt;
+    &lt;!-- first-row last-row first-column last-column --&gt;
     &lt;caption&gt;Row borders and Row alternating&lt;/caption&gt;
     &lt;thead&gt;
         &lt;tr&gt;&lt;th&gt;Column 1&lt;/th&gt;&lt;th&gt;Column 2&lt;/th&gt;&lt;th&gt;Column 3&lt;/th&gt;&lt;th&gt;Column 4&lt;/th&gt;&lt;/tr&gt;
@@ -567,9 +584,14 @@ public static void main(String args[]) {
                         </div>
                         <div class="button button-blue dropdown">
                           <span class="padding-right border-right">Reply</span><span class="padding-left">&#9660;</span>
-                          <div class="dropdown-body border text-left">
-                            <a href="#dropdowns" class="">Reply</a>
-                            <a href="#dropdowns" class="">Reply All</a>
+                          <div class="dropdown-body border round">
+                            <button class="button button-blue square full-width">Reply</button>
+                            <button class="button square full-width">Reply All</button>
+                          </div>
+                        </div>
+                        <div class="button button-red dropdown">&#8416;
+                          <div class="dropdown-body padding-none">
+                            <button class="button button-red">Are you sure?</button>
                           </div>
                         </div>
                         <p>Add the <code>button</code> class to look like a button.</p>
@@ -583,9 +605,9 @@ public static void main(String args[]) {
     &lt;a href="#dropdowns" class=""&gt;Link 3&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="dropdown padding"&gt;Dropdown-Tip
+&lt;div class="dropdown padding"&gt;Dropdown-Tooltip
   &lt;div class="dropdown-body border round"&gt;
-    &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip. If you really want tooltips.&lt;/span&gt;
+    &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip!&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="dropdown padding text-medium"&gt;&amp;#9776;
@@ -594,7 +616,6 @@ public static void main(String args[]) {
   &lt;/div&gt;
 &lt;/div&gt;
 
-
 &lt;div class="button dropdown"&gt;Dropdown &amp;#9662;
   &lt;div class="dropdown-body border"&gt;
     &lt;a href="#dropdowns" class=""&gt;Action 1&lt;/a&gt;
@@ -602,11 +623,16 @@ public static void main(String args[]) {
     &lt;a href="#dropdowns" class=""&gt;Action 3&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="button button-blue dropdown"&gt;
+&lt;div class="button button-blue dropdown square"&gt;
   &lt;span class="padding-right border-right"&gt;Reply&lt;/span&gt;&lt;span class="padding-left"&gt;&amp;#9660;&lt;/span&gt;
-  &lt;div class="dropdown-body border text-left"&gt;
-    &lt;a href="#dropdowns" class=""&gt;Reply&lt;/a&gt;
-    &lt;a href="#dropdowns" class=""&gt;Reply All&lt;/a&gt;
+  &lt;div class="dropdown-body border round"&gt;
+    &lt;button class="button button-blue square full-width"&gt;Reply&lt;/button&gt;
+    &lt;button class="button square full-width"&gt;Reply All&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="button button-red dropdown"&gt;&amp;#8416;
+    &lt;div class="dropdown-body padding-none"&gt;
+      &lt;button class="button button-red"&gt;Are you sure?&lt;/button&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
