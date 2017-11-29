@@ -16,7 +16,15 @@ Add to your project using this link or download the CSS file.
 <script type="text/javascript" src="https://austindelamar.com/osseous/1.0.1/osseous.min.js"></script>
 ```
 
-(The links are using Cloudflare CDN for delivery.)
+Optionally, use with subresource integrity checks like so:
+
+```html
+<!-- With SRI check: -->
+<link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.1/osseous.min.css" integrity="sha384-cXy9bC1cXPoE3wzxEhaXIFJmUBCfbhXsv6UJlV65YkEqs+QOq0ocqekWqSF320cS" crossorigin="anonymous">
+<script src="https://austindelamar.com/osseous/1.0.1/osseous.min.js" integrity="sha384-1VYzqNECxIKIGMSLgV7ShGrnpq6O95QfaXTPO5S8e233vyQQ/zUKMjRZr9yD0Nly" crossorigin="anonymous"></script>
+```
+
+The links are using Cloudflare CDN for delivery. Use the [SRI Hash generator](https://www.srihash.org/) for computing integrity checks for other versions.
 
 Or get the CSS source and minified files here: [Download | 11kb](https://github.com/amdelamar/osseous/releases/download/1.0.1/Osseous-1.0.1.zip)
 

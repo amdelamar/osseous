@@ -179,7 +179,13 @@
 &lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
 &lt;script type="text/javascript" src="https://austindelamar.com/osseous/1.0.1/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
 
-            <p>(The links are using Cloudflare CDN for delivery.)</p>
+            <p>Optionally, use with subresource integrity checks like so:</p>
+
+            <pre><code class="html">&lt;!-- With SRI check: --&gt;
+&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.1/osseous.min.css" integrity="sha384-cXy9bC1cXPoE3wzxEhaXIFJmUBCfbhXsv6UJlV65YkEqs+QOq0ocqekWqSF320cS" crossorigin="anonymous"&gt;
+&lt;script src="https://austindelamar.com/osseous/1.0.1/osseous.min.js" integrity="sha384-1VYzqNECxIKIGMSLgV7ShGrnpq6O95QfaXTPO5S8e233vyQQ/zUKMjRZr9yD0Nly" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+
+            <p>The links are using Cloudflare CDN for delivery. Use the <a href="https://www.srihash.org/" target="_blank">SRI Hash generator</a> for computing integrity checks for other versions.</p>
 
             <div class="text-center">
               <p>
