@@ -18,7 +18,7 @@ Add to your project using this link or download the CSS file.
 
 (The links are using Cloudflare CDN for delivery.)
 
-Or get the CSS source and minified files here: [Download | 10.4kb](https://github.com/amdelamar/osseous/releases/download/1.0.1/Osseous-1.0.1.zip)
+Or get the CSS source and minified files here: [Download | 11kb](https://github.com/amdelamar/osseous/releases/download/1.0.1/Osseous-1.0.1.zip)
 
 ## Examples
 
