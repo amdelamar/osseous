@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Austin Delamar">
-    <meta name="keywords" content="osseous,css,framework,bones,skeleton,skull,html,css">
+    <meta name="keywords" content="osseous,css,framework,bones,skeleton,skull,html,css,javascript,js">
     <meta name="description" content="A bony CSS framework without guts." />
     <meta name="robots" content="all">
 
@@ -32,7 +32,7 @@
     <meta itemprop="image" content="https://austindelamar.com/osseous/assets/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="assets/img/skull-32x32.png">
-    <link rel="stylesheet" href="1.0.0/osseous.min.css">
+    <link rel="stylesheet" href="1.0.1/osseous.min.css">
     <link rel="stylesheet" href="assets/icomoon/icomoon.css">
     <link rel="stylesheet" href="assets/highlightjs/default.min.css">
     <title>Osseous - A bony CSS framework without guts</title>
@@ -111,7 +111,7 @@
         </div>
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
-            <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v1.0.0</sup></p>
+            <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v1.0.1</sup></p>
 
             <!-- Call to action -->
             <p>
@@ -142,9 +142,10 @@
                   <li>Columns, Rows, Grid</li>
                   <li>Tables</li>
                   <li>Buttons, Forms, Inputs</li>
+                  <li>Dropdowns</li>
                   <li>Navbar</li>
                   <li>Sidebar</li>
-                  <li>Dropdowns</li>
+                  <li>and extra Utility Classes</li>
                 </ul>
               </div>
               <div class="five columns">
@@ -153,16 +154,18 @@
                   <li>Alerts</li>
                   <li>Cards</li>
                   <li>Carousel</li>
-                  <li>Icons</li>
+                  <li>Icons --> Use <a href="https://icomoon.io" target="_blank">Icomoon.io</a></li>
                   <li>Modals / Popovers</li>
                   <li>Tooltips</li>
-                  <li>Animations</li>
+                  <li>Animations --> Use <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a></li>
+                  <li>Code Colors --> Use <a href="https://highlightjs.org/" target="_blank">Highlight.js</a></li>
                 </ul>
               </div>
             </div>
             <h4>Osseous is Best used for...</h4>
             <p>Small projects, portfolios, blogs, wikis, and prototypes. By itself, it wouldn't be a good fit for large projects, such as
-            e-commerce, news, SPAs, and responsive webapps. However you could add on to this framework to fit your specific needs!</p>
+            e-commerce, news, SPAs, and responsive webapps. Websites that require all the meat on the bones. However, you could easily add
+            on to this framework to fit your specific needs. Feel free to copy and edit it. (<a href="#license">MIT Licensed</a>).</p>
         </div>
 
         <!-- Download Section -->
@@ -171,17 +174,17 @@
             <p>
                 Add Osseous to your project using these links or download the source files.
             </p>
-            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.0/osseous.min.css"&gt;
+            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.1/osseous.min.css"&gt;
 
 &lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
-&lt;script type="text/javascript" src="https://austindelamar.com/osseous/1.0.0/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script type="text/javascript" src="https://austindelamar.com/osseous/1.0.1/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
 
             <p>(The links are using Cloudflare CDN for delivery.)</p>
 
             <div class="text-center">
               <p>
-                <a href="https://github.com/amdelamar/osseous/releases/download/1.0.0/Osseous-1.0.0.zip" class="button button-blue"><span class="icon-embed text-medium margin-right"></span>Download</a>
-                <br/>Latest v1.0.0 <code class="text-thin">10.4kb</code>
+                <a href="https://github.com/amdelamar/osseous/releases/download/1.0.1/Osseous-1.0.1.zip" class="button button-blue"><span class="icon-embed text-medium margin-right"></span>Download</a>
+                <br/>Latest v1.0.1 <code class="text-thin">10.4kb</code>
               </p>
             </div>
         </div>
@@ -271,7 +274,7 @@ public static void main(String args[]) {
 }
 &lt;/code&gt;&lt;/pre&gt;</code></pre>
 
-                            <p>Add the third-party library <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">HighlightJS</a>, to easily colorize the code syntax.</p>
+                            <p>Add the third-party library <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">Highlight.js</a>, to easily colorize the code syntax.</p>
         				</div>
             </div>
 
@@ -694,10 +697,10 @@ public static void main(String args[]) {
                     </div>
                     <div class="row padding-top">
                       <div class="four columns">
-                        <input type="checkbox" id="c1" value="1" checked="checked" />
+                        <input type="checkbox" id="c1" value="1" checked />
                         <label for="c1">Checkbox</label>
 
-                        <input type="checkbox" id="c2" value="2" checked="checked" />
+                        <input type="checkbox" id="c2" value="2" />
                         <label for="c2">Checkbox</label>
 
                         <input type="checkbox" id="c3" value="3" />
@@ -707,10 +710,10 @@ public static void main(String args[]) {
                         <label for="c4">Checkbox Disabled</label>
 
                         <input type="checkbox" id="c5" value="5" checked readonly />
-                        <label for="c5">Checkbox Readonly</label>
+                        <label for="c5">Checkbox Readonly<br/><small>(This is still interactable. <a href="https://stackoverflow.com/a/155301/7065245" target="_blank">See here</a>).</small></label>
                       </div>
                       <div class="four columns">
-                        <input type="radio" id="r1" name="radiogroup" value="1" />
+                        <input type="radio" id="r1" name="radiogroup" value="1" checked />
                         <label for="r1">Radio</label>
 
                         <input type="radio" id="r2" name="radiogroup" value="2" />
@@ -1107,6 +1110,7 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
                 </div>
                 <p>You can always add more of your own utilities, and other features, on top of Osseous too!</p>
             </div>
+          </div>
 
         </div>
 
@@ -1140,7 +1144,7 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 </footer>
 
 <!-- Lazy load JavaScript, just for sidebar popup -->
-<script type="text/javascript" src="1.0.0/osseous.js"></script>
+<script type="text/javascript" src="1.0.1/osseous.min.js"></script>
 
 <!-- Highlightjs for color coding -->
 <script src="assets/highlightjs/highlight.min.js"></script>

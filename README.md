@@ -10,13 +10,15 @@ A bony CSS framework without guts.
 Add to your project using this link or download the CSS file.
 
 ```html
-<link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.0/osseous.min.css">
+<link rel="stylesheet" href="https://austindelamar.com/osseous/1.0.1/osseous.min.css">
 
 <!--This tiny JavaScript file is just for the sidebar (mobile menu).-->
-<script type="text/javascript" src="https://austindelamar.com/osseous/1.0.0/osseous.min.js"></script>
+<script type="text/javascript" src="https://austindelamar.com/osseous/1.0.1/osseous.min.js"></script>
 ```
 
 (The links are using Cloudflare CDN for delivery.)
+
+Or get the CSS source and minified files here: [Download | 10.4kb](https://github.com/amdelamar/osseous/releases/download/1.0.1/Osseous-1.0.1.zip)
 
 ## Examples
 
