@@ -1,5 +1,6 @@
 # Osseous CSS
 
+[![Release](https://img.shields.io/github/release/amdelamar/osseous.svg)](https://github.com/amdelamar/osseous/releases)
 [![CDN](https://img.shields.io/badge/cdn-cloudflare-orange.svg)](https://austindelamar.com/osseous/)
 [![License](https://img.shields.io/:license-MIT-blue.svg)](https://github.com/amdelamar/osseous/blob/master/LICENSE)
 
@@ -26,7 +27,9 @@ Optionally, use with subresource integrity checks like so:
 
 The links are using Cloudflare CDN for delivery. Use the [SRI Hash generator](https://www.srihash.org/) for computing integrity checks for other versions.
 
-Or get the CSS source and minified files here: [Download | 11kb](https://github.com/amdelamar/osseous/releases/download/1.0.1/Osseous-1.0.1.zip)
+Or get the CSS source and minified files here: [Download | 11KB](https://github.com/amdelamar/osseous/releases/download/1.0.1/Osseous-1.0.1.zip)
+
+Or clone this repo. `git clone https://github.com/amdelamar/osseous`
 
 ## Examples
 
