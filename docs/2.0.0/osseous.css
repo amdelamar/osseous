@@ -69,6 +69,26 @@ h6{font-size:1.5rem;line-height:1.6;letter-spacing:0;}
   h6{font-size:1.5rem;}
 }
 
+/* Coloring */
+.text-blue{color:var(--blue)!important;}
+.text-red{color:var(--red)!important;}
+.text-green{color:var(--green)!important;}
+.text-white{color:var(--white)!important;}
+.text-black{color:var(--black)!important;}
+.text-grey{color:var(--grey)!important;}
+.background-blue{background-color:var(--blue)!important;}
+.background-red{background-color:var(--red)!important;}
+.background-green{background-color:var(--green)!important;}
+.background-white{background-color:var(--white)!important;}
+.background-black{background-color:var(--black)!important;}
+.background-grey{background-color:var(--grey)!important;}
+.border-blue{border-color:var(--blue)!important;}
+.border-red{border-color:var(--red)!important;}
+.border-green{border-color:var(--green)!important;}
+.border-white{border-color:var(--white)!important;}
+.border-black{border-color:var(--black)!important;}
+.border-grey{border-color:var(--grey)!important;}
+
 /* Lists */
 ul{list-style:circle inside;}
 ol{list-style:decimal inside;}

@@ -1083,9 +1083,9 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
                       <div class="six columns">
                         <h4>Shapes / Edges</h4>
 
-                        <div class="button button-blue margin round">&nbsp;&nbsp;&nbsp;</div><code>round</code> for round corners.<br/>
-                        <div class="button button-blue margin square">&nbsp;&nbsp;&nbsp;</div><code>square</code> for square corners.<br/>
-                        <div class="button button-blue margin circle">&nbsp;&nbsp;&nbsp;</div><code>circle</code> for a circle shape.<br/>
+                        <div class="button background-grey border-none margin round">&nbsp;&nbsp;&nbsp;</div><code>round</code> for round corners.<br/>
+                        <div class="button background-grey border-none margin square">&nbsp;&nbsp;&nbsp;</div><code>square</code> for square corners.<br/>
+                        <div class="button background-grey border-none margin circle">&nbsp;&nbsp;&nbsp;</div><code>circle</code> for a circle shape.<br/>
                         <div class="button margin border">&nbsp;&nbsp;&nbsp;</div><code>border</code> for bordered sides.<br/>
                         <div class="button margin border-none">&nbsp;&nbsp;&nbsp;</div><code>border-none</code> for no borders.<br/>
                         And <code>border-top</code>
@@ -1101,11 +1101,63 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 
                       <div class="twelve columns">
                         <hr/>
+                        <h4>Coloring</h4>
+
+                        <p>Apply colors to text, borders, and backgrounds wherever you want to add emphasis.</p>
+
+
+                        <div class="row">
+                          <div class="six columns">
+                            <code>text-red</code> for <span class="text-red text-bold">red text</span>.<br/>
+                            <code>text-blue</code> for <span class="text-blue text-bold">blue text</span>.<br/>
+                            <code>text-green</code> for <span class="text-green text-bold">green text</span>.<br/>
+                            <code>text-white</code> for <span class="text-white text-bold background-grey">white text</span>.<br/>
+                            <code>text-black</code> for <span class="text-black text-bold">black text</span>.<br/>
+                            <code>text-grey</code> for <span class="text-grey text-bold background-black">grey text</span>.<br/>
+                            <br/>
+                          </div>
+                          <div class="six columns">
+                            <code>background-red</code> for <span class="text-white text-bold background-red">red background</span>.<br/>
+                            <code>background-blue</code> for <span class="text-white text-bold background-blue">blue background</span>.<br/>
+                            <code>background-green</code> for <span class="text-white text-bold background-green">green background</span>.<br/>
+                            <code>background-white</code> for <span class="text-black text-bold background-white">white background</span>.<br/>
+                            <code>background-black</code> for <span class="text-white text-bold background-black">black background</span>.<br/>
+                            <code>background-grey</code> for <span class="text-black text-bold background-grey">grey background</span>.<br/>
+                            <br/>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="four columns padding border border-red text-center">
+                            <code>border-red</code>
+                          </div>
+                          <div class="four columns padding border border-blue text-center">
+                            <code>border-blue</code>
+                          </div>
+                          <div class="four columns padding border border-green text-center">
+                            <code>border-green</code>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="four columns padding border border-white background-grey text-center">
+                            <code>border-white</code>
+                          </div>
+                          <div class="four columns padding border border-black text-center">
+                            <code>border-black</code>
+                          </div>
+                          <div class="four columns padding border border-grey text-center">
+                            <code>border-grey</code>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="twelve columns">
+                        <hr/>
                         <h4>Layout Helpers</h4>
 
                         <p>The simple <code>padding</code> and <code>margin</code> classes can give you some additional spacing.
-                        But there is also the directional suffixes; left, right, top, bottom, as well
-                        as their large versions for when you need even more spacing.</p>
+                        But there is also the directional suffixes; <code>-left</code>, <code>-right</code>, <code>-top</code>, <code>-bottom</code>, as well
+                        as their <code>-large</code> versions for when you need even more spacing.</p>
 
                         <div class="row">
                           <div class="six columns">
@@ -1130,7 +1182,7 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
                           <span class="left">Float <code>left</code></span>&nbsp;
                           <span class="right">Float <code>right</code></span>
                         </div>
-                        <p>Note: Floating is different than aligning text-left, text-right. Use floats when you are pushing content
+                        <p>Note: Floating is different than aligning <code>text-left</code>, <code>text-right</code>. Use floats when you are pushing content
                         to one side of an element. And use text alignment when you are just adjusting text.</p>
 
                         <p>
@@ -1139,15 +1191,11 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
                           <br/>
                           The <code>section</code> class helps separate large containers from each other with padding on top and bottom.
                         </p>
-                        <pre><code class="html">&lt;!-- Container --&gt;
-&lt;article class="container"&gt;
+                        <pre><code class="html">&lt;article class="container"&gt;
 
-    &lt;!-- Section --&gt;
-    &lt;div class="row section"&gt;
+    &lt;div class="section"&gt;
         &lt;h2&gt;What is it?&lt;/h2&gt;
-        &lt;p&gt;
-            Osseous is a small CSS framework...
-        &lt;/p&gt;
+        &lt;p&gt;Osseous is a small CSS framework...&lt;/p&gt;
     &lt;/div&gt;
 
 &lt;/article&gt;</code></pre>
