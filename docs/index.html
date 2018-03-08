@@ -32,7 +32,7 @@
     <meta itemprop="image" content="https://austindelamar.com/osseous/assets/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="assets/img/skull-32x32.png">
-    <link rel="stylesheet" href="2.0.0/osseous.min.css">
+    <link rel="stylesheet" href="2.0.0/osseous.css">
     <link rel="stylesheet" href="assets/icomoon/icomoon.css">
     <link rel="stylesheet" href="assets/highlightjs/default.min.css">
     <title>Osseous - A bony CSS framework without guts</title>
@@ -56,6 +56,7 @@
       			<a class="nav-item" href="#columns">Columns</a>
       			<a class="nav-item" href="#tables">Tables</a>
       			<a class="nav-item" href="#buttons">Buttons</a>
+            <a class="nav-item" href="#tabs">Tabs</a>
             <a class="nav-item" href="#dropdowns">Dropdowns</a>
       			<a class="nav-item" href="#forms">Forms</a>
       			<a class="nav-item" href="#navbar">Navbar</a>
@@ -91,6 +92,7 @@
       			<a href="#columns">Columns</a>
       			<a href="#tables">Tables</a>
       			<a href="#buttons">Buttons</a>
+            <a href="#tabs">Tabs</a>
             <a href="#dropdowns">Dropdowns</a>
       			<a href="#forms">Forms</a>
             <a href="#navbar">Navbar</a>
@@ -139,8 +141,8 @@
                 <h4 class="text-center">What's Included?</h4>
                 <ul class="text-left">
                   <li>Typography</li>
-                  <li>Columns, Rows, Grid</li>
-                  <li>Tables</li>
+                  <li>Columns, Rows</li>
+                  <li>Tables, Tabs</li>
                   <li>Buttons, Forms, Inputs</li>
                   <li>Dropdowns</li>
                   <li>Navbar</li>
@@ -153,8 +155,8 @@
                 <ul class="text-left">
                   <li>Alerts</li>
                   <li>Cards</li>
-                  <li>Carousel --> See <a href="http://slidesjs.com/" target="_blank">Slides.js</a></li>
-                  <li>Icons --> Use <a href="https://icomoon.io" target="_blank">Icomoon.io</a></li>
+                  <li>Carousel --> Try <a href="http://slidesjs.com/" target="_blank">Slides.js</a></li>
+                  <li>Icons --> See <a href="https://icomoon.io" target="_blank">Icomoon.io</a> / <a href="https://feathericons.com/" target="_blank">Feathericons</a></li>
                   <li>Modals / Popovers --> See <a href="https://drublic.github.io/css-modal/" target="_blank">CSS-modal</a></li>
                   <li>Tooltips</li>
                   <li>Animations --> Try <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a></li>
@@ -566,6 +568,41 @@ public static void main(String args[]) {
     &lt;button class="button text-small"&gt;Small&lt;/button&gt;
     &lt;button class="button text-tiny"&gt;Tiny&lt;/button&gt;
 &lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="tabs" class="row section">
+                <div class="twelve columns">
+                    <h3>Tabs</h3>
+                    <p>Tabs behave like buttons. Add the <code>tabs</code> parent class and <code>tab</code> class for an child item.
+                      Add more styling with other elements like <code>button</code> or <code>padding</code> if you like.
+                    <br/><br/>
+                    </p>
+
+                    <div class="tabs border-left border-right border-top" style="background-color:var(--light-grey)">
+                      <button class="tab">Tab</button>
+                      <button class="tab button">Tab Button</button>
+                      <a class="tab button button-blue" href="#tabs">Tab Blue</a>
+                      <a class="tab button button-red" href="#tabs">Tab Red</a>
+                      <a class="tab padding" href="#tabs">Tab Link</a>
+                    </div>
+                    <div class="border padding">
+                      <p>Note: Tab content like this, can be hidden/shown through JavaScript functions
+                        or by separating content over separate pages.</code></p>
+                    </div>
+
+                    <pre><code>&lt;div class="tabs border-left border-right border-top" style="background-color:var(--light-grey)"&gt;
+  &lt;button class="tab"&gt;Tab&lt;/button&gt;
+  &lt;button class="tab button"&gt;Tab Button&lt;/button&gt;
+  &lt;a class="tab button button-blue" href="#tabs"&gt;Tab Blue&lt;/a&gt;
+  &lt;a class="tab button button-red" href="#tabs"&gt;Tab Red&lt;/a&gt;
+  &lt;a class="tab padding" href="#tabs"&gt;Tab Link&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="border padding"&gt;
+  &lt;p&gt;Note: Tab content like this, can be hidden/shown through JavaScript functions
+    or by separating content over separate pages.&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
                 </div>
             </div>
 
@@ -1158,7 +1195,7 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 </footer>
 
 <!-- Lazy load JavaScript, just for sidebar popup -->
-<script type="text/javascript" src="2.0.0/osseous.min.js"></script>
+<script type="text/javascript" src="2.0.0/osseous.js"></script>
 
 <!-- Highlightjs for color coding -->
 <script src="assets/highlightjs/highlight.min.js"></script>
