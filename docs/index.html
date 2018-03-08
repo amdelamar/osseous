@@ -72,35 +72,35 @@
 </nav>
 
 <!-- Navbar -->
-<nav class="navbar border-bottom">
+<nav class="navbar background-black">
     <div class="navbar-body container">
     <div class="nav-item-logo">
-        <a href="#"><span class="text-medium text-thin text-uppercase text-wide">Osseous</span></a>
+        <a href="#"><span class="text-medium text-white text-uppercase text-wide">Osseous</span></a>
     </div>
     <div class="nav-small-menu">
         <a class="nav-item" title="Open Menu" href="javascript:openSidebar()">
-            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill="#ffffff" fill-rule="evenodd"></path></svg>
         </a>
     </div>
-    <div class="nav-group nav-large-menu">
-        <a class="nav-item" href="#download">Download</a>
+    <div class="nav-group nav-large-menu text-bold">
+        <a class="nav-item text-white" href="#download">Download</a>
     		<div class="nav-item dropdown">
-    		  <a href="#examples">Examples &#9662;</a>
-    		  <div class="dropdown-body border text-left">
-      			<a href="#root">Root Variables</a>
-      			<a href="#typography">Typography</a>
-      			<a href="#columns">Columns</a>
-      			<a href="#tables">Tables</a>
-      			<a href="#buttons">Buttons</a>
-            <a href="#tabs">Tabs</a>
-            <a href="#dropdowns">Dropdowns</a>
-      			<a href="#forms">Forms</a>
-            <a href="#navbar">Navbar</a>
-            <a href="#sidebar">Sidebar</a>
-            <a href="#utility">Utility Classes</a>
+    		  <a href="#examples" class="text-white">Examples &#9662;</a>
+    		  <div class="dropdown-body background-black text-left">
+      			<a href="#root" class="text-white">Root Variables</a>
+      			<a href="#typography" class="text-white">Typography</a>
+      			<a href="#columns" class="text-white">Columns</a>
+      			<a href="#tables" class="text-white">Tables</a>
+      			<a href="#buttons" class="text-white">Buttons</a>
+            <a href="#tabs" class="text-white">Tabs</a>
+            <a href="#dropdowns" class="text-white">Dropdowns</a>
+      			<a href="#forms" class="text-white">Forms</a>
+            <a href="#navbar" class="text-white">Navbar</a>
+            <a href="#sidebar" class="text-white">Sidebar</a>
+            <a href="#utility" class="text-white">Utility Classes</a>
     		  </div>
     		</div>
-        <a class="nav-item" href="#about">About</a>
+        <a class="nav-item text-white" href="#about">About</a>
     </div>
     </div>
 </nav>
@@ -114,11 +114,9 @@
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
             <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v2.0.0</sup></p>
-
-            <!-- Call to action -->
             <p>
                 <a class="button button-blue" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
-                <a class="button" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
+                <a class="button text-white background-black" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
                 <a class="button" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
             </p>
         </div>
@@ -142,8 +140,9 @@
                 <ul class="text-left">
                   <li>Typography</li>
                   <li>Columns, Rows</li>
-                  <li>Tables, Tabs</li>
+                  <li>Tables</li>
                   <li>Buttons, Forms, Inputs</li>
+                  <li>Tabs</li>
                   <li>Dropdowns</li>
                   <li>Navbar</li>
                   <li>Sidebar</li>
@@ -185,6 +184,8 @@
 
             <pre><code class="html">&lt;!-- With SRI check: --&gt;
 &lt;link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.0/osseous.min.css" integrity="sha384-rhym7x7onta0FmpFTwUdHReuo5MBh61O8MPkSmVPFrWvqKSwKud3zPIkKNrSdQWz" crossorigin="anonymous"&gt;
+
+&lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
 &lt;script src="https://austindelamar.com/osseous/2.0.0/osseous.min.js" integrity="sha384-FAtYvt8ELKf+EkEq6RyCg9jEfZp4N5lQMd8KDx8OTGKWHozg4bjCrjecmmGNR2H2" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
 
             <p>The links are using Cloudflare CDN for delivery. Use the <a href="https://www.srihash.org/" target="_blank">SRI Hash generator</a> for computing integrity checks for other versions.</p>
@@ -192,7 +193,7 @@
             <div class="text-center">
               <p>
                 <br/><a href="https://github.com/amdelamar/osseous/releases/download/2.0.0/Osseous-2.0.0.zip" class="button button-blue"><span class="icon-embed text-medium margin-right"></span>Download</a>
-                <br/><br/><code class="text-thin">v2.0.0</code> - 14 Dec 2017 - <code class="text-thin">12KB</code>
+                <br/><br/><code class="text-thin">v2.0.0</code> - 9 Mar 2018 - <code class="text-thin">12KB</code>
                 <br/><a class="text-small" href="./1.2.0/">[Older versions]</a>
               </p>
             </div>
@@ -243,12 +244,8 @@
                     <p>Override the defaults by providing new variable values.</p>
                     <pre><code class="html">&lt;style&gt;:root {
     --background-color:rgb(200,50,80); /* New Background Color */
-
     --font-default:"Comic Sans"; /* New font */
 }&lt;/style&gt;</code></pre>
-
-                    <p>If you decide to set a background color on the <code>body</code> directly, just know that
-                      other elements might not appear correctly, such as Dropdowns.</p>
                 </div>
             </div>
 
