@@ -1,5 +1,5 @@
 /*!
- * Osseous CSS v1.2.0
+ * Osseous CSS v2.0.0
  * https://austindelamar.com/osseous
  * MIT License
  */

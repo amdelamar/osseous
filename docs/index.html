@@ -516,57 +516,52 @@ public static void main(String args[]) {
                     The <code>button-blue</code> class could mark important actions and <code>button-red</code> could mark dangerous actions. But we're not
                     going to tell you how you should design your site.</p>
 
-                    <div class="row">
+                    <div class="row padding">
                         <a class="button">Anchor</a>
                         <button class="button">Button</button>
                         <input class="button" type="button" value="Input Button" />
-                        <input class="button" type="submit" value="Input Submit" />
-                        <input class="button" type="reset" value="Input Reset" />
-                    </div>
-                    <br/><br/>
-                    <div class="row">
-                        <button class="button button-blue">Button Blue</button>
-                        <button class="button button-green">Button Green</button>
-                        <button class="button button-red">Button Red</button>
+                        <button class="button button-small">Button-Small</button>
+                        <button class="button button-large">Button-Large</button>
                         <button class="button" disabled title="Disabled Button">Disabled</button>
                     </div>
-                    <br/><br/>
-                    <div class="row">
+                    <div class="row padding">
+                      <div class="six columns">
+                          <button class="button button-blue">Button Blue</button>
+                          <button class="button button-green">Button Green</button>
+                          <button class="button button-red">Button Red</button>
+                      </div>
+                      <div class="six columns">
+                          <button class="button button-blue-outline">Blue Outline</button>
+                          <button class="button button-green-outline">Green Outline</button>
+                          <button class="button button-red-outline">Red Outline</button>
+                      </div>
+                    </div>
+                    <div class="row padding">
                         <button class="button button-blue full-width">Full Width Button</button>
                     </div>
-                    <br/><br/>
-                    <div class="row">
-                        <button class="button text-largest text-thinner">Largest</button>
-                        <button class="button text-large text-thinner">Large</button>
-                        <button class="button text-medium text-thinner">Medium</button>
-                        <button class="button">Regular</button>
-                        <button class="button text-small">Small</button>
-                        <button class="button text-tiny">Tiny</button>
-                    </div>
 
-                    <pre><code class="html">&lt;div class="row"&gt;
+                    <pre><code class="html">&lt;div class="row padding"&gt;
     &lt;a class="button"&gt;Anchor&lt;/a&gt;
     &lt;button class="button"&gt;Button&lt;/button&gt;
     &lt;input class="button" type="button" value="Input Button" /&gt;
-    &lt;input class="button" type="submit" value="Input Submit" /&gt;
-    &lt;input class="button" type="reset" value="Input Reset" /&gt;
-&lt;/div&gt;
-&lt;div class="row"&gt;
-    &lt;button class="button button-blue"&gt;Button Blue&lt;/button&gt;
-    &lt;button class="button button-green"&gt;Button Green&lt;/button&gt;
-    &lt;button class="button button-red"&gt;Button Red&lt;/button&gt;
+    &lt;button class="button button-small"&gt;Button-Small&lt;/button&gt;
+    &lt;button class="button button-large"&gt;Button-Large&lt;/button&gt;
     &lt;button class="button" disabled title="Disabled Button"&gt;Disabled&lt;/button&gt;
 &lt;/div&gt;
-&lt;div class="row"&gt;
-    &lt;button class="button button-blue full-width"&gt;Full Width Button&lt;/button&gt;
+&lt;div class="row padding"&gt;
+  &lt;div class="six columns"&gt;
+      &lt;button class="button button-blue"&gt;Button Blue&lt;/button&gt;
+      &lt;button class="button button-green"&gt;Button Green&lt;/button&gt;
+      &lt;button class="button button-red"&gt;Button Red&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="six columns"&gt;
+      &lt;button class="button button-blue-outline"&gt;Blue Outline&lt;/button&gt;
+      &lt;button class="button button-green-outline"&gt;Green Outline&lt;/button&gt;
+      &lt;button class="button button-red-outline"&gt;Red Outline&lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="row"&gt;
-    &lt;button class="button text-largest text-thinner"&gt;Largest&lt;/button&gt;
-    &lt;button class="button text-large text-thinner"&gt;Large&lt;/button&gt;
-    &lt;button class="button text-medium text-thinner"&gt;Medium&lt;/button&gt;
-    &lt;button class="button"&gt;Regular&lt;/button&gt;
-    &lt;button class="button text-small"&gt;Small&lt;/button&gt;
-    &lt;button class="button text-tiny"&gt;Tiny&lt;/button&gt;
+&lt;div class="row padding"&gt;
+    &lt;button class="button button-blue full-width"&gt;Full Width Button&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 </div>
             </div>

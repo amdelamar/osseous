@@ -92,6 +92,12 @@ progress{display:inline-block;vertical-align:baseline;}
   line-height:3.8rem;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;box-sizing:border-box;white-space:nowrap;
   background-color:transparent;border-radius:0.5rem;border:1px solid;border-color:var(--light-black);cursor:pointer;
 }
+.button-small {
+  font-size:.75em;height:3rem;padding:0 1em;line-height:2.8rem;
+}
+.button-large {
+  font-size:1.5em;height:5rem;padding:0 1.2em;line-height:4.8rem;
+}
 .button:hover,.button:focus{
   text-decoration:none;color:var(--font-color);border-color:var(--light-black);
 }
@@ -115,6 +121,27 @@ progress{display:inline-block;vertical-align:baseline;}
 }
 .button-red:hover,.button-red:focus{
   color:var(--white);background-color:var(--light-red);border-color:var(--red);
+}
+.button-blue-outline {
+  background:transparent;
+  color: var(--blue);border-color:var(--blue);
+}
+.button-blue-outline:hover,.button-blue-outline:focus{
+  color:var(--white);background-color:var(--light-blue);border-color:var(--blue);
+}
+.button-red-outline {
+  background:transparent;
+  color: var(--red);border-color:var(--red);
+}
+.button-red-outline:hover,.button-red-outline:focus{
+  color:var(--white);background-color:var(--light-red);border-color:var(--red);
+}
+.button-green-outline {
+  background:transparent;
+  color: var(--green);border-color:var(--green);
+}
+.button-green-outline:hover,.button-green-outline:focus{
+  color:var(--white);background-color:var(--light-green);border-color:var(--green);
 }
 
 /* Disabled Buttons */
