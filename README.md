@@ -21,13 +21,13 @@ Optionally, use with subresource integrity checks like so:
 
 ```html
 <!-- With SRI check: -->
-<link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.1/osseous.min.css" integrity="sha384-a6HZDSWR29ML+cF0sEA6vnJFGzYDmr2PFxG581K39iVmqattxCDJMI58zNGJW5xl" crossorigin="anonymous">
-<script src="https://austindelamar.com/osseous/2.0.1/osseous.min.js" integrity="sha384-J289UbByGU3psYe6Z644APtanbQP1Do9tw1bf3Ilnd8suixa6oftCMUBbTjhz07d" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.1/osseous.min.css" integrity="sha384-ULvV7OTpb6RDTE59A8BzLWetlGJgO0iNYMcrqRD/+uYJvWrxTjd66i60ZM5nW30g" crossorigin="anonymous">
+<script src="https://austindelamar.com/osseous/2.0.1/osseous.min.js" integrity="sha384-aUS5jw8/WW+gOrlsw3y9i2YF0GFZagyiBlK9SELEOLT8cALgTTMIAvu7zR/JSd1k" crossorigin="anonymous"></script>
 ```
 
 The links are using Cloudflare CDN for delivery. Use the [SRI Hash generator](https://www.srihash.org/) for computing integrity checks for other versions.
 
-Or get the CSS source and minified files here: [Download | 11KB](https://github.com/amdelamar/osseous/releases/download/2.0.1/Osseous-2.0.1.zip)
+Or get the CSS source and minified files here: [Download | 12KB](https://github.com/amdelamar/osseous/releases/download/2.0.1/Osseous-2.0.1.zip)
 
 Or clone this repo. `git clone https://github.com/amdelamar/osseous`
 
