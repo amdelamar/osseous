@@ -32,7 +32,7 @@
     <meta itemprop="image" content="https://austindelamar.com/osseous/assets/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="assets/img/skull-32x32.png">
-    <link rel="stylesheet" href="2.0.0/osseous.css">
+    <link rel="stylesheet" href="2.0.1/osseous.min.css">
     <link rel="stylesheet" href="assets/icomoon/icomoon.css">
     <link rel="stylesheet" href="assets/highlightjs/default.min.css">
     <title>Osseous - A bony CSS framework without guts</title>
@@ -113,7 +113,7 @@
         </div>
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
-            <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v2.0.0</sup></p>
+            <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v2.0.1</sup></p>
             <p>
                 <a class="button button-primary" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
                 <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
@@ -176,25 +176,25 @@
             <p>
                 Add Osseous to your project using these links or download the source files.
             </p>
-            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.0/osseous.min.css"&gt;
+            <pre><code class="html">&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.1/osseous.min.css"&gt;
 
 &lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
-&lt;script type="text/javascript" src="https://austindelamar.com/osseous/2.0.0/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script type="text/javascript" src="https://austindelamar.com/osseous/2.0.1/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
 
             <p>Optionally, use with subresource integrity checks like so:</p>
 
             <pre><code class="html">&lt;!-- With SRI check: --&gt;
-&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.0/osseous.min.css" integrity="sha384-a6HZDSWR29ML+cF0sEA6vnJFGzYDmr2PFxG581K39iVmqattxCDJMI58zNGJW5xl" crossorigin="anonymous"&gt;
+&lt;link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.1/osseous.min.css" integrity="sha384-a6HZDSWR29ML+cF0sEA6vnJFGzYDmr2PFxG581K39iVmqattxCDJMI58zNGJW5xl" crossorigin="anonymous"&gt;
 
 &lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
-&lt;script src="https://austindelamar.com/osseous/2.0.0/osseous.min.js" integrity="sha384-J289UbByGU3psYe6Z644APtanbQP1Do9tw1bf3Ilnd8suixa6oftCMUBbTjhz07d" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="https://austindelamar.com/osseous/2.0.1/osseous.min.js" integrity="sha384-J289UbByGU3psYe6Z644APtanbQP1Do9tw1bf3Ilnd8suixa6oftCMUBbTjhz07d" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
 
             <p>The links are using Cloudflare CDN for delivery. Use the <a href="https://www.srihash.org/" target="_blank">SRI Hash generator</a> for computing integrity checks for other versions.</p>
 
             <div class="text-center">
               <p>
-                <br/><a href="https://github.com/amdelamar/osseous/releases/download/2.0.0/Osseous-2.0.0.zip" class="button button-primary"><span class="icon-embed text-medium margin-right"></span>Download</a>
-                <br/><br/><code class="text-thin">v2.0.0</code> - 9 Mar 2018 - <code class="text-thin">11KB</code>
+                <br/><a href="https://github.com/amdelamar/osseous/releases/download/2.0.1/Osseous-2.0.1.zip" class="button button-primary"><span class="icon-embed text-medium margin-right"></span>Download</a>
+                <br/><br/><code class="text-thin">v2.0.1</code> - 24 Mar 2018 - <code class="text-thin">11KB</code>
                 <br/><a class="text-small" href="./1.2.0/">[Older versions]</a>
               </p>
             </div>
@@ -504,8 +504,8 @@ public static void main(String args[]) {
             <div id="buttons" class="row section">
                 <div class="twelve columns">
                     <h3>Buttons</h3>
-                    <p>Use the <code>button</code> class for styling anchors, inputs, tabs, or just regular buttons, to look like a button.
-                    Osseous also provides five alternative buttons like primary, secondary, tertiary, etc.</p>
+                    <p>Use the <code>button</code> class for styling anchors, inputs, tabs, or regular links to look like a button.
+                    Osseous also provides five alternative buttons like primary, secondary, tertiary, success, and danger.</p>
 
                     <div class="row padding">
                       <a class="button">Anchor</a>
@@ -716,12 +716,12 @@ public static void main(String args[]) {
                       </div>
                     </div>
                     <div class="row padding-top">
-                      <label for="in8" class="">Text Input with Full Width</label>
-                      <input type="text" id="in8" class="full-width" value="1234567890" />
+                      <label for="t1" class="">Text Input with Full Width</label>
+                      <input type="text" id="t1" class="full-width" placeholder="Hello..." value="1234567890" />
                     </div>
                     <div class="row padding-top">
-                      <label for="t1" class="">Textarea with Full Width</label>
-                      <textarea id="t1" class="full-width" placeholder="Hello..."></textarea>
+                      <label for="t2" class="">Textarea with Full Width</label>
+                      <textarea id="t2" class="full-width" placeholder="Hello..."></textarea>
                     </div>
                     <div class="row padding-top">
                       <div class="four columns">
@@ -1215,7 +1215,7 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 </footer>
 
 <!-- Lazy load JavaScript, just for sidebar popup -->
-<script type="text/javascript" src="2.0.0/osseous.js"></script>
+<script type="text/javascript" src="2.0.1/osseous.min.js"></script>
 
 <!-- Highlightjs for color coding -->
 <script src="assets/highlightjs/highlight.min.js"></script>

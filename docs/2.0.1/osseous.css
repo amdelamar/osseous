@@ -142,9 +142,9 @@ button:disabled:hover,.button:disabled:hover,.button-blue:disabled:hover,.button
 
 /* Inputs */
 input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],input[type="date"],input[type="time"],textarea,select{
-  height:3.8rem;min-width:10rem;margin-bottom:1rem;padding:.6rem 1rem;background-color:transparent;
+  height:3.8rem;min-width:10rem;margin-bottom:1rem;padding:.6rem 1rem;background-color:transparent;font-family:var(--font-default);
   border:0.1rem solid;border-color:var(--tertiary);border-radius:0.4rem;box-shadow:none;box-sizing:border-box;}
-textarea{min-height:65px;overflow:auto;}
+textarea{min-height:65px;overflow:auto;font-size:0.85em;}
 input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="time"]:focus,textarea:focus,select:focus,
 input[type="email"]:hover,input[type="number"]:hover,input[type="search"]:hover,input[type="text"]:hover,input[type="tel"]:hover,input[type="url"]:hover,input[type="password"]:hover,input[type="date"]:hover,input[type="time"]:hover,textarea:hover,select:hover{
 	border-color:var(--primary);}
