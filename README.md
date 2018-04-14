@@ -11,23 +11,23 @@ A bony CSS framework without guts.
 Add to your project using this link or download the CSS file.
 
 ```html
-<link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.1/osseous.min.css">
+<link rel="stylesheet" href="https://austindelamar.com/osseous/2.5.0/osseous.min.css">
 
 <!--This tiny JavaScript file is just for the sidebar (mobile menu).-->
-<script type="text/javascript" src="https://austindelamar.com/osseous/2.0.1/osseous.min.js"></script>
+<script type="text/javascript" src="https://austindelamar.com/osseous/2.5.0/osseous.min.js"></script>
 ```
 
 Optionally, use with subresource integrity checks like so:
 
 ```html
 <!-- With SRI check: -->
-<link rel="stylesheet" href="https://austindelamar.com/osseous/2.0.1/osseous.min.css" integrity="sha384-ULvV7OTpb6RDTE59A8BzLWetlGJgO0iNYMcrqRD/+uYJvWrxTjd66i60ZM5nW30g" crossorigin="anonymous">
-<script src="https://austindelamar.com/osseous/2.0.1/osseous.min.js" integrity="sha384-aUS5jw8/WW+gOrlsw3y9i2YF0GFZagyiBlK9SELEOLT8cALgTTMIAvu7zR/JSd1k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://austindelamar.com/osseous/2.5.0/osseous.min.css" integrity="sha384-UvVzaNN7WArMkra9x0XinaXYrO9jwYrOa2UubG2VhRGWMZWpqRCtpfOOEyY4FImm" crossorigin="anonymous">
+<script src="https://austindelamar.com/osseous/2.5.0/osseous.min.js" integrity="sha384-XUvewScoAT3AGDwXpY2XynuVkg8tWtyzdXKsuYWEhg+WuD8tnN2Wo+1ca1Oe5Mcl" crossorigin="anonymous"></script>
 ```
 
 The links are using Cloudflare CDN for delivery. Use the [SRI Hash generator](https://www.srihash.org/) for computing integrity checks for other versions.
 
-Or get the CSS source and minified files here: [Download | 12KB](https://github.com/amdelamar/osseous/releases/download/2.0.1/Osseous-2.0.1.zip)
+Or get the CSS source and minified files here: [Download ZIP | 12KB](https://github.com/amdelamar/osseous/releases/download/2.5.0/Osseous-2.5.0.zip)
 
 Or clone this repo. `git clone https://github.com/amdelamar/osseous`
 
