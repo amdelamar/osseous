@@ -42,7 +42,7 @@
 <!-- Sidebar -->
 <nav id="sidebarMenu" class="sidebar border-right shadow-right">
     <div class="nav-item-close">
-        <a class="right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
+        <a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
         </a>
     </div>
@@ -1011,7 +1011,7 @@ public static void main(String args[]) {
 
                     <pre><code class="html">&lt;nav id="sidebarMenu" class="sidebar shadow-right"&gt;
     &lt;div class="nav-item-close"&gt;
-        &lt;a class="right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close"&gt;
+        &lt;a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close"&gt;
             &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
         &lt;/a&gt;
     &lt;/div&gt;
@@ -1160,8 +1160,8 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
                         </div>
 
                         <div class="container border round padding">
-                          <span class="left">Float <code>left</code></span>&nbsp;
-                          <span class="right">Float <code>right</code></span>
+                          <span class="float-left">Float <code>float-left</code></span>&nbsp;
+                          <span class="float-right">Float <code>float-right</code></span>
                         </div>
                         <p>Note: Floating is different than aligning <code>text-left</code>, <code>text-right</code>. Use floats when you are pushing content
                         to one side of an element. And use text alignment when you are just adjusting text.</p>
@@ -1215,7 +1215,7 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 <!-- Footer at bottom -->
 <footer class="row section text-center">
     <p><small><em>&#169; <a href="https://austindelamar.com">AustinDelamar</a> - 2017-2018</em></small></p>
-    <a class="button button-primary right margin-right-large" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
+    <a class="button button-primary float-right margin-right-large" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
 </footer>
 
 <!-- Lazy load JavaScript, just for sidebar popup -->
