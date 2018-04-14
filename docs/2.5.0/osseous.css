@@ -396,8 +396,10 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
 .border-left{border-left:1px solid;border-color:var(--border-color);}
 .border-right{border-right:1px solid;border-color:var(--border-color);}
 .border-none{border:0;}
-.shadow{box-shadow: 0 0 8px 5px rgba(0,0,0,.15);}
-.shadow-top{box-shadow: 0 -4px 5px rgba(0,0,0,.15);}
-.shadow-bottom{box-shadow: 0 4px 5px rgba(0,0,0,.15);}
-.shadow-left{box-shadow: -4px 0 5px rgba(0,0,0,.15);}
-.shadow-right{box-shadow: 4px 0 5px rgba(0,0,0,.15);}
+.shade{box-shadow: 0 4px 4px 0 rgba(0,0,0,0.15);}
+.shadow{box-shadow: 0 0 4px 1px rgba(0,0,0,0.15);}
+.shadow-top{box-shadow: 0 -4px 1px rgba(0,0,0,.15);}
+.shadow-bottom{box-shadow: 0 4px 1px rgba(0,0,0,.15);}
+.shadow-left{box-shadow: -4px 0 1px rgba(0,0,0,.15);}
+.shadow-right{box-shadow: 4px 0 1px rgba(0,0,0,.15);}
+.shadow-none{box-shadow:none;}
