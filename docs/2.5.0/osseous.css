@@ -356,9 +356,11 @@ input[type="email"]:disabled,input[type="number"]:disabled,input[type="search"]:
 .text-largest{font-size:3em;height:2em;}
 .text-large{font-size:2em;height:1.9em;}
 .text-medium{font-size:1.5em;height:1.8em;}
+.text-regular{font-size:1em;height:1em;}
 .text-small{font-size:0.75em;}
 .text-tiny{font-size:0.5em;}
 .text-thin{font-weight:300;}
+.text-unbold{font-weight:400;}
 .text-bold{font-weight:700;}
 .text-bolder{font-weight:800;}
 .text-wide{letter-spacing:.4rem;}
