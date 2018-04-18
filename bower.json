@@ -1,0 +1,24 @@
+{
+  "name": "osseous",
+  "version": "2.5.0",
+  "description": "A bony CSS framework without guts.",
+  "homepage": "https://austindelamar.com/osseous/",
+  "authors": [
+    "amdelamar <amdelamar@protonmail.com>"
+  ],
+  "main": "docs/2.5.0/osseous.min.css",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "css3",
+    "bony",
+    "framework"
+  ],
+  "ignore": [
+    "docs/1.*",
+    "docs/2.0.*",
+    "docs/assets",
+    "*.html",
+    "*.png"
+  ]
+}
