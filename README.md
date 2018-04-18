@@ -8,7 +8,12 @@ A bony CSS framework without guts.
 
 ## Download
 
-Add to your project using this link or download the CSS file.
+Add Osseous to your web project using npm, bower, cdn link, or download the CSS file.
+
+```
+npm install osseous
+bower install osseous
+```
 
 ```html
 <link rel="stylesheet" href="https://austindelamar.com/osseous/2.5.0/osseous.min.css">
