@@ -15,10 +15,11 @@
     "framework"
   ],
   "ignore": [
+    "package.json",
     "docs/1.*",
     "docs/2.0.*",
     "docs/assets",
-    "*.html",
+    "docs/*.html",
     "*.png"
   ]
 }

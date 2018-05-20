@@ -21,10 +21,11 @@
     "url": "https://github.com/amdelamar/osseous/issues"
   },
   "ignore": [
+    "bower.json",
     "docs/1.*",
     "docs/2.0.*",
     "docs/assets",
-    "*.html",
+    "docs/*.html",
     "*.png"
   ]
 }
