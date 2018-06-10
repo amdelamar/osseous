@@ -6,10 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/amdelamar/osseous.git"
   },
-  "homepage": "https://austindelamar.com/osseous/",
-  "author": "Austin Delamar <amdelamar@protonmail.com> (https://austindelamar.com)",
-  "main": "docs/2.5.0/osseous.min.css",
-  "style": "docs/2.5.0/osseous.min.css",
+  "homepage": "https://amdelamar.com/osseous/",
+  "author": "Austin Delamar <amdelamar@protonmail.com> (https://amdelamar.com)",
+  "main": "docs/2.5.1/osseous.min.css",
+  "style": "docs/2.5.1/osseous.min.css",
   "license": "MIT",
   "keywords": [
     "css",
