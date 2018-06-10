@@ -25,8 +25,8 @@ Optionally, use with subresource integrity checks like so:
 
 ```html
 <!-- With SRI check: -->
-<link rel="stylesheet" href="https://amdelamar.com/osseous/2.5.1/osseous.min.css" integrity="sha384-UvVzaNN7WArMkra9x0XinaXYrO9jwYrOa2UubG2VhRGWMZWpqRCtpfOOEyY4FImm" crossorigin="anonymous">
-<script src="https://amdelamar.com/osseous/2.5.1/osseous.min.js" integrity="sha384-XUvewScoAT3AGDwXpY2XynuVkg8tWtyzdXKsuYWEhg+WuD8tnN2Wo+1ca1Oe5Mcl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://amdelamar.com/osseous/2.5.1/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous">
+<script src="https://amdelamar.com/osseous/2.5.1/osseous.min.js" integrity="sha384-beoWumBdsMYWCW4AA8aQZ9f+QJQJW3qh/9HLDYMbUD5NGzwX7Wmm8rc2ZyWM+NEd" crossorigin="anonymous"></script>
 ```
 
 The links are using Cloudflare CDN for delivery. But [unpkg.com](https://unpkg.com/osseous/docs/2.5.1/osseous.min.css) links are available too.
