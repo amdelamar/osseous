@@ -1,0 +1,1232 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Austin Delamar">
+    <meta name="keywords" content="osseous,osseous.css,framework,bones,skeleton,skull,html,css,javascript,js">
+    <meta name="description" content="A bony CSS framework without guts." />
+    <meta name="robots" content="all">
+
+    <!-- Open Graph data -->
+    <meta property="og:url" content="https://amdelamar.com/osseous/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Osseous">
+    <meta property="og:image" content="https://amdelamar.com/osseous/assets/img/skull-200x200.png">
+    <meta property="og:description" content="A bony CSS framework without guts.">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://amdelamar.com/osseous/">
+    <meta name="twitter:creator" content="@amdelamar">
+    <meta name="twitter:title" content="Osseous">
+    <meta name="twitter:description" content="A bony CSS framework without guts.">
+    <meta name="twitter:image" content="https://amdelamar.com/osseous/assets/img/skull-200x200.png">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Osseous">
+    <meta itemprop="description" content="A bony CSS framework without guts.">
+    <meta itemprop="image" content="https://amdelamar.com/osseous/assets/img/skull-200x200.png">
+
+    <link rel="icon" type="image/x-icon" href="../assets/img/skull-32x32.png">
+    <link rel="stylesheet" href="../3.0.0/osseous.css">
+    <link rel="stylesheet" href="../assets/icomoon/icomoon.css">
+    <link rel="stylesheet" href="../assets/highlightjs/default.min.css">
+    <title>Osseous - A bony CSS framework without guts</title>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav id="sidebarMenu" class="sidebar border-right shadow-right">
+    <div class="nav-item-close">
+        <a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
+        </a>
+    </div>
+    <div class="nav-list text-center" onclick="closeSidebar()">
+        <a class="nav-item" href="#download">Download</a>
+        <div class="nav-item">
+    		  <a href="#examples">Examples &#9662;</a>
+    		  <div class="nav-list padding margin-top border-top border-bottom">
+      			<a class="nav-item" href="#root">Root Variables</a>
+      			<a class="nav-item" href="#typography">Typography</a>
+      			<a class="nav-item" href="#columns">Columns</a>
+      			<a class="nav-item" href="#tables">Tables</a>
+      			<a class="nav-item" href="#buttons">Buttons</a>
+            <a class="nav-item" href="#tabs">Tabs</a>
+            <a class="nav-item" href="#dropdowns">Dropdowns</a>
+      			<a class="nav-item" href="#forms">Forms</a>
+      			<a class="nav-item" href="#navbar">Navbar</a>
+            <a class="nav-item" href="#sidebar">Sidebar</a>
+            <a class="nav-item" href="#utility">Utility Classes</a>
+    		  </div>
+    		</div>
+        <a class="nav-item" href="#about">About</a>
+    </div>
+    <div class="padding-top-large full-width text-center">
+        <p class="text-small"><em>© <a href="https://amdelamar.com">AustinDelamar</a> - 2017-2018</em></p>
+    </div>
+</nav>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-body container">
+    <div class="nav-item-logo">
+        <a href="#"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
+    </div>
+    <div class="nav-small-menu">
+        <a class="nav-item" title="Open Menu" href="javascript:openSidebar()">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
+        </a>
+    </div>
+    <div class="nav-group nav-large-menu text-bold">
+        <a class="nav-item" href="#download">Download</a>
+    		<div class="nav-item dropdown">
+    		  <a href="#examples">Examples &#9662;</a>
+    		  <div class="dropdown-body border background-lightgrey text-left">
+      			<a href="#root">Root Variables</a>
+      			<a href="#typography">Typography</a>
+      			<a href="#columns">Columns</a>
+      			<a href="#tables">Tables</a>
+      			<a href="#buttons">Buttons</a>
+            <a href="#tabs">Tabs</a>
+            <a href="#dropdowns">Dropdowns</a>
+      			<a href="#forms">Forms</a>
+            <a href="#navbar">Navbar</a>
+            <a href="#sidebar">Sidebar</a>
+            <a href="#utility">Utility Classes</a>
+    		  </div>
+    		</div>
+        <a class="nav-item" href="#about">About</a>
+    </div>
+    </div>
+</nav>
+
+<!-- Landing logo, title, and subtitle. -->
+<header class="row padding-top-large margin-top-large">
+    <div class="container text-center">
+        <div class="twelve columns">
+            <img class="round" src="../assets/img/skull-382x382.png" width="200" height="200" alt="Banner" title="Photo Credit: Google Images of all places." />
+        </div>
+        <div class="twelve columns">
+            <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
+            <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v3.0.0</sup></p>
+            <p class="text-bold text-danger">This version is archived and no longer maintained.</p>
+            <p>
+                <a class="button button-danger" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
+                <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
+            </p>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<article class="container">
+
+        <!-- Description Section -->
+        <div id="description" class="row section">
+            <h2>What is it?</h2>
+            <p>
+                Osseous is a small CSS framework that only includes some (bony) elements to grow a website. Its meant to be a skeleton
+                that you can add additional guts (features) on top of, as you require them. Rather than importing a massive framework
+                and not utilizing all of the features.
+            </p>
+            <div class="row">
+              <div class="five columns offset-by-one">
+                <h4 class="text-center">What's Included?</h4>
+                <ul class="text-left">
+                  <li>Typography</li>
+                  <li>Columns, Rows</li>
+                  <li>Tables</li>
+                  <li>Buttons, Forms, Inputs</li>
+                  <li>Tabs</li>
+                  <li>Dropdowns</li>
+                  <li>Navbar</li>
+                  <li>Sidebar</li>
+                  <li>and extra Utility Classes</li>
+                </ul>
+              </div>
+              <div class="five columns">
+                <h4 class="text-center">What's Missing?</h4>
+                <ul class="text-left">
+                  <li>Alerts</li>
+                  <li>Flexbox Grid --> Try <a href="https://evgenyrodionov.github.io/flexboxgrid2/" target="_blank">Flexboxgrid2</a></li>
+                  <li>Cards</li>
+                  <li>Carousel --> Try <a href="http://slidesjs.com/" target="_blank">Slides.js</a></li>
+                  <li>Icons --> See <a href="https://icomoon.io" target="_blank">Icomoon.io</a> / <a href="https://feathericons.com/" target="_blank">Feathericons</a></li>
+                  <li>Modals / Popovers --> See <a href="https://drublic.github.io/css-modal/" target="_blank">CSS-modal</a></li>
+                  <li>Tooltips</li>
+                  <li>Animations --> Try <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a></li>
+                  <li>Code Colors --> Use <a href="https://highlightjs.org/" target="_blank">Highlight.js</a></li>
+                </ul>
+              </div>
+            </div>
+            <h4>Osseous is Best used for...</h4>
+            <p>Small projects, portfolios, blogs, wikis, and prototypes. By itself, it wouldn't be a good fit for large projects, such as
+            e-commerce, news, SPAs, and responsive webapps. Websites that require all the meat on the bones. However, you could easily add
+            on to this framework to fit your specific needs. Feel free to copy and edit it. (<a href="#license">MIT Licensed</a>).</p>
+        </div>
+
+        <!-- Download Section -->
+        <div id="download" class="row section">
+            <h2>Download</h2>
+            <p>
+                Add Osseous to your web project using npm, bower, cdn link, or download the CSS file.
+            </p>
+            <pre><code>npm install osseous
+bower install osseous</code></pre>
+
+            <pre><code class="html">&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css"&gt;
+
+&lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
+&lt;script type="text/javascript" src="https://amdelamar.com/osseous/3.0.0/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+
+            <p>Optionally, use with subresource integrity checks like so:</p>
+
+            <pre><code class="html">&lt;!-- With SRI check: --&gt;
+&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous"&gt;
+&lt;script src="https://amdelamar.com/osseous/3.0.0/osseous.min.js" integrity="sha384-beoWumBdsMYWCW4AA8aQZ9f+QJQJW3qh/9HLDYMbUD5NGzwX7Wmm8rc2ZyWM+NEd" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+
+            <p>The links are using Cloudflare CDN for delivery. But <a href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css">unpkg.com</a> links are available too.</p>
+
+            <div class="text-center">
+              <p>
+                <br/><a href="https://github.com/amdelamar/osseous/releases/download/3.0.0/Osseous-3.0.0.zip" class="button button-primary">
+                  <span class="icon-embed text-medium margin-right"></span>Download ZIP</a>
+                <br/><br/><code class="text-thin">v3.0.0</code> - 10 Jun 2018 - <code class="text-thin">12KB</code>
+                <br/><span class="text-small">[Older versions: <a href="./1.2.0/">1.2.0</a>]</span>
+              </p>
+            </div>
+        </div>
+
+        <!-- Examples Section -->
+        <div id="examples" class="row section">
+            <h2>Examples</h2>
+            <p>
+                Osseous includes formatting for all the basic elements, and some common features like columns, mobile menus, and dropdowns.
+                <br/><br/>
+                Use the examples below as a reference and demonstration of this bony framework.
+            </p>
+
+            <div id="root" class="row section">
+                <div class="twelve columns">
+                    <h3>Root Variables</h3>
+                    <p>The default fonts and colors are in the global <b>root</b> for easy editing.
+                    The default font is <code>-apple-system,BlinkMacSystemFont</code> but you can change this
+                    by overriding the root variable: <code>--font-default</code>. The default font for monospace
+                    elements is <code>SFMono-Regular</code>. And the default background color is white. but again,
+                    you can override these easily to your own liking.
+                    </p>
+
+                    <pre><code class="css">:root {
+  --primary:rgb(51,195,240); /*#33c3f0*/
+  --danger:rgb(239,50,91); /*#ef325b*/
+  --success:rgb(50,239,135); /*#32ef87*/
+  --secondary:rgb(85,85,85); /*#555*/
+  --tertiary:rgb(223,223,223); /*#dfdfdf*/
+
+  --black:rgb(34,34,34); /*#222*/
+  --white:rgb(255,255,255); /*#fff*/
+  --light-grey:rgb(247,247,247); /*#f7f7f7*/
+  --highlight:rgb(239,239,50); /*#efef32*/
+
+  --background-color:var(--white);
+  --border-color:var(--tertiary);
+  --font-color:var(--black);
+  --table-highlight:var(--light-grey);
+  --font-default:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-monospace:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,"Courier New",monospace;
+}</code></pre>
+                    <p>Override the defaults by providing new variable values.</p>
+                    <pre><code class="html">&lt;style&gt;:root {
+  --background-color:rgb(200,50,80); /* New Background Color */
+  --font-default:"Comic Sans"; /* New font */
+}&lt;/style&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="typography" class="row section">
+                <div class="six columns">
+                    <h3>Typography</h3>
+                    <p>
+                    <code>&lt;p&gt;</code>This is a paragraph.<br/>
+                    <code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
+                    <code>&lt;b&gt;</code>This is <b>bolded</b>.<br/>
+                    <code>&lt;i&gt;</code>This is <i>italic</i>.<br/>
+                    <code>&lt;u&gt;</code>This is <u>underlined</u>.<br/>
+                    <code>&lt;s&gt;</code>This is <s>striked</s>.<br/>
+                    <code>&lt;small&gt;</code><small>This is a small.</small><br/>
+                    <code>&lt;sup&gt;</code>This is a supersript<sup>10</sup> and <code>&lt;sub&gt;</code> subscript<sub>10</sub>.<br/>
+                    <blockquote>This is a <code>&lt;blockquote&gt;</code></blockquote>
+                    <code>&lt;mark&gt;</code>This is <mark>highlighted</mark>.<br/>
+                    <code>&lt;abbr&gt;</code>This is an <abbr title="abbreviation">abbr</abbr>.<br/>
+                    </p>
+                </div>
+                <div class="six columns">
+                    <br/><br/>
+                    <h1 style="display:inline">Heading 1</h1><code>&lt;h1&gt;</code><br/>
+                    <h2 style="display:inline">Heading 2</h2><code>&lt;h2&gt;</code><br/>
+                    <h3 style="display:inline">Heading 3</h3><code>&lt;h3&gt;</code><br/>
+                    <h4 style="display:inline">Heading 4</h4><code>&lt;h4&gt;</code><br/>
+                    <h5 style="display:inline">Heading 5</h5><code>&lt;h5&gt;</code><br/>
+                    <h6 style="display:inline">Heading 6</h6><code>&lt;h6&gt;</code><br/>
+                </div>
+
+        				<div class="twelve columns">
+        				<p><code>&lt;code&gt;</code> This is some code. <code>System.out.println("Code!");</code>
+                </p>
+
+                <pre><code class="html">&lt;pre&gt;&lt;code&gt;
+public static void main(String args[]) {
+     System.out.println("This is a code block.");
+     System.exit(0);
+}
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+                            <p>Add the third-party library, <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">Highlight.js</a>, to easily colorize the code syntax.</p>
+        				</div>
+            </div>
+
+            <div id="columns" class="row section">
+                <div class="twelve columns">
+                    <h3>Columns</h3>
+                    <p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
+                    The values start from one and go up to twelve across. They also resize automatically for smaller screens
+                    at the 640px mark.</p>
+
+                    <div class="row text-center">
+                        <div class="twelve columns border round">TWELVE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="one columns border round">ONE</div><div class="eleven columns border round">ELEVEN</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="two columns border round">TWO</div><div class="ten columns border round">TEN</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="three columns border round">THREE</div><div class="nine columns border round">NINE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="four columns border round">FOUR</div><div class="eight columns border round">EIGHT</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="five columns border round">FIVE</div><div class="seven columns border round">SEVEN</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="six columns border round">SIX</div><div class="six columns border round">SIX</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="seven columns border round">SEVEN</div><div class="five columns border round">FIVE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="eight columns border round">EIGHT</div><div class="four columns border round">FOUR</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="nine columns border round">NINE</div><div class="three columns border round">THREE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="ten columns border round">TEN</div><div class="two columns border round">TWO</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="eleven columns border round">ELEVEN</div><div class="one columns border round">ONE</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="twelve columns border round">TWELVE</div>
+                    </div>
+
+                    <pre><code class="html">&lt;div class="row"&gt;
+    &lt;div class="three columns"&gt;
+        &lt;h2&gt;This is a quarter-width column.&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="six columns"&gt;
+        &lt;h2&gt;This is column is half-width.&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="three columns"&gt;
+        &lt;h2&gt;This is a quarter-width column.&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="twelve columns"&gt;
+        &lt;h2&gt;This is a full-width column.&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="tables" class="row section">
+                <div class="twelve columns">
+                    <h3>Tables</h3>
+                    <p>Tables are unstyled by default. Add the <code>table</code> class to style them.
+                    <br/><br/>
+                    You can further style tables with
+                    <code>row-borders</code>
+          <code>row-alternating</code>
+                    <code>column-borders</code>
+          <code>column-alternating</code>
+                    <code>row-first</code>
+          <code>row-last</code>
+          <code>column-first</code>
+          <code>column-last</code>
+          <code>text-center</code>
+          <code>margin</code>
+          <code>padding</code> and more!
+                    More utility classes are available and described in the utility section below.</p>
+
+                    <div class="row">
+                        <div class="six columns">
+                            <table class="table">
+                                <caption>Plain Table</caption>
+                                <thead><tr>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                </tr></thead>
+                                <tbody>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="six columns">
+                            <table class="table row-alternating text-center">
+                                <caption>Row alternating and Centered</caption>
+                                <thead><tr>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                </tr></thead>
+                                <tbody>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br/><br/><br/>
+                    <div class="row">
+                        <div class="six columns">
+                            <table class="table border row-borders row-alternating text-center">
+                                <caption>Row borders and Row alternating</caption>
+                                <thead><tr>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                </tr></thead>
+                                <tbody>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="six columns">
+                            <table class="table border column-borders column-alternating text-center">
+                                <caption>Column borders and Column alternating</caption>
+                                <thead><tr>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                </tr></thead>
+                                <tbody>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br/><br/><br/>
+                    <div class="row">
+                        <div class="six columns">
+                            <table class="table row-first column-first">
+                                <caption>First row and First column</caption>
+                                <thead><tr>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                </tr></thead>
+                                <tbody>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="six columns">
+                            <table class="table row-last column-last">
+                                <caption>Last row and Last column</caption>
+                                <thead><tr>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                </tr></thead>
+                                <tbody>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                    <tr><td>Cell</td><td>Cell</td><td>Cell</td><td>Cell</td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <pre><code class="html">&lt;table class="table border row-borders row-alternating text-center"&gt;
+    &lt;!-- column-borders column-alternating --&gt;
+    &lt;!-- first-row last-row first-column last-column --&gt;
+    &lt;caption&gt;Row borders and Row alternating&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;&lt;th&gt;Header&lt;/th&gt;&lt;th&gt;Header&lt;/th&gt;&lt;th&gt;Header&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="buttons" class="row section">
+                <div class="twelve columns">
+                    <h3>Buttons</h3>
+                    <p>Use the <code>button</code> class for styling anchors, inputs, tabs, or regular links to look like a button.
+                    Osseous also provides five alternative buttons like primary, secondary, tertiary, success, and danger.</p>
+
+                    <div class="row padding">
+                      <a class="button">Anchor</a>
+                      <button class="button">Button</button>
+                      <input class="button" type="button" value="Input Button" />
+                    </div>
+                    <div class="row padding">
+                      <button class="button button-primary">Primary</button>
+                      <button class="button button-secondary">Secondary</button>
+                      <button class="button button-tertiary">Tertiary</button>
+                      <button class="button button-success">Success</button>
+                      <button class="button button-danger">Danger</button>
+                    </div>
+                    <div class="row padding">
+                      <button class="button button-primary full-width">Full Width Button</button>
+                    </div>
+                    <div class="row padding">
+                      <button class="button" disabled title="Disabled Button">Disabled</button>
+                      <button class="button button-small">Button-Small</button>
+                      <button class="button button-large">Button-Large</button>
+                    </div>
+
+                    <pre><code class="html">&lt;div class="row padding"&gt;
+  &lt;a class="button"&gt;Anchor&lt;/a&gt;
+  &lt;button class="button"&gt;Button&lt;/button&gt;
+  &lt;input class="button" type="button" value="Input Button" /&gt;
+&lt;/div&gt;
+&lt;div class="row padding"&gt;
+  &lt;button class="button button-primary"&gt;Primary&lt;/button&gt;
+  &lt;button class="button button-secondary"&gt;Secondary&lt;/button&gt;
+  &lt;button class="button button-tertiary"&gt;Tertiary&lt;/button&gt;
+  &lt;button class="button button-success"&gt;Success&lt;/button&gt;
+  &lt;button class="button button-danger"&gt;Danger&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="row padding"&gt;
+  &lt;button class="button button-primary full-width"&gt;Full Width Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="row padding"&gt;
+  &lt;button class="button" disabled title="Disabled Button"&gt;Disabled&lt;/button&gt;
+  &lt;button class="button button-small"&gt;Button-Small&lt;/button&gt;
+  &lt;button class="button button-large"&gt;Button-Large&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="tabs" class="row section">
+                <div class="twelve columns">
+                    <h3>Tabs</h3>
+                    <p>Tabs behave like buttons. Add the <code>tabs</code> parent class and <code>tab</code> class for an child item.
+                      Add more styling with other elements like <code>button</code> or <code>padding</code> if you like.
+                    <br/><br/>
+                    </p>
+
+                    <div class="tabs border-left border-right border-top" style="background-color:var(--light-grey)">
+                      <a class="tab padding" href="#tabs">Tab Link</a>
+                      <button class="tab button">Tab Button</button>
+                      <a class="tab button button-primary" href="#tabs">Tab Primary</a>
+                      <a class="tab button button-secondary" href="#tabs">Tab Secondary</a>
+                    </div>
+                    <div class="border padding">
+                      <p>Note: Tab content like this, can be hidden/shown through JavaScript functions
+                        or by separating content over separate pages.</code></p>
+                    </div>
+
+                    <pre><code>&lt;div class="tabs border-left border-right border-top" style="background-color:var(--light-grey)"&gt;
+  &lt;a class="tab" href="#tabs"&gt;Tab&lt;/a&gt;
+  &lt;a class="tab button button-primary" href="#tabs"&gt;Tab Primary&lt;/a&gt;
+  &lt;a class="tab button button-secondary" href="#tabs"&gt;Tab Secondary&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="border padding"&gt;
+  &lt;p&gt;Note: Tab content like this, can be hidden/shown through JavaScript functions
+    or by separating content over separate pages.&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                </div>
+            </div>
+
+            <div id="dropdowns" class="row section">
+                <div class="twelve columns">
+                    <h3>Dropdowns</h3>
+                    <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered or clicked.
+                    Content that should appear should be wrapped in the <code>dropdown-body</code> class.</p>
+
+                    <div class="row">
+                      <div class="six columns">
+                        <div class="dropdown padding" onclick="">Dropdown &#9662;
+                          <div class="dropdown-body border text-left">
+                            <a href="#dropdowns" class="">Link 1</a>
+                            <a href="#dropdowns" class="">Link 2</a>
+                            <a href="#dropdowns" class="">Link 3</a>
+                          </div>
+                        </div>
+                        <div class="dropdown padding" onclick="">Dropdown-Tooltip
+                          <div class="dropdown-body border round">
+                            <span class="text-small text-nowrap">This is kinda like a tooltip!</span>
+                          </div>
+                        </div>
+                        <div class="dropdown padding" onclick=""><span class="text-medium">&#9776;</span>
+                          <div class="dropdown-body shadow round">
+                            <span class="text-small text-nowrap">Shadow outline instead of border.</span>
+                          </div>
+                        </div>
+                        <p>You can style the dropdown and the body any way you like. Add <code>&amp;#9662;</code> for a tiny arrow, or anything else you like.</p>
+                      </div>
+                      <div class="six columns">
+                        <div class="button dropdown" onclick="">Dropdown &#9662;
+                          <div class="dropdown-body border">
+                            <a href="#dropdowns" class="">Action 1</a>
+                            <a href="#dropdowns" class="">Action 2</a>
+                            <a href="#dropdowns" class="">Action 3</a>
+                          </div>
+                        </div>
+                        <div class="button button-primary dropdown" onclick="">
+                          <span class="padding-right border-right">Reply</span><span class="padding-left">&#9660;</span>
+                          <div class="dropdown-body border round">
+                            <button class="button button-primary square full-width">Reply</button>
+                            <button class="button square full-width">Reply All</button>
+                          </div>
+                        </div>
+                        <div class="button button-danger dropdown" onclick="">&#8416;
+                          <div class="dropdown-body padding-none">
+                            <button class="button button-danger">Are you sure?</button>
+                          </div>
+                        </div>
+                        <p>Add the <code>button</code> class to look like a button.</p>
+                      </div>
+                    </div>
+
+                    <pre><code class="html">&lt;div class="dropdown padding" onclick=""&gt;Dropdown &amp;#9662;
+  &lt;div class="dropdown-body border text-left"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 1&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 2&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Link 3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="dropdown padding" onclick=""&gt;Dropdown-Tooltip
+  &lt;div class="dropdown-body border round"&gt;
+    &lt;span class="text-small text-nowrap"&gt;This is kinda like a tooltip!&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="dropdown padding text-medium" onclick=""&gt;&amp;#9776;
+  &lt;div class="dropdown-body shadow round"&gt;
+    &lt;span class="text-small text-nowrap"&gt;Shadow outline.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="button dropdown" onclick=""&gt;Dropdown &amp;#9662;
+  &lt;div class="dropdown-body border"&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 1&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 2&lt;/a&gt;
+    &lt;a href="#dropdowns" class=""&gt;Action 3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="button button-primary dropdown square" onclick=""&gt;
+  &lt;span class="padding-right border-right"&gt;Reply&lt;/span&gt;&lt;span class="padding-left"&gt;&amp;#9660;&lt;/span&gt;
+  &lt;div class="dropdown-body border round"&gt;
+    &lt;button class="button button-primary square full-width"&gt;Reply&lt;/button&gt;
+    &lt;button class="button square full-width"&gt;Reply All&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="button button-danger dropdown" onclick=""&gt;&amp;#8416;
+    &lt;div class="dropdown-body padding-none"&gt;
+      &lt;button class="button button-danger"&gt;Are you sure?&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="forms" class="row section">
+                <div class="twelve columns">
+                    <h3>Forms</h3>
+                    <p>Forms are essential to any website. Osseous gives you enough styling for each input type, and using columns. Wrap your input fields with a parent <code>form</code>
+                    or <code>div</code> with <code>class="form"</code> to stylize as Osseous form inputs.</p>
+
+                    <div class="form row">
+                      <div class="three columns">
+                        <label for="in1" class="">Text Input</label>
+                        <input type="text" id="in1" value="12345" />
+                      </div>
+                      <div class="three columns">
+                        <label for="in2" class="">Password Input</label>
+                        <input type="password" id="in2" value="12345" />
+                      </div>
+                      <div class="three columns">
+                        <label for="in3" class="">Email Input</label>
+                        <input type="email" id="in3" placeholder="email@example.com" />
+                      </div>
+                      <div class="three columns">
+                        <label for="ind1" class="">Disabled Input</label>
+                        <input type="text" id="ind1" value="disabled" disabled />
+                      </div>
+                    </div>
+                    <div class="form row padding-top">
+                      <div class="three columns">
+                        <label for="in4" class="">Date Input</label>
+                        <input type="date" id="in4" value="12/01/2017" />
+                      </div>
+                      <div class="three columns">
+                        <label for="in5" class="">Time Input</label>
+                        <input type="time" id="in5" value="12:30 AM" />
+                      </div>
+                      <div class="three columns">
+                        <label for="in6" class="">Telephone Input</label>
+                        <input type="tel" id="in6" placeholder="xxx-xxx-xxxx" />
+                      </div>
+                      <div class="three columns">
+                        <label for="ind2" class="">Readonly Input</label>
+                        <input type="text" id="ind2" value="readonly" readonly />
+                      </div>
+                    </div>
+                    <div class="form row padding-top">
+                      <label for="t1" class="">Text Input with Full Width</label>
+                      <input type="text" id="t1" class="full-width" placeholder="Hello..." value="1234567890" />
+                    </div>
+                    <div class="form row padding-top">
+                      <label for="t2" class="">Textarea with Full Width</label>
+                      <textarea id="t2" class="full-width" placeholder="Hello..."></textarea>
+                    </div>
+                    <div class="form row padding-top">
+                      <div class="four columns">
+                        <input type="checkbox" id="c1" value="1" checked />
+                        <label for="c1">Checkbox</label>
+
+                        <input type="checkbox" id="c2" value="2" />
+                        <label for="c2">Checkbox</label>
+
+                        <input type="checkbox" id="c3" value="3" />
+                        <label for="c3">Checkbox</label>
+
+                        <input type="checkbox" id="c4" value="4" disabled />
+                        <label for="c4">Checkbox Disabled</label>
+
+                        <input type="checkbox" id="c5" value="5" checked readonly />
+                        <label for="c5">Checkbox Readonly<br/><small>(This is still interactable. <a href="https://stackoverflow.com/a/155301/7065245" target="_blank">See here</a>).</small></label>
+                      </div>
+                      <div class="four columns">
+                        <input type="radio" id="r1" name="radiogroup" value="1" checked />
+                        <label for="r1">Radio</label>
+
+                        <input type="radio" id="r2" name="radiogroup" value="2" />
+                        <label for="r2">Radio</label>
+
+                        <input type="radio" id="r3" name="radiogroup" value="3" />
+                        <label for="r3">Radio</label>
+
+                        <input type="radio" id="r4" name="radiogroup" value="4" disabled />
+                        <label for="r4">Radio Disabled</label>
+
+                        <input type="radio" id="r5" name="radiogroup2" value="5" checked readonly />
+                        <label for="r5">Radio Readonly</label>
+                      </div>
+                      <div class="four columns">
+                        <label for="s1">Select Box</label>
+                        <select class="full-width" id="s1">
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                          <option value="4">Option 4</option>
+                          <option value="5">Option 5</option>
+                          <option value="6">Option 6</option>
+                        </select>
+                        <br/><br/>
+                        <label for="s2">Select Disabled</label>
+                        <select class="full-width" id="s2" disabled>
+                          <option value="1">Option 1</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <p>Forms can be structured with <code>row</code> and <code>columns</code> to easily group fields together. Don't forget the <code>form</code> class though.</p>
+
+                    <pre><code class="html">&lt;div class="form row"&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="in1" class=""&gt;Text Input&lt;/label&gt;
+    &lt;input type="text" id="in1" value="12345" /&gt;
+  &lt;/div&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="in2" class=""&gt;Password Input&lt;/label&gt;
+    &lt;input type="password" id="in2" value="12345" /&gt;
+  &lt;/div&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="in3" class=""&gt;Email Input&lt;/label&gt;
+    &lt;input type="email" id="in3" placeholder="email@example.com" /&gt;
+  &lt;/div&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="ind1" class=""&gt;Disabled Input&lt;/label&gt;
+    &lt;input type="text" id="ind1" value="disabled" disabled /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form row padding-top"&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="in4" class=""&gt;Date Input&lt;/label&gt;
+    &lt;input type="date" id="in4" value="12/01/2017" /&gt;
+  &lt;/div&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="in5" class=""&gt;Time Input&lt;/label&gt;
+    &lt;input type="time" id="in5" value="12:30 AM" /&gt;
+  &lt;/div&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="in6" class=""&gt;Telephone Input&lt;/label&gt;
+    &lt;input type="tel" id="in6" placeholder="xxx-xxx-xxxx" /&gt;
+  &lt;/div&gt;
+  &lt;div class="three columns"&gt;
+    &lt;label for="ind2" class=""&gt;Readonly Input&lt;/label&gt;
+    &lt;input type="text" id="ind2" value="readonly" readonly /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form row padding-top"&gt;
+  &lt;label for="in8" class=""&gt;Text Input with Full Width&lt;/label&gt;
+  &lt;input type="text" id="in8" class="full-width" value="1234567890" /&gt;
+&lt;/div&gt;
+&lt;div class="form row padding-top"&gt;
+  &lt;label for="t1" class=""&gt;Textarea with Full Width&lt;/label&gt;
+  &lt;textarea id="t1" class="full-width" placeholder="Hello..."&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="form row padding-top"&gt;
+  &lt;div class="four columns"&gt;
+    &lt;input type="checkbox" id="c1" value="1" checked="checked" /&gt;
+    &lt;label for="c1"&gt;Checkbox&lt;/label&gt;
+
+    &lt;input type="checkbox" id="c2" value="2" checked="checked" /&gt;
+    &lt;label for="c2"&gt;Checkbox&lt;/label&gt;
+
+    &lt;input type="checkbox" id="c3" value="3" /&gt;
+    &lt;label for="c3"&gt;Checkbox&lt;/label&gt;
+
+    &lt;input type="checkbox" id="c4" value="4" disabled /&gt;
+    &lt;label for="c4"&gt;Checkbox Disabled&lt;/label&gt;
+
+    &lt;input type="checkbox" id="c5" value="5" checked readonly /&gt;
+    &lt;label for="c5"&gt;Checkbox Readonly&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="four columns"&gt;
+    &lt;input type="radio" id="r1" name="radiogroup" value="1" /&gt;
+    &lt;label for="r1"&gt;Radio&lt;/label&gt;
+
+    &lt;input type="radio" id="r2" name="radiogroup" value="2" /&gt;
+    &lt;label for="r2"&gt;Radio&lt;/label&gt;
+
+    &lt;input type="radio" id="r3" name="radiogroup" value="3" /&gt;
+    &lt;label for="r3"&gt;Radio&lt;/label&gt;
+
+    &lt;input type="radio" id="r4" name="radiogroup" value="4" disabled /&gt;
+    &lt;label for="r4"&gt;Radio Disabled&lt;/label&gt;
+
+    &lt;input type="radio" id="r5" name="radiogroup2" value="5" checked readonly /&gt;
+    &lt;label for="r5"&gt;Radio Readonly&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="four columns"&gt;
+    &lt;label for="s1"&gt;Select Box&lt;/label&gt;
+    &lt;select class="full-width" id="s1"&gt;
+      &lt;option value="1"&gt;Option 1&lt;/option&gt;
+      &lt;option value="2"&gt;Option 2&lt;/option&gt;
+      &lt;option value="3"&gt;Option 3&lt;/option&gt;
+      &lt;option value="4"&gt;Option 4&lt;/option&gt;
+      &lt;option value="5"&gt;Option 5&lt;/option&gt;
+      &lt;option value="6"&gt;Option 6&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;br/&gt;&lt;br/&gt;
+    &lt;label for="s2"&gt;Select Disabled&lt;/label&gt;
+    &lt;select class="full-width" id="s2" disabled&gt;
+      &lt;option value="1"&gt;Option 1&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    <br/>
+                    <p>You can make nice box forms with additional layout classes, such as offset-by columns, borders, and padding.
+                    More utility classes are explained in the <a href="#utility">Utility</a> section.</p>
+
+                    <form method="post" action="#" class="form">
+                      <div class="row">
+                      <div class="four columns offset-by-four padding-large border round">
+                        <h4>Login</h4>
+                        <div class="row">
+                          <input class="full-width" placeholder="Username" id="input3" type="text" />
+                          <input class="full-width margin-top" placeholder="Password" id="input4" type="password" />
+                        </div>
+                        <div class="row padding-top padding-bottom border-bottom text-center">
+                          <a href="javascript:void(0);" class="text-small">Forgot Username</a>&nbsp;<a href="javascript:void(0);" class="text-small">/ Password?</a>
+                        </div>
+                        <div class="row padding-top margin-top">
+                          <input type="button" class="button button-primary full-width" type="submit" value="Login" />
+                        </div>
+                      </div>
+                      </div>
+                    </form>
+
+                    <pre><code class="html">&lt;form method="post" action="#" class="form"&gt;
+  &lt;div class="row"&gt;
+  &lt;div class="four columns offset-by-four padding-large border round"&gt;
+    &lt;h4&gt;Login&lt;/h4&gt;
+    &lt;div class="row"&gt;
+      &lt;input class="full-width" placeholder="Username" id="input3" type="text" /&gt;
+      &lt;input class="full-width margin-top" placeholder="Password" id="input4" type="password" /&gt;
+    &lt;/div&gt;
+    &lt;div class="row padding-top padding-bottom border-bottom text-center"&gt;
+      &lt;a href="javascript:void(0);" class="text-small"&gt;Forgot Username&lt;/a&gt;&nbsp;&lt;a href="javascript:void(0);" class="text-small"&gt;/ Password?&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="row padding-top margin-top"&gt;
+      &lt;input type="button" class="button button-primary full-width" type="submit" value="Login" /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+                    <br/>
+                    <p>Also, you can use <code>fieldset</code> and <code>legend</code> tags, to group content together.</p>
+
+                    <div class="form row">
+                      <div class="six columns">
+                      <fieldset>
+                        <legend>Helpdesk Contact</legend>
+                        <label for="field1">Email Address</label>
+                        <input class="full-width" id="field1" type="email" value="help@example.com" />
+
+                        <label for="field2" class="">Emergency Telephone</label>
+                        <input class="full-width" id="field2" type="text" value="517-123-1000" />
+                      </fieldset>
+                      </div>
+                      <div class="six columns">
+                      <fieldset>
+                        <legend>HR Contact</legend>
+                        <label for="field3">Email Address</label>
+                        <input class="full-width" id="field3" type="email" value="humanresources@example.com" />
+
+                        <label for="field4" class="">Daytime Telephone</label>
+                        <input class="full-width" id="field4" type="text" value="517-123-1489" />
+                      </fieldset>
+                      </div>
+                    </div>
+
+                    <pre><code class="html">&lt;div class="form row"&gt;
+  &lt;div class="six columns"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Helpdesk Contact Information&lt;/legend&gt;
+    &lt;label for="field1"&gt;Email Address&lt;/label&gt;
+    &lt;input class="full-width" id="field1" type="email" value="help@example.com" /&gt;
+
+    &lt;label for="field2" class=""&gt;Emergency Telephone&lt;/label&gt;
+    &lt;input class="full-width" id="field2" type="text" value="517-123-1000" /&gt;
+  &lt;/fieldset&gt;
+  &lt;/div&gt;
+  &lt;div class="six columns"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;HR Contact Information&lt;/legend&gt;
+    &lt;label for="field3"&gt;Email Address&lt;/label&gt;
+    &lt;input class="full-width" id="field3" type="email" value="humanresources@example.com" /&gt;
+
+    &lt;label for="field4" class=""&gt;Daytime Telephone&lt;/label&gt;
+    &lt;input class="full-width" id="field4" type="text" value="517-123-1489" /&gt;
+  &lt;/fieldset&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                </div>
+            </div>
+
+            <div id="navbar" class="row section">
+                <div class="twelve columns">
+                    <h3>Navbar</h3>
+                    <p>Use the <code>navbar</code> class for a fixed navigation bar on the top of the page.<br/>
+                    <br/>
+                    Take a look at this page's navbar for the example.</p>
+
+                    <pre><code class="html">&lt;nav class="navbar border-bottom"&gt;
+    &lt;div class="navbar-body container"&gt;
+        &lt;div class="nav-item-logo"&gt;
+            &lt;a href="#"&gt;&lt;span class="text-medium text-thin text-uppercase text-wide"&gt;Website&lt;/span&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="nav-small-menu"&gt;
+            &lt;a class="nav-item" title="Open Menu" href="javascript:openSidebar()"&gt;
+                &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="nav-group nav-large-menu"&gt;
+            &lt;a class="nav-item" href="#download"&gt;Download&lt;/a&gt;
+            &lt;a class="nav-item" href="#examples"&gt;Examples&lt;/a&gt;
+            &lt;a class="nav-item" href="#about"&gt;About&lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                  <p>The <code>nav-large-menu</code> will hide on small screens. While the <code>nav-small-menu</code> will show up in its place.
+                  You can even add <a href="#dropdowns">dropdown items</a> to add sub-menus.
+                  <br/><br/>
+                  In this example, the small menu just contains one element; A menu icon that opens the Sidebar.</p>
+                </div>
+            </div>
+
+            <div id="sidebar" class="row section">
+                <div class="twelve columns">
+                    <h3>Sidebar</h3>
+                    <p>Use the <code>sidebar</code> class for mobile navigation bar on the left side. But be sure to
+                    provide an id for the sidebar, so that it can easily be opened/closed using JavaScript. The
+                    default id provided is simply, "sidebarMenu".</p>
+
+                    <button class="button" onclick="openSidebar()">Open Sidebar</button>
+
+                    <button class="button" onclick="closeSidebar()">Close Sidebar</button>
+
+                    <pre><code class="html">&lt;nav id="sidebarMenu" class="sidebar shadow-right"&gt;
+    &lt;div class="nav-item-close"&gt;
+        &lt;a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close"&gt;
+            &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="nav-list text-center" onclick="closeSidebar()"&gt;
+        &lt;a class="nav-item" href="#link1"&gt;Link 1&lt;/a&gt;
+        &lt;a class="nav-item" href="#link2"&gt;Link 2&lt;/a&gt;
+        &lt;a class="nav-item" href="#link3"&gt;Link 3&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+                    <p>Showing the sidebar requires some JavaScript to work. But its only 2 lines worth.</p>
+
+                    <pre><code class="javascript">function openSidebar(){document.getElementById("sidebarMenu").style.display="block";}
+function closeSidebar(){document.getElementById("sidebarMenu").style.display="none";}</code></pre>
+                </div>
+            </div>
+
+            <div id="utility" class="row section">
+                <div class="twelve columns">
+                    <h3>Utility Classes</h3>
+                    <p>Osseous comes with some useful classes you can use to help do formatting or simple text changes.
+                    These can be margin/padding/borders, or text bolding/size/alignment. You'll find the naming convention
+                    is quite simple.</p>
+
+                    <div class="row">
+                      <div class="six columns">
+                        <h4>Text Utilities</h4>
+
+                        <div class="border round padding">
+                          <div class="row text-center"><span><code>text-center</code></span></div>
+                          <div class="row text-left"><span><code>text-left</code></span></div>
+                          <div class="row text-right"><span><code>text-right</code></span></div>
+                        </div>
+
+                        <p>
+                          <code>text-bold</code> for <span class="text-bold">bold text</span>.<br/>
+                          <code>text-bolder</code> for <span class="text-bolder">bolder text</span>.<br/>
+                          <code>text-unbold</code> for <span class="text-unbold">unbold text</span>.<br/>
+                          <code>text-thin</code> for <span class="text-thin">thin text</span>.<br/>
+                          <code>text-wide</code> for <span class="text-wide">wide text</span>.<br/>
+                          <code>text-uppercase</code> for <span class="text-uppercase">all uppercase text</span>.<br/>
+                          <code>text-lowercase</code> for <span class="text-lowercase">all lowercase text</span>.<br/>
+                          <code>text-tiny</code> for <span class="text-tiny">tiny text</span>.<br/>
+                          <code>text-small</code> for <span class="text-small">small text</span>.<br/>
+                          <code>text-regular</code> for <span class="text-regular">regular text</span>.<br/>
+                          <code>text-medium</code> for <span class="text-medium">medium text</span>.<br/>
+                          <code>text-large</code> for <span class="text-large">large text</span>.<br/>
+                          <code>text-largest</code> for <span class="text-largest">largest text</span>.<br/>
+                        </p>
+
+                      </div>
+                      <div class="six columns">
+                        <h4>Shapes / Edges</h4>
+
+                        <div class="button background-tertiary border-none margin round">&nbsp;&nbsp;&nbsp;</div><code>round</code> for round corners.<br/>
+                        <div class="button background-tertiary border-none margin square">&nbsp;&nbsp;&nbsp;</div><code>square</code> for square corners.<br/>
+                        <div class="button background-tertiary border-none margin circle">&nbsp;&nbsp;&nbsp;</div><code>circle</code> for a circle shape.<br/>
+                        <div class="button margin border">&nbsp;&nbsp;&nbsp;</div><code>border</code> for bordered sides.<br/>
+                        And <code>border-top</code>
+                        <code>border-bottom</code>
+                        <code>border-left</code>
+                        <code>border-right</code>
+                        <code>border-none</code> too.<br/><br/>
+                        <div class="button margin border-none shadow">&nbsp;&nbsp;&nbsp;</div><code>shadow</code> for evenly shaded sides.<br/>
+                        And <code>shadow-top</code>
+                        <code>shadow-bottom</code>
+                        <code>shadow-left</code>
+                        <code>shadow-right</code>
+                        <code>shadow-none</code> too.<br/><br/>
+                        <div class="button margin border-none shade">&nbsp;&nbsp;&nbsp;</div><code>shade</code> for a more natural shadow from light.<br/>
+                      </div>
+
+                      <div class="twelve columns">
+                        <hr/>
+                        <h4>Alternate Colors</h4>
+
+                        <p>Apply primary/secondary colors to text, borders, and backgrounds wherever you want to add emphasis.</p>
+
+
+                        <div class="row">
+                          <div class="six columns">
+                            <code>text-primary</code> for <span class="text-primary text-bold">primary text</span>.<br/>
+                            <code>text-secondary</code> for <span class="text-secondary text-bold">secondary text</span>.<br/>
+                            <code>text-tertiary</code> for <span class="text-tertiary text-bold">tertiary text</span>.<br/>
+                            <code>text-success</code> for <span class="text-success text-bold">success text</span>.<br/>
+                            <code>text-danger</code> for <span class="text-danger text-bold">danger text</span>.<br/>
+                            <br/>
+                          </div>
+                          <div class="six columns">
+                            <code>background-primary</code> for <span class="text-white text-bold background-primary">primary background</span>.<br/>
+                            <code>background-secondary</code> for <span class="text-white text-bold background-secondary">secondary background</span>.<br/>
+                            <code>background-tertiary</code> for <span class="text-black text-bold background-tertiary">tertiary background</span>.<br/>
+                            <code>background-success</code> for <span class="text-white text-bold background-success">success background</span>.<br/>
+                            <code>background-danger</code> for <span class="text-white text-bold background-danger">danger background</span>.<br/>
+                            <br/>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="three columns padding border border-primary round text-center">
+                            <code>border-primary</code>
+                          </div>
+                          <div class="three columns padding border border-danger round text-center">
+                            <code>border-danger</code>
+                          </div>
+                          <div class="three columns padding border border-success round text-center">
+                            <code>border-success</code>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="three columns padding border border-secondary round text-center">
+                            <code>border-secondary</code>
+                          </div>
+                          <div class="three columns padding border border-tertiary round text-center">
+                            <code>border-tertiary</code>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="twelve columns">
+                        <hr/>
+                        <h4>Layout Helpers</h4>
+
+                        <p>The simple <code>padding</code> and <code>margin</code> classes can give you some additional spacing.
+                        But there is also the directional suffixes; <code>-left</code>, <code>-right</code>, <code>-top</code>, <code>-bottom</code>, as well
+                        as their <code>-large</code> versions for when you need even more spacing.</p>
+
+                        <div class="row">
+                          <div class="six columns">
+                            <code>padding</code> and <code>padding-large</code><br/>
+                            <code>padding-top</code> and <code>padding-top-large</code><br/>
+                            <code>padding-bottom</code> and <code>padding-bottom-large</code><br/>
+                            <code>padding-left</code> and <code>padding-left-large</code><br/>
+                            <code>padding-right</code> and <code>padding-right-large</code><br/>
+                            <br/>
+                          </div>
+                          <div class="six columns">
+                            <code>margin</code> and <code>margin-large</code><br/>
+                            <code>margin-top</code> and <code>margin-top-large</code><br/>
+                            <code>margin-bottom</code> and <code>margin-bottom-large</code><br/>
+                            <code>margin-left</code> and <code>margin-left-large</code><br/>
+                            <code>margin-right</code> and <code>margin-right-large</code><br/>
+                            <br/>
+                          </div>
+                        </div>
+
+                        <div class="container border round padding">
+                          <span class="float-left">Float <code>float-left</code></span>&nbsp;
+                          <span class="float-right">Float <code>float-right</code></span>
+                        </div>
+                        <p>Note: Floating is different than aligning <code>text-left</code>, <code>text-right</code>. Use floats when you are pushing content
+                        to one side of an element. And use text alignment when you are just adjusting text.</p>
+
+                        <p>
+                          The <code>container</code> class simply reduces max-width a little on large screens.
+                          <br/>
+                          <br/>
+                          The <code>section</code> class helps separate large containers from each other with padding on top and bottom.
+                        </p>
+                        <pre><code class="html">&lt;article class="container"&gt;
+
+    &lt;div class="section"&gt;
+        &lt;h2&gt;What is it?&lt;/h2&gt;
+        &lt;p&gt;Osseous is a small CSS framework...&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/article&gt;</code></pre>
+
+                      </div>
+                </div>
+                <p>You can always add more of your own utilities, and other features, on top of Osseous too!</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="row section border-top">
+            <h2>About</h2>
+            <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
+            <p>
+              This really started as a stylesheet for my porfolio site. But as I've kept adding pieces to it as I created additional sites.
+              So now, I wanted an easy way to centralize and share it. Maybe you'll find it useful for your next project!
+            </p>
+            <p>
+              If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch on <a href="https://github.com/amdelamar/osseous/">GitHub</a>.
+            </p>
+        </div>
+
+        <!-- License Section -->
+        <div id="license" class="row section">
+            <h2>License</h2>
+            <p>
+              <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and <i>free forever</i>.
+            </p>
+        </div>
+
+</article>
+
+<!-- Footer at bottom -->
+<footer class="row section text-center">
+    <p><small><em>&#169; <a href="https://amdelamar.com">AustinDelamar</a> - 2017-2018</em></small></p>
+    <a class="button button-primary float-right margin-right-large" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
+</footer>
+
+<!-- Lazy load JavaScript, just for sidebar popup -->
+<script type="text/javascript" src="../3.0.0/osseous.min.js"></script>
+
+<!-- Highlightjs for color coding -->
+<script src="../assets/highlightjs/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
