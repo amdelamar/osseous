@@ -6,38 +6,7 @@
 
 A bony CSS framework without guts.
 
-## Download
-
-Add Osseous to your web project using npm, bower, cdn link, or download the CSS file.
-
-```bash
-npm install osseous
-# or
-bower install osseous
-```
-
-```html
-<link rel="stylesheet" href="https://amdelamar.com/osseous/2.5.1/osseous.min.css">
-<script type="text/javascript" src="https://amdelamar.com/osseous/2.5.1/osseous.min.js"></script>
-```
-
-Optionally, use with subresource integrity checks like so:
-
-```html
-<!-- With SRI check: -->
-<link rel="stylesheet" href="https://amdelamar.com/osseous/2.5.1/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous">
-<script src="https://amdelamar.com/osseous/2.5.1/osseous.min.js" integrity="sha384-beoWumBdsMYWCW4AA8aQZ9f+QJQJW3qh/9HLDYMbUD5NGzwX7Wmm8rc2ZyWM+NEd" crossorigin="anonymous"></script>
-```
-
-The links are using Cloudflare CDN for delivery. But [unpkg.com](https://unpkg.com/osseous/docs/2.5.1/osseous.min.css) links are available too.
-
-Or get the CSS source and minified files here: [Download ZIP | 12KB](https://github.com/amdelamar/osseous/releases/download/2.5.1/Osseous-2.5.1.zip)
-
-Or clone this repo. `git clone https://github.com/amdelamar/osseous`
-
-## Examples
-
-Checkout the website for live demo and full examples: https://amdelamar.com/osseous/
+Docs and Examples: https://amdelamar.com/osseous
 
 ## About
 
