@@ -114,20 +114,21 @@
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
             <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v3.0.0</sup></p>
-            <p class="text-bold text-danger">This version is archived and no longer maintained.</p>
             <p>
-                <a class="button button-danger" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
-                <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
+              <a class="button button-primary" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
+              <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
+              <a class="button" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
             </p>
         </div>
     </div>
 </header>
 
 <!-- Main Content -->
-<article class="container">
+<article>
 
         <!-- Description Section -->
         <div id="description" class="row section">
+          <div class="container">
             <h2>What is it?</h2>
             <p>
                 Osseous is a small CSS framework that only includes some (bony) elements to grow a website. Its meant to be a skeleton
@@ -168,17 +169,27 @@
             <p>Small projects, portfolios, blogs, wikis, and prototypes. By itself, it wouldn't be a good fit for large projects, such as
             e-commerce, news, SPAs, and responsive webapps. Websites that require all the meat on the bones. However, you could easily add
             on to this framework to fit your specific needs. Feel free to copy and edit it. (<a href="#license">MIT Licensed</a>).</p>
+          </div>
         </div>
 
         <!-- Download Section -->
         <div id="download" class="row section">
+          <div class="container">
             <h2>Download</h2>
             <p>
-                Add Osseous to your web project using npm, bower, cdn link, or download the CSS file.
+                You can add Osseous to your web project using a package manager, cdn links, or just download the files directly.
             </p>
-            <pre><code>npm install osseous
-bower install osseous</code></pre>
 
+            <h4>Package Managers</h4>
+            <div class="row margin-bottom">
+              <div class="six columns">
+                <pre class="margin-none"><code>npm install osseous</code></pre>
+                <pre class="margin-none"><code>yarn add osseous</code></pre>
+                <pre class="margin-none"><code>bower install osseous</code></pre>
+              </div>
+            </div>
+
+            <h4>CDN</h4>
             <pre><code class="html">&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css"&gt;
 
 &lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
@@ -190,28 +201,40 @@ bower install osseous</code></pre>
 &lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous"&gt;
 &lt;script src="https://amdelamar.com/osseous/3.0.0/osseous.min.js" integrity="sha384-beoWumBdsMYWCW4AA8aQZ9f+QJQJW3qh/9HLDYMbUD5NGzwX7Wmm8rc2ZyWM+NEd" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
 
-            <p>The links are using Cloudflare CDN for delivery. But <a href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css">unpkg.com</a> links are available too.</p>
+            <p>Cloudflare CDN is used for delivery. But <a target="_blank" href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css">unpkg.com</a>
+               and <a target="_blank" href="https://cdn.jsdelivr.net/npm/osseous/docs/3.0.0/osseous.min.css">jsDelivr.net</a> links are available too.</p>
 
-            <div class="text-center">
-              <p>
-                <br/><a href="https://github.com/amdelamar/osseous/releases/download/3.0.0/Osseous-3.0.0.zip" class="button button-primary">
-                  <span class="icon-embed text-medium margin-right"></span>Download ZIP</a>
-                <br/><br/><code class="text-thin">v3.0.0</code> - 10 Jun 2018 - <code class="text-thin">12KB</code>
-                <br/><span class="text-small">[Older versions: <a href="./1.2.0/">1.2.0</a>]</span>
-              </p>
-            </div>
+            <h4>Compiled Files</h4>
+            <p>Download the zipped CSS files and modify them to your liking.</p>
+            <p>
+              <a href="https://github.com/amdelamar/osseous/releases/download/3.0.0/Osseous-3.0.0.zip" class="button button-primary">
+                <span class="icon-embed text-medium margin-right"></span>Download ZIP</a> (
+                <code class="text-thin">v3.0.0</code> / 10 Jun 2018 / <code class="text-thin">12KB</code> )
+            </p>
+
+            <h4>Source Files</h4>
+            <p>View the source CSS files on GitHub. You can contribute or open issues. Please be sure to star it!</p>
+            <p>
+              <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View Source</a>
+              <br/><br/>
+              <span>Looking for older versions? Browse here: <a href="./1.2.0/" class="text-secondary">1.2.0</a> / <a href="./2.5.1/" class="text-secondary">2.5.1</a></span>
+            </p>
+          </div>
         </div>
 
         <!-- Examples Section -->
         <div id="examples" class="row section">
+          <div class="container">
             <h2>Examples</h2>
             <p>
                 Osseous includes formatting for all the basic elements, and some common features like columns, mobile menus, and dropdowns.
                 <br/><br/>
                 Use the examples below as a reference and demonstration of this bony framework.
             </p>
+          </div>
 
             <div id="root" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Root Variables</h3>
                     <p>The default fonts and colors are in the global <b>root</b> for easy editing.
@@ -246,9 +269,11 @@ bower install osseous</code></pre>
   --font-default:"Comic Sans"; /* New font */
 }&lt;/style&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="typography" class="row section">
+              <div class="container">
                 <div class="six columns">
                     <h3>Typography</h3>
                     <p>
@@ -288,9 +313,11 @@ public static void main(String args[]) {
 
                             <p>Add the third-party library, <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">Highlight.js</a>, to easily colorize the code syntax.</p>
         				</div>
+              </div>
             </div>
 
             <div id="columns" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Columns</h3>
                     <p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
@@ -354,9 +381,11 @@ public static void main(String args[]) {
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="tables" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Tables</h3>
                     <p>Tables are unstyled by default. Add the <code>table</code> class to style them.
@@ -501,9 +530,11 @@ public static void main(String args[]) {
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="buttons" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Buttons</h3>
                     <p>Use the <code>button</code> class for styling anchors, inputs, tabs, or regular links to look like a button.
@@ -551,9 +582,11 @@ public static void main(String args[]) {
   &lt;button class="button button-large"&gt;Button-Large&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="tabs" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Tabs</h3>
                     <p>Tabs behave like buttons. Add the <code>tabs</code> parent class and <code>tab</code> class for an child item.
@@ -583,9 +616,11 @@ public static void main(String args[]) {
 &lt;/div&gt;</code></pre>
 
                 </div>
+              </div>
             </div>
 
             <div id="dropdowns" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Dropdowns</h3>
                     <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered or clicked.
@@ -674,9 +709,11 @@ public static void main(String args[]) {
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="forms" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Forms</h3>
                     <p>Forms are essential to any website. Osseous gives you enough styling for each input type, and using columns. Wrap your input fields with a parent <code>form</code>
@@ -964,9 +1001,11 @@ public static void main(String args[]) {
 &lt;/div&gt;</code></pre>
 
                 </div>
+              </div>
             </div>
 
             <div id="navbar" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Navbar</h3>
                     <p>Use the <code>navbar</code> class for a fixed navigation bar on the top of the page.<br/>
@@ -999,9 +1038,11 @@ public static void main(String args[]) {
                   <br/><br/>
                   In this example, the small menu just contains one element; A menu icon that opens the Sidebar.</p>
                 </div>
+              </div>
             </div>
 
             <div id="sidebar" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Sidebar</h3>
                     <p>Use the <code>sidebar</code> class for mobile navigation bar on the left side. But be sure to
@@ -1031,9 +1072,11 @@ public static void main(String args[]) {
                     <pre><code class="javascript">function openSidebar(){document.getElementById("sidebarMenu").style.display="block";}
 function closeSidebar(){document.getElementById("sidebarMenu").style.display="none";}</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="utility" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Utility Classes</h3>
                     <p>Osseous comes with some useful classes you can use to help do formatting or simple text changes.
@@ -1188,12 +1231,14 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
                 </div>
                 <p>You can always add more of your own utilities, and other features, on top of Osseous too!</p>
             </div>
+            </div>
           </div>
 
-        </div>
+        </div> <!-- end examples -->
 
         <!-- About Section -->
         <div id="about" class="row section border-top">
+          <div class="container">
             <h2>About</h2>
             <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
@@ -1203,17 +1248,20 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
             <p>
               If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch on <a href="https://github.com/amdelamar/osseous/">GitHub</a>.
             </p>
+          </div>
         </div>
 
         <!-- License Section -->
         <div id="license" class="row section">
+          <div class="container">
             <h2>License</h2>
             <p>
               <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and <i>free forever</i>.
             </p>
+          </div>
         </div>
 
-</article>
+</article> <!-- end main section -->
 
 <!-- Footer at bottom -->
 <footer class="row section text-center">
