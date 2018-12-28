@@ -381,6 +381,10 @@ button:disabled:hover,.button:disabled:hover,.button-blue:disabled:hover,.button
 .margin-left-large{margin-left:4rem;}
 .margin-right-large{margin-right:4rem;}
 .margin-none{margin:0;}
+.margin-top-none{margin-top:0;}
+.margin-bottom-none{margin-bottom:0;}
+.margin-left-none{margin-left:0;}
+.margin-right-none{margin-right:0;}
 .padding{padding:1rem;}
 .padding-top{padding-top:1rem;}
 .padding-bottom{padding-bottom:1rem;}
@@ -392,6 +396,10 @@ button:disabled:hover,.button:disabled:hover,.button-blue:disabled:hover,.button
 .padding-left-large{padding-left:4rem;}
 .padding-right-large{padding-right:4rem;}
 .padding-none{padding:0;}
+.padding-top-none{padding-top:0;}
+.padding-bottom-none{padding-bottom:0;}
+.padding-left-none{padding-left:0;}
+.padding-right-none{padding-right:0;}
 .border{border:1px solid;border-color:var(--border-color);}
 .border-top{border-top:1px solid;border-color:var(--border-color);}
 .border-bottom{border-bottom:1px solid;border-color:var(--border-color);}
