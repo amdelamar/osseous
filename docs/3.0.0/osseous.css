@@ -353,10 +353,10 @@ button:disabled:hover,.button:disabled:hover,.button-blue:disabled:hover,.button
 .circle{border-radius:50%;}
 .text-wrap{white-space:pre-line;word-break:normal;}
 .text-nowrap{white-space:nowrap;word-break:unset;}
-.text-largest{font-size:3em;height:2em;}
-.text-large{font-size:2em;height:1.9em;}
-.text-medium{font-size:1.5em;height:1.8em;}
-.text-regular{font-size:1em;height:1em;}
+.text-largest{font-size:3em;}
+.text-large{font-size:2em;}
+.text-medium{font-size:1.5em;}
+.text-regular{font-size:1em;}
 .text-small{font-size:0.75em;}
 .text-tiny{font-size:0.5em;}
 .text-thin{font-weight:300;}
