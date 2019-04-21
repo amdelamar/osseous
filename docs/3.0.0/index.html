@@ -40,13 +40,16 @@
 <body>
 
 <!-- Sidebar -->
-<nav id="sidebarMenu" class="sidebar border-right shadow-right">
+<input type="checkbox" id="toggleSidebar" style="display: none;">
+<nav id="sidebar" class="border-right shadow-right">
     <div class="nav-item-close">
-        <a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
+      <label class="clickable" for="toggleSidebar">
+        <span class="float-right" title="Close Menu" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
-        </a>
+        </span>
+      </label>
     </div>
-    <div class="nav-list text-center" onclick="closeSidebar()">
+    <div class="nav-list text-center">
         <a class="nav-item" href="#download">Download</a>
         <div class="nav-item">
     		  <a href="#examples">Examples &#9662;</a>
@@ -59,8 +62,8 @@
             <a class="nav-item" href="#tabs">Tabs</a>
             <a class="nav-item" href="#dropdowns">Dropdowns</a>
       			<a class="nav-item" href="#forms">Forms</a>
-      			<a class="nav-item" href="#navbar">Navbar</a>
-            <a class="nav-item" href="#sidebar">Sidebar</a>
+      			<a class="nav-item" href="#nav-bar">Navbar</a>
+            <a class="nav-item" href="#side-bar">Sidebar</a>
             <a class="nav-item" href="#utility">Utility Classes</a>
     		  </div>
     		</div>
@@ -72,15 +75,17 @@
 </nav>
 
 <!-- Navbar -->
-<nav class="navbar">
-    <div class="navbar-body container">
+<nav id="navbar">
+    <div id="navbar-body" class="container">
     <div class="nav-item-logo">
         <a href="#"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
     </div>
     <div class="nav-small-menu">
-        <a class="nav-item" title="Open Menu" href="javascript:openSidebar()">
+      <label class="clickable" for="toggleSidebar">
+        <span class="nav-item" title="Open Menu">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
-        </a>
+        </span>
+      </label>
     </div>
     <div class="nav-group nav-large-menu text-bold">
         <a class="nav-item" href="#download">Download</a>
@@ -95,8 +100,8 @@
             <a href="#tabs">Tabs</a>
             <a href="#dropdowns">Dropdowns</a>
       			<a href="#forms">Forms</a>
-            <a href="#navbar">Navbar</a>
-            <a href="#sidebar">Sidebar</a>
+            <a href="#nav-bar">Navbar</a>
+            <a href="#side-bar">Sidebar</a>
             <a href="#utility">Utility Classes</a>
     		  </div>
     		</div>
@@ -192,14 +197,10 @@
             <h4>CDN</h4>
             <pre><code class="html">&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css"&gt;
 
-&lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
-&lt;script type="text/javascript" src="https://amdelamar.com/osseous/3.0.0/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
-
             <p>Optionally, use with subresource integrity checks like so:</p>
 
             <pre><code class="html">&lt;!-- With SRI check: --&gt;
-&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous"&gt;
-&lt;script src="https://amdelamar.com/osseous/3.0.0/osseous.min.js" integrity="sha384-beoWumBdsMYWCW4AA8aQZ9f+QJQJW3qh/9HLDYMbUD5NGzwX7Wmm8rc2ZyWM+NEd" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous"&gt;</code></pre>
 
             <p>Cloudflare CDN is used for delivery. But <a target="_blank" href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css">unpkg.com</a>
                and <a target="_blank" href="https://cdn.jsdelivr.net/npm/osseous/docs/3.0.0/osseous.min.css">jsDelivr.net</a> links are available too.</p>
@@ -601,7 +602,7 @@ public static void main(String args[]) {
                       <a class="tab button button-secondary" href="#tabs">Tab Secondary</a>
                     </div>
                     <div class="border padding">
-                      <p>Note: Tab content like this, can be hidden/shown through JavaScript functions
+                      <p>Note: Tab content like this, can be hidden/shown through JavaScript functions, hidden toggle checkbox,
                         or by separating content over separate pages.</code></p>
                     </div>
 
@@ -611,7 +612,7 @@ public static void main(String args[]) {
   &lt;a class="tab button button-secondary" href="#tabs"&gt;Tab Secondary&lt;/a&gt;
 &lt;/div&gt;
 &lt;div class="border padding"&gt;
-  &lt;p&gt;Note: Tab content like this, can be hidden/shown through JavaScript functions
+  &lt;p&gt;Note: Tab content like this, can be hidden/shown through JavaScript functions, hidden toggle checkbox,
     or by separating content over separate pages.&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 
@@ -1004,7 +1005,7 @@ public static void main(String args[]) {
               </div>
             </div>
 
-            <div id="navbar" class="row section">
+            <div id="nav-bar" class="row section">
               <div class="container">
                 <div class="twelve columns">
                     <h3>Navbar</h3>
@@ -1019,7 +1020,7 @@ public static void main(String args[]) {
         &lt;/div&gt;
 
         &lt;div class="nav-small-menu"&gt;
-            &lt;a class="nav-item" title="Open Menu" href="javascript:openSidebar()"&gt;
+            &lt;a class="nav-item" title="Open Menu"&gt;
                 &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
             &lt;/a&gt;
         &lt;/div&gt;
@@ -1041,36 +1042,23 @@ public static void main(String args[]) {
               </div>
             </div>
 
-            <div id="sidebar" class="row section">
+            <div id="side-bar" class="row section">
               <div class="container">
                 <div class="twelve columns">
                     <h3>Sidebar</h3>
-                    <p>Use the <code>sidebar</code> class for mobile navigation bar on the left side. But be sure to
-                    provide an id for the sidebar, so that it can easily be opened/closed using JavaScript. The
-                    default id provided is simply, "sidebarMenu".</p>
+                    <p>Use the <code>#sidebar</code> for mobile navigation bar on the left side. But be sure to
+                    provide the "sidebar" id for it, so that it can use the hidden checkbox toggle to work.</p>
 
-                    <button class="button" onclick="openSidebar()">Open Sidebar</button>
+                    <label for="toggleSidebar" class="button">
+                      Open Sidebar
+                    </label>
+                    <label for="toggleSidebar" class="button">
+                      Close Sidebar
+                    </label>
 
-                    <button class="button" onclick="closeSidebar()">Close Sidebar</button>
+                    <pre><code class="html">// TODO</code></pre>
 
-                    <pre><code class="html">&lt;nav id="sidebarMenu" class="sidebar shadow-right"&gt;
-    &lt;div class="nav-item-close"&gt;
-        &lt;a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close"&gt;
-            &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-
-    &lt;div class="nav-list text-center" onclick="closeSidebar()"&gt;
-        &lt;a class="nav-item" href="#link1"&gt;Link 1&lt;/a&gt;
-        &lt;a class="nav-item" href="#link2"&gt;Link 2&lt;/a&gt;
-        &lt;a class="nav-item" href="#link3"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;</code></pre>
-
-                    <p>Showing the sidebar requires some JavaScript to work. But its only 2 lines worth.</p>
-
-                    <pre><code class="javascript">function openSidebar(){document.getElementById("sidebarMenu").style.display="block";}
-function closeSidebar(){document.getElementById("sidebarMenu").style.display="none";}</code></pre>
+                    <p>Note: The sidebar does not require JavaScript to work.</p>
                 </div>
               </div>
             </div>
@@ -1282,12 +1270,9 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 
 <!-- Footer at bottom -->
 <footer class="row section text-center">
-    <p><small><em>&#169; <a href="https://amdelamar.com">AustinDelamar</a> - 2017-2018</em></small></p>
-    <a class="button button-primary float-right margin-right-large" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
+    <p><small><em>&#169; <a href="https://amdelamar.com">AustinDelamar</a> - 2017-2019</em></small></p>
+    <a class="button button-primary float-right margin-right-large" title="Back to top" href="#">Back to Top</a>
 </footer>
-
-<!-- Lazy load JavaScript, just for sidebar popup -->
-<script type="text/javascript" src="../3.0.0/osseous.min.js"></script>
 
 <!-- Highlightjs for color coding -->
 <script src="../assets/highlightjs/highlight.min.js"></script>
