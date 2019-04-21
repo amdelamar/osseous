@@ -349,8 +349,8 @@ button:disabled:hover,.button:disabled:hover,.button-blue:disabled:hover,.button
 .full-width{width:100%;box-sizing:border-box;}
 .full-height{height:100%;}
 .max-full-width{max-width:100%;box-sizing:border-box;}
-.float-right,.right{float:right;}
-.float-left,.left{float:left;}
+.float-right{float:right;}
+.float-left{float:left;}
 .round{border-radius:1rem;}
 .square{border-radius:unset;}
 .circle{border-radius:50%;}
