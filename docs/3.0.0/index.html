@@ -52,7 +52,7 @@
     <div class="nav-list text-center">
         <a class="nav-item" href="#download">Download</a>
         <div class="nav-item">
-    		  <a href="#examples">Examples &#9662;</a>
+    		  <a href="#docs">Docs &#9662;</a>
     		  <div class="nav-list padding margin-top border-top border-bottom">
       			<a class="nav-item" href="#root">Root Variables</a>
       			<a class="nav-item" href="#typography">Typography</a>
@@ -90,7 +90,7 @@
     <div class="nav-group nav-large-menu text-bold">
         <a class="nav-item" href="#download">Download</a>
     		<div class="nav-item dropdown">
-    		  <a href="#examples">Examples &#9662;</a>
+    		  <a href="#docs">Docs &#9662;</a>
     		  <div class="dropdown-body border background-lightgrey text-left">
       			<a href="#root">Root Variables</a>
       			<a href="#typography">Typography</a>
@@ -188,22 +188,32 @@
             <h4>Package Managers</h4>
             <div class="row margin-bottom">
               <div class="six columns">
-                <pre class="margin-none"><code>npm install osseous</code></pre>
-                <pre class="margin-none"><code>yarn add osseous</code></pre>
-                <pre class="margin-none"><code>bower install osseous</code></pre>
+                <pre><code class="bash">npm install osseous
+# or
+yarn add osseous
+# or
+bower install osseous</code></pre>
               </div>
             </div>
 
             <h4>CDN</h4>
-            <pre><code class="html">&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css"&gt;
+            <pre><code class="html">&lt;!-- Cloudflare: --&gt;
+&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css"&gt;
+&lt;!-- Or unpkg: --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css"&gt;
+&lt;!-- Or jsDelivr: --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/osseous/docs/3.0.0/osseous.min.css"&gt;
+</code></pre>
 
             <p>Optionally, use with subresource integrity checks like so:</p>
 
-            <pre><code class="html">&lt;!-- With SRI check: --&gt;
-&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous"&gt;</code></pre>
-
-            <p>Cloudflare CDN is used for delivery. But <a target="_blank" href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css">unpkg.com</a>
-               and <a target="_blank" href="https://cdn.jsdelivr.net/npm/osseous/docs/3.0.0/osseous.min.css">jsDelivr.net</a> links are available too.</p>
+            <pre><code class="html">&lt;!-- Cloudflare with SRI check: --&gt;
+&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css" integrity="sha384-TODO" crossorigin="anonymous"&gt;
+&lt;!-- Or unpkg: --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css" integrity="sha384-TODO" crossorigin="anonymous"&gt;
+&lt;!-- Or jsDelivr: --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/osseous/docs/3.0.0/osseous.min.css" integrity="sha384-TODO" crossorigin="anonymous"&gt;
+</code></pre>
 
             <h4>Compiled Files</h4>
             <p>Download the zipped CSS files and modify them to your liking.</p>
@@ -223,14 +233,12 @@
           </div>
         </div>
 
-        <!-- Examples Section -->
-        <div id="examples" class="row section">
+        <!-- Docs Section -->
+        <div id="docs" class="row section">
           <div class="container">
-            <h2>Examples</h2>
+            <h2>Documentation</h2>
             <p>
-                Osseous includes formatting for all the basic elements, and some common features like columns, mobile menus, and dropdowns.
-                <br/><br/>
-                Use the examples below as a reference and demonstration of this bony framework.
+                Follow the examples below as a reference and documentation of this bony framework.
             </p>
           </div>
 
@@ -279,7 +287,7 @@
                     <h3>Typography</h3>
                     <p>
                     <code>&lt;p&gt;</code>This is a paragraph.<br/>
-                    <code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
+                    <code>&lt;a&gt;</code>This is an <a href="#about">anchor</a>.<br/>
                     <code>&lt;b&gt;</code>This is <b>bolded</b>.<br/>
                     <code>&lt;i&gt;</code>This is <i>italic</i>.<br/>
                     <code>&lt;u&gt;</code>This is <u>underlined</u>.<br/>
@@ -709,6 +717,9 @@ public static void main(String args[]) {
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+
+                  <p>Note: The dropdown does not require JavaScript to work.</p>
+
                 </div>
               </div>
             </div>
@@ -1009,12 +1020,12 @@ public static void main(String args[]) {
               <div class="container">
                 <div class="twelve columns">
                     <h3>Navbar</h3>
-                    <p>Use the <code>navbar</code> class for a fixed navigation bar on the top of the page.<br/>
+                    <p>Use the <code>navbar</code> for a fixed navigation bar on the top of the page.<br/>
                     <br/>
                     Take a look at this page's navbar for the example.</p>
 
-                    <pre><code class="html">&lt;nav class="navbar border-bottom"&gt;
-    &lt;div class="navbar-body container"&gt;
+                    <pre><code class="html">&lt;nav id="navbar" class="border-bottom"&gt;
+    &lt;div id="navbar-body" class="container"&gt;
         &lt;div class="nav-item-logo"&gt;
             &lt;a href="#"&gt;&lt;span class="text-medium text-thin text-uppercase text-wide"&gt;Website&lt;/span&gt;&lt;/a&gt;
         &lt;/div&gt;
@@ -1027,7 +1038,7 @@ public static void main(String args[]) {
 
         &lt;div class="nav-group nav-large-menu"&gt;
             &lt;a class="nav-item" href="#download"&gt;Download&lt;/a&gt;
-            &lt;a class="nav-item" href="#examples"&gt;Examples&lt;/a&gt;
+            &lt;a class="nav-item" href="#docs"&gt;Docs&lt;/a&gt;
             &lt;a class="nav-item" href="#about"&gt;About&lt;/a&gt;
         &lt;/div&gt;
 
@@ -1056,7 +1067,21 @@ public static void main(String args[]) {
                       Close Sidebar
                     </label>
 
-                    <pre><code class="html">// TODO</code></pre>
+                    <pre><code class="html">&lt;input type="checkbox" id="toggleSidebar" style="display: none;"&gt;
+&lt;nav id="sidebar" class="border-right shadow-right"&gt;
+    &lt;div class="nav-item-close"&gt;
+      &lt;label class="clickable" for="toggleSidebar"&gt;
+        &lt;span class="float-right" title="Close Menu" aria-label="Close"&gt;
+            &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-list text-center"&gt;
+        &lt;a class="nav-item" href="#download"&gt;Download&lt;/a&gt;
+        &lt;a class="nav-item" href="#docs"&gt;Docs&lt;/a&gt;
+        &lt;a class="nav-item" href="#about"&gt;About&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
 
                     <p>Note: The sidebar does not require JavaScript to work.</p>
                 </div>
