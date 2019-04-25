@@ -82,8 +82,8 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}
 ::-webkit-input-placeholder{color:inherit;opacity:0.54;}
 .button{
-  display:inline-block;height:4rem;padding:0 1.2em;color:var(--secondary);text-align:center;font-size:1.1rem;font-weight:700;
-  line-height:3.8rem;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;box-sizing:border-box;white-space:nowrap;
+  display:inline-block;padding:0 1.2em;color:var(--secondary);text-align:center;font-size:1.1rem;font-weight:700;
+  line-height:3.8rem;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;
   background-color:transparent;border-radius:0.5rem;border:1px solid;border-color:var(--secondary);cursor:pointer;
 }
 .button-small {
