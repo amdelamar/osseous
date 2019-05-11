@@ -1,6 +1,6 @@
 {
   "name": "osseous",
-  "version": "2.5.1",
+  "version": "3.0.0",
   "description": "A bony CSS framework without guts.",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   "ignore": [
     "bower.json",
     "docs/1.*",
-    "docs/2.0.*",
+    "docs/2.*",
     "docs/assets",
     "docs/*.html",
     "*.png"

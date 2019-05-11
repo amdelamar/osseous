@@ -1,6 +1,6 @@
 {
   "name": "osseous",
-  "version": "2.5.1",
+  "version": "3.0.0",
   "description": "A bony CSS framework without guts.",
   "homepage": "https://amdelamar.com/osseous/",
   "authors": [
@@ -17,7 +17,7 @@
   "ignore": [
     "package.json",
     "docs/1.*",
-    "docs/2.0.*",
+    "docs/2.*",
     "docs/assets",
     "docs/*.html",
     "*.png"

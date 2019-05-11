@@ -32,7 +32,7 @@
     <meta itemprop="image" content="https://amdelamar.com/osseous/assets/img/skull-200x200.png">
 
     <link rel="icon" type="image/x-icon" href="assets/img/skull-32x32.png">
-    <link rel="stylesheet" href="2.5.1/osseous.min.css">
+    <link rel="stylesheet" href="3.0.0/osseous.css">
     <link rel="stylesheet" href="assets/icomoon/icomoon.css">
     <link rel="stylesheet" href="assets/highlightjs/default.min.css">
     <title>Osseous - A bony CSS framework without guts</title>
@@ -40,16 +40,19 @@
 <body>
 
 <!-- Sidebar -->
-<nav id="sidebarMenu" class="sidebar border-right shadow-right">
+<input type="checkbox" id="toggleSidebar" style="display: none;">
+<nav id="sidebar" class="border-right shadow-right">
     <div class="nav-item-close">
-        <a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close">
+      <label class="clickable" for="toggleSidebar">
+        <span class="float-right" title="Close Menu" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"></path></svg>
-        </a>
+        </span>
+      </label>
     </div>
-    <div class="nav-list text-center" onclick="closeSidebar()">
+    <div class="nav-list text-center">
         <a class="nav-item" href="#download">Download</a>
-        <div class="nav-item">
-    		  <a href="#examples">Examples &#9662;</a>
+        <details class="nav-item">
+    		  <summary>Docs</summary>
     		  <div class="nav-list padding margin-top border-top border-bottom">
       			<a class="nav-item" href="#root">Root Variables</a>
       			<a class="nav-item" href="#typography">Typography</a>
@@ -59,11 +62,11 @@
             <a class="nav-item" href="#tabs">Tabs</a>
             <a class="nav-item" href="#dropdowns">Dropdowns</a>
       			<a class="nav-item" href="#forms">Forms</a>
-      			<a class="nav-item" href="#navbar">Navbar</a>
-            <a class="nav-item" href="#sidebar">Sidebar</a>
+      			<a class="nav-item" href="#nav-bar">Navbar</a>
+            <a class="nav-item" href="#side-bar">Sidebar</a>
             <a class="nav-item" href="#utility">Utility Classes</a>
     		  </div>
-    		</div>
+    		</details>
         <a class="nav-item" href="#about">About</a>
     </div>
     <div class="padding-top-large full-width text-center">
@@ -72,20 +75,22 @@
 </nav>
 
 <!-- Navbar -->
-<nav class="navbar">
-    <div class="navbar-body container">
+<nav id="navbar">
+    <div id="navbar-body" class="container">
     <div class="nav-item-logo">
         <a href="#"><span class="text-medium text-uppercase text-wide">Osseous</span></a>
     </div>
     <div class="nav-small-menu">
-        <a class="nav-item" title="Open Menu" href="javascript:openSidebar()">
+      <label class="clickable" for="toggleSidebar">
+        <span class="nav-item" title="Open Menu">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"></path></svg>
-        </a>
+        </span>
+      </label>
     </div>
     <div class="nav-group nav-large-menu text-bold">
         <a class="nav-item" href="#download">Download</a>
     		<div class="nav-item dropdown">
-    		  <a href="#examples">Examples &#9662;</a>
+    		  <a href="#docs">Docs &#9662;</a>
     		  <div class="dropdown-body border background-lightgrey text-left">
       			<a href="#root">Root Variables</a>
       			<a href="#typography">Typography</a>
@@ -95,8 +100,8 @@
             <a href="#tabs">Tabs</a>
             <a href="#dropdowns">Dropdowns</a>
       			<a href="#forms">Forms</a>
-            <a href="#navbar">Navbar</a>
-            <a href="#sidebar">Sidebar</a>
+            <a href="#nav-bar">Navbar</a>
+            <a href="#side-bar">Sidebar</a>
             <a href="#utility">Utility Classes</a>
     		  </div>
     		</div>
@@ -113,21 +118,22 @@
         </div>
         <div class="twelve columns">
             <h1 class="text-uppercase text-thinner text-wide">Osseous</h1>
-            <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v2.5.1</sup></p>
+            <p>A bony CSS framework without guts.&nbsp;<sup class="text-thin">v3.0.0</sup></p>
             <p>
-                <a class="button button-primary" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
-                <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
-                <a class="button" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
+              <a class="button button-primary" href="#download"><span class="icon-embed text-medium margin-right"></span>Download</a>
+              <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View on GitHub</a>
+              <a class="button" href="https://github.com/amdelamar/osseous/issues"><span class="icon-bug text-medium margin-right"></span>Report Issue</a>
             </p>
         </div>
     </div>
 </header>
 
 <!-- Main Content -->
-<article class="container">
+<article>
 
         <!-- Description Section -->
         <div id="description" class="row section">
+          <div class="container">
             <h2>What is it?</h2>
             <p>
                 Osseous is a small CSS framework that only includes some (bony) elements to grow a website. Its meant to be a skeleton
@@ -168,50 +174,76 @@
             <p>Small projects, portfolios, blogs, wikis, and prototypes. By itself, it wouldn't be a good fit for large projects, such as
             e-commerce, news, SPAs, and responsive webapps. Websites that require all the meat on the bones. However, you could easily add
             on to this framework to fit your specific needs. Feel free to copy and edit it. (<a href="#license">MIT Licensed</a>).</p>
+          </div>
         </div>
 
         <!-- Download Section -->
         <div id="download" class="row section">
+          <div class="container">
             <h2>Download</h2>
             <p>
-                Add Osseous to your web project using npm, bower, cdn link, or download the CSS file.
+                You can add Osseous to your web project using a package manager, cdn links, or just download the files directly.
             </p>
-            <pre><code>npm install osseous
+
+            <h4>Package Managers</h4>
+            <div class="row margin-bottom">
+              <div class="six columns">
+                <pre><code class="bash">npm install osseous
+# or
+yarn add osseous
+# or
 bower install osseous</code></pre>
+              </div>
+            </div>
 
-            <pre><code class="html">&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/2.5.1/osseous.min.css"&gt;
-
-&lt;!--This tiny JavaScript file is just for the sidebar (mobile menu).--&gt;
-&lt;script type="text/javascript" src="https://amdelamar.com/osseous/2.5.1/osseous.min.js"&gt;&lt;/script&gt;</code></pre>
+            <h4>CDN</h4>
+            <pre><code class="html">&lt;!-- Cloudflare: --&gt;
+&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css"&gt;
+&lt;!-- Or unpkg: --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css"&gt;
+&lt;!-- Or jsDelivr: --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/osseous/docs/3.0.0/osseous.min.css"&gt;
+</code></pre>
 
             <p>Optionally, use with subresource integrity checks like so:</p>
 
-            <pre><code class="html">&lt;!-- With SRI check: --&gt;
-&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/2.5.1/osseous.min.css" integrity="sha384-EbtTSlR9pHQ+478TV/Vx8zOOCSpMwDzfMiFMLbOd8axnCjCHNHvZY8IPvVrlumea" crossorigin="anonymous"&gt;
-&lt;script src="https://amdelamar.com/osseous/2.5.1/osseous.min.js" integrity="sha384-beoWumBdsMYWCW4AA8aQZ9f+QJQJW3qh/9HLDYMbUD5NGzwX7Wmm8rc2ZyWM+NEd" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+            <pre><code class="html">&lt;!-- Cloudflare with SRI check: --&gt;
+&lt;link rel="stylesheet" href="https://amdelamar.com/osseous/3.0.0/osseous.min.css" integrity="sha384-QuuIzow564lH5jao3xOvngmEwuZ2tYxlylgik3UCq33fpwg5SZANhXbXxuhTY1ik" crossorigin="anonymous"&gt;
+&lt;!-- Or unpkg: --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/osseous/docs/3.0.0/osseous.min.css" integrity="sha384-TODO" crossorigin="anonymous"&gt;
+&lt;!-- Or jsDelivr: --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/osseous/docs/3.0.0/osseous.min.css" integrity="sha384-TODO" crossorigin="anonymous"&gt;
+</code></pre>
 
-            <p>The links are using Cloudflare CDN for delivery. But <a href="https://unpkg.com/osseous/docs/2.5.1/osseous.min.css">unpkg.com</a> links are available too.</p>
-
-            <div class="text-center">
-              <p>
-                <br/><a href="https://github.com/amdelamar/osseous/releases/download/2.5.1/Osseous-2.5.1.zip" class="button button-primary">
-                  <span class="icon-embed text-medium margin-right"></span>Download ZIP</a>
-                <br/><br/><code class="text-thin">v2.5.1</code> - 10 Jun 2018 - <code class="text-thin">12KB</code>
-                <br/><span class="text-small">[Older versions: <a href="./1.2.0/">1.2.0</a>]</span>
-              </p>
-            </div>
-        </div>
-
-        <!-- Examples Section -->
-        <div id="examples" class="row section">
-            <h2>Examples</h2>
+            <h4>Compiled Files</h4>
+            <p>Download the zipped CSS files and modify them to your liking.</p>
             <p>
-                Osseous includes formatting for all the basic elements, and some common features like columns, mobile menus, and dropdowns.
-                <br/><br/>
-                Use the examples below as a reference and demonstration of this bony framework.
+              <a href="https://github.com/amdelamar/osseous/releases/download/3.0.0/Osseous-3.0.0.zip" class="button button-primary">
+                <span class="icon-embed text-medium margin-right"></span>Download ZIP</a> (
+                <code class="text-thin">v3.0.0</code> / 11 May 2019 / <code class="text-thin">11KB</code> )
             </p>
 
+            <h4>Source Files</h4>
+            <p>View the source CSS files on GitHub. You can contribute or open issues. Please be sure to star it!</p>
+            <p>
+              <a class="button button-secondary" href="https://github.com/amdelamar/osseous/"><span class="icon-github text-medium margin-right"></span>View Source</a>
+              <br/><br/>
+              <span>Looking for older versions? Browse here: <a href="./1.2.0/" class="text-secondary">1.2.0</a> / <a href="./2.5.1/" class="text-secondary">2.5.1</a></span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Docs Section -->
+        <div id="docs" class="row section">
+          <div class="container">
+            <h2>Documentation</h2>
+            <p>
+                Follow the examples below as a reference and documentation of this bony framework.
+            </p>
+          </div>
+
             <div id="root" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Root Variables</h3>
                     <p>The default fonts and colors are in the global <b>root</b> for easy editing.
@@ -246,14 +278,16 @@ bower install osseous</code></pre>
   --font-default:"Comic Sans"; /* New font */
 }&lt;/style&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="typography" class="row section">
+              <div class="container">
                 <div class="six columns">
                     <h3>Typography</h3>
                     <p>
                     <code>&lt;p&gt;</code>This is a paragraph.<br/>
-                    <code>&lt;a&gt;</code>This is an <a href="#examples">anchor</a>.<br/>
+                    <code>&lt;a&gt;</code>This is an <a href="#about">anchor</a>.<br/>
                     <code>&lt;b&gt;</code>This is <b>bolded</b>.<br/>
                     <code>&lt;i&gt;</code>This is <i>italic</i>.<br/>
                     <code>&lt;u&gt;</code>This is <u>underlined</u>.<br/>
@@ -288,9 +322,11 @@ public static void main(String args[]) {
 
                             <p>Add the third-party library, <a target="_blank" href="https://highlightjs.org/" title="Highlightjs">Highlight.js</a>, to easily colorize the code syntax.</p>
         				</div>
+              </div>
             </div>
 
             <div id="columns" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Columns</h3>
                     <p>Use the <code>row</code> and <code>columns</code> classes together to organize content into grids.
@@ -354,9 +390,11 @@ public static void main(String args[]) {
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="tables" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Tables</h3>
                     <p>Tables are unstyled by default. Add the <code>table</code> class to style them.
@@ -501,9 +539,11 @@ public static void main(String args[]) {
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="buttons" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Buttons</h3>
                     <p>Use the <code>button</code> class for styling anchors, inputs, tabs, or regular links to look like a button.
@@ -551,9 +591,11 @@ public static void main(String args[]) {
   &lt;button class="button button-large"&gt;Button-Large&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 </div>
+              </div>
             </div>
 
             <div id="tabs" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Tabs</h3>
                     <p>Tabs behave like buttons. Add the <code>tabs</code> parent class and <code>tab</code> class for an child item.
@@ -568,7 +610,7 @@ public static void main(String args[]) {
                       <a class="tab button button-secondary" href="#tabs">Tab Secondary</a>
                     </div>
                     <div class="border padding">
-                      <p>Note: Tab content like this, can be hidden/shown through JavaScript functions
+                      <p>Note: Tab content like this, can be hidden/shown through JavaScript functions, hidden toggle checkbox,
                         or by separating content over separate pages.</code></p>
                     </div>
 
@@ -578,14 +620,16 @@ public static void main(String args[]) {
   &lt;a class="tab button button-secondary" href="#tabs"&gt;Tab Secondary&lt;/a&gt;
 &lt;/div&gt;
 &lt;div class="border padding"&gt;
-  &lt;p&gt;Note: Tab content like this, can be hidden/shown through JavaScript functions
+  &lt;p&gt;Note: Tab content like this, can be hidden/shown through JavaScript functions, hidden toggle checkbox,
     or by separating content over separate pages.&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 
                 </div>
+              </div>
             </div>
 
             <div id="dropdowns" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Dropdowns</h3>
                     <p>Use the <code>dropdown</code> class for a hiding menus or additional actions that appear when hovered or clicked.
@@ -673,15 +717,21 @@ public static void main(String args[]) {
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+
+                  <p>Note: The dropdown does not require JavaScript to work.</p>
+
                 </div>
+              </div>
             </div>
 
             <div id="forms" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Forms</h3>
-                    <p>Forms are essential to any website. Osseous gives you enough styling for each input type, and using columns.</p>
+                    <p>Forms are essential to any website. Osseous gives you enough styling for each input type, and using columns. Wrap your input fields with a parent <code>form</code>
+                    or <code>div</code> with <code>class="form"</code> to stylize as Osseous form inputs.</p>
 
-                    <div class="row">
+                    <div class="form row">
                       <div class="three columns">
                         <label for="in1" class="">Text Input</label>
                         <input type="text" id="in1" value="12345" />
@@ -699,7 +749,7 @@ public static void main(String args[]) {
                         <input type="text" id="ind1" value="disabled" disabled />
                       </div>
                     </div>
-                    <div class="row padding-top">
+                    <div class="form row padding-top">
                       <div class="three columns">
                         <label for="in4" class="">Date Input</label>
                         <input type="date" id="in4" value="12/01/2017" />
@@ -717,15 +767,15 @@ public static void main(String args[]) {
                         <input type="text" id="ind2" value="readonly" readonly />
                       </div>
                     </div>
-                    <div class="row padding-top">
+                    <div class="form row padding-top">
                       <label for="t1" class="">Text Input with Full Width</label>
                       <input type="text" id="t1" class="full-width" placeholder="Hello..." value="1234567890" />
                     </div>
-                    <div class="row padding-top">
+                    <div class="form row padding-top">
                       <label for="t2" class="">Textarea with Full Width</label>
                       <textarea id="t2" class="full-width" placeholder="Hello..."></textarea>
                     </div>
-                    <div class="row padding-top">
+                    <div class="form row padding-top">
                       <div class="four columns">
                         <input type="checkbox" id="c1" value="1" checked />
                         <label for="c1">Checkbox</label>
@@ -776,9 +826,9 @@ public static void main(String args[]) {
                       </div>
                     </div>
 
-                    <p>Forms can be structured with <code>row</code> and <code>columns</code> to easily group fields together.</p>
+                    <p>Forms can be structured with <code>row</code> and <code>columns</code> to easily group fields together. Don't forget the <code>form</code> class though.</p>
 
-                    <pre><code class="html">&lt;div class="row"&gt;
+                    <pre><code class="html">&lt;div class="form row"&gt;
   &lt;div class="three columns"&gt;
     &lt;label for="in1" class=""&gt;Text Input&lt;/label&gt;
     &lt;input type="text" id="in1" value="12345" /&gt;
@@ -796,7 +846,7 @@ public static void main(String args[]) {
     &lt;input type="text" id="ind1" value="disabled" disabled /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="row padding-top"&gt;
+&lt;div class="form row padding-top"&gt;
   &lt;div class="three columns"&gt;
     &lt;label for="in4" class=""&gt;Date Input&lt;/label&gt;
     &lt;input type="date" id="in4" value="12/01/2017" /&gt;
@@ -814,15 +864,15 @@ public static void main(String args[]) {
     &lt;input type="text" id="ind2" value="readonly" readonly /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="row padding-top"&gt;
+&lt;div class="form row padding-top"&gt;
   &lt;label for="in8" class=""&gt;Text Input with Full Width&lt;/label&gt;
   &lt;input type="text" id="in8" class="full-width" value="1234567890" /&gt;
 &lt;/div&gt;
-&lt;div class="row padding-top"&gt;
+&lt;div class="form row padding-top"&gt;
   &lt;label for="t1" class=""&gt;Textarea with Full Width&lt;/label&gt;
   &lt;textarea id="t1" class="full-width" placeholder="Hello..."&gt;&lt;/textarea&gt;
 &lt;/div&gt;
-&lt;div class="row padding-top"&gt;
+&lt;div class="form row padding-top"&gt;
   &lt;div class="four columns"&gt;
     &lt;input type="checkbox" id="c1" value="1" checked="checked" /&gt;
     &lt;label for="c1"&gt;Checkbox&lt;/label&gt;
@@ -877,7 +927,7 @@ public static void main(String args[]) {
                     <p>You can make nice box forms with additional layout classes, such as offset-by columns, borders, and padding.
                     More utility classes are explained in the <a href="#utility">Utility</a> section.</p>
 
-                    <form method="post" action="">
+                    <form method="post" action="#" class="form">
                       <div class="row">
                       <div class="four columns offset-by-four padding-large border round">
                         <h4>Login</h4>
@@ -889,13 +939,13 @@ public static void main(String args[]) {
                           <a href="javascript:void(0);" class="text-small">Forgot Username</a>&nbsp;<a href="javascript:void(0);" class="text-small">/ Password?</a>
                         </div>
                         <div class="row padding-top margin-top">
-                          <input class="button button-primary full-width" type="submit" value="Login" />
+                          <input type="button" class="button button-primary full-width" type="submit" value="Login" />
                         </div>
                       </div>
                       </div>
                     </form>
 
-                    <pre><code class="html">&lt;form method="post" action=""&gt;
+                    <pre><code class="html">&lt;form method="post" action="#" class="form"&gt;
   &lt;div class="row"&gt;
   &lt;div class="four columns offset-by-four padding-large border round"&gt;
     &lt;h4&gt;Login&lt;/h4&gt;
@@ -907,7 +957,7 @@ public static void main(String args[]) {
       &lt;a href="javascript:void(0);" class="text-small"&gt;Forgot Username&lt;/a&gt;&nbsp;&lt;a href="javascript:void(0);" class="text-small"&gt;/ Password?&lt;/a&gt;
     &lt;/div&gt;
     &lt;div class="row padding-top margin-top"&gt;
-      &lt;input class="button button-primary full-width" type="submit" value="Login" /&gt;
+      &lt;input type="button" class="button button-primary full-width" type="submit" value="Login" /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;/div&gt;
@@ -916,7 +966,7 @@ public static void main(String args[]) {
                     <br/>
                     <p>Also, you can use <code>fieldset</code> and <code>legend</code> tags, to group content together.</p>
 
-                    <div class="row">
+                    <div class="form row">
                       <div class="six columns">
                       <fieldset>
                         <legend>Helpdesk Contact</legend>
@@ -939,7 +989,7 @@ public static void main(String args[]) {
                       </div>
                     </div>
 
-                    <pre><code class="html">&lt;div class="row"&gt;
+                    <pre><code class="html">&lt;div class="form row"&gt;
   &lt;div class="six columns"&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Helpdesk Contact Information&lt;/legend&gt;
@@ -963,30 +1013,32 @@ public static void main(String args[]) {
 &lt;/div&gt;</code></pre>
 
                 </div>
+              </div>
             </div>
 
-            <div id="navbar" class="row section">
+            <div id="nav-bar" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Navbar</h3>
-                    <p>Use the <code>navbar</code> class for a fixed navigation bar on the top of the page.<br/>
+                    <p>Use the <code>navbar</code> for a fixed navigation bar on the top of the page.<br/>
                     <br/>
                     Take a look at this page's navbar for the example.</p>
 
-                    <pre><code class="html">&lt;nav class="navbar border-bottom"&gt;
-    &lt;div class="navbar-body container"&gt;
+                    <pre><code class="html">&lt;nav id="navbar" class="border-bottom"&gt;
+    &lt;div id="navbar-body" class="container"&gt;
         &lt;div class="nav-item-logo"&gt;
             &lt;a href="#"&gt;&lt;span class="text-medium text-thin text-uppercase text-wide"&gt;Website&lt;/span&gt;&lt;/a&gt;
         &lt;/div&gt;
 
         &lt;div class="nav-small-menu"&gt;
-            &lt;a class="nav-item" title="Open Menu" href="javascript:openSidebar()"&gt;
+            &lt;a class="nav-item" title="Open Menu"&gt;
                 &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M0 7h16v2H0V7zm0-6h16v2H0V1zm0 12h16v2H0v-2z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
             &lt;/a&gt;
         &lt;/div&gt;
 
         &lt;div class="nav-group nav-large-menu"&gt;
             &lt;a class="nav-item" href="#download"&gt;Download&lt;/a&gt;
-            &lt;a class="nav-item" href="#examples"&gt;Examples&lt;/a&gt;
+            &lt;a class="nav-item" href="#docs"&gt;Docs&lt;/a&gt;
             &lt;a class="nav-item" href="#about"&gt;About&lt;/a&gt;
         &lt;/div&gt;
 
@@ -998,41 +1050,46 @@ public static void main(String args[]) {
                   <br/><br/>
                   In this example, the small menu just contains one element; A menu icon that opens the Sidebar.</p>
                 </div>
+              </div>
             </div>
 
-            <div id="sidebar" class="row section">
+            <div id="side-bar" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Sidebar</h3>
-                    <p>Use the <code>sidebar</code> class for mobile navigation bar on the left side. But be sure to
-                    provide an id for the sidebar, so that it can easily be opened/closed using JavaScript. The
-                    default id provided is simply, "sidebarMenu".</p>
+                    <p>Use the <code>#sidebar</code> for mobile navigation bar on the left side. But be sure to
+                    provide the "sidebar" id for it, so that it can use the hidden checkbox toggle to work.</p>
 
-                    <button class="button" onclick="openSidebar()">Open Sidebar</button>
+                    <label for="toggleSidebar" class="button">
+                      Open Sidebar
+                    </label>
+                    <label for="toggleSidebar" class="button">
+                      Close Sidebar
+                    </label>
 
-                    <button class="button" onclick="closeSidebar()">Close Sidebar</button>
-
-                    <pre><code class="html">&lt;nav id="sidebarMenu" class="sidebar shadow-right"&gt;
+                    <pre><code class="html">&lt;input type="checkbox" id="toggleSidebar" style="display: none;"&gt;
+&lt;nav id="sidebar" class="border-right shadow-right"&gt;
     &lt;div class="nav-item-close"&gt;
-        &lt;a class="float-right" title="Close Menu" href="javascript:closeSidebar()" aria-label="Close"&gt;
+      &lt;label class="clickable" for="toggleSidebar"&gt;
+        &lt;span class="float-right" title="Close Menu" aria-label="Close"&gt;
             &lt;svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M2.757 14.657L8 9.414l5.243 5.243 1.414-1.414L9.414 8l5.243-5.243-1.414-1.414L8 6.586 2.757 1.343 1.343 2.757 6.586 8l-5.243 5.243z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;
-        &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
     &lt;/div&gt;
-
-    &lt;div class="nav-list text-center" onclick="closeSidebar()"&gt;
-        &lt;a class="nav-item" href="#link1"&gt;Link 1&lt;/a&gt;
-        &lt;a class="nav-item" href="#link2"&gt;Link 2&lt;/a&gt;
-        &lt;a class="nav-item" href="#link3"&gt;Link 3&lt;/a&gt;
+    &lt;div class="nav-list text-center"&gt;
+        &lt;a class="nav-item" href="#download"&gt;Download&lt;/a&gt;
+        &lt;a class="nav-item" href="#docs"&gt;Docs&lt;/a&gt;
+        &lt;a class="nav-item" href="#about"&gt;About&lt;/a&gt;
     &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
 
-                    <p>Showing the sidebar requires some JavaScript to work. But its only 2 lines worth.</p>
-
-                    <pre><code class="javascript">function openSidebar(){document.getElementById("sidebarMenu").style.display="block";}
-function closeSidebar(){document.getElementById("sidebarMenu").style.display="none";}</code></pre>
+                    <p>Note: The sidebar does not require JavaScript to work.</p>
                 </div>
+              </div>
             </div>
 
             <div id="utility" class="row section">
+              <div class="container">
                 <div class="twelve columns">
                     <h3>Utility Classes</h3>
                     <p>Osseous comes with some useful classes you can use to help do formatting or simple text changes.
@@ -1184,15 +1241,35 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
 &lt;/article&gt;</code></pre>
 
                       </div>
+
+                      <div class="twelve columns">
+                        <hr/>
+                        <h4>Show/Hide Helpers</h4>
+
+                        <p>Easily <code>show</code> and <code>hide</code> content based on the screen size of the device. This is useful
+                          with customizing content for smartphones and tablets instead of relying on desktop screen sizes. The breaking
+                          points are at 640px and 1000px in width.<p>
+
+                        <p class="hide-small">#1. <code>hide-small</code> = I do not show on small screens!</p>
+                        <p class="show-small">#2. <code>show-small</code> = I only show on small screens!</p>
+                        <p class="hide-medium">#3. <code>hide-medium</code> = I do not show on medium screens!</p>
+                        <p class="show-medium">#4. <code>show-medium</code> = I only show on medium screens!</p>
+                        <p class="hide-large">#5. <code>hide-large</code> = I do not show on large screens!</p>
+                        <p class="show-large">#6. <code>show-large</code> = I only show on large screens!</p>
+
+                      </div>
                 </div>
                 <p>You can always add more of your own utilities, and other features, on top of Osseous too!</p>
             </div>
+            </div>
           </div>
 
-        </div>
+        </div> <!-- end examples -->
 
         <!-- About Section -->
-        <div id="about" class="row section border-top">
+        <div id="about" class="row section">
+          <div class="container">
+            <hr/>
             <h2>About</h2>
             <p>A project by Austin Delamar based off of <a href="https://github.com/dhg/Skeleton">Skeleton</a> and other popular libraries.</p>
             <p>
@@ -1202,26 +1279,26 @@ function closeSidebar(){document.getElementById("sidebarMenu").style.display="no
             <p>
               If you'd like to contribute, feel free to fork and make changes, then open a pull request to <code>master</code> branch on <a href="https://github.com/amdelamar/osseous/">GitHub</a>.
             </p>
+          </div>
         </div>
 
         <!-- License Section -->
         <div id="license" class="row section">
+          <div class="container">
             <h2>License</h2>
             <p>
               <a href="https://github.com/amdelamar/osseous/blob/master/LICENSE">MIT</a> licensed and <i>free forever</i>.
             </p>
+          </div>
         </div>
 
-</article>
+</article> <!-- end main section -->
 
 <!-- Footer at bottom -->
 <footer class="row section text-center">
-    <p><small><em>&#169; <a href="https://amdelamar.com">AustinDelamar</a> - 2017-2018</em></small></p>
-    <a class="button button-primary float-right margin-right-large" title="Back to top" href="javascript:gotoTop()">Back to Top</a>
+    <p><small><em>&#169; <a href="https://amdelamar.com">AustinDelamar</a> - 2017-2019</em></small></p>
+    <a class="button button-primary float-right margin-right-large" title="Back to top" href="#">Back to Top</a>
 </footer>
-
-<!-- Lazy load JavaScript, just for sidebar popup -->
-<script type="text/javascript" src="2.5.1/osseous.min.js"></script>
 
 <!-- Highlightjs for color coding -->
 <script src="assets/highlightjs/highlight.min.js"></script>
