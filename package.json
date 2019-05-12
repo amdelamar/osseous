@@ -4,12 +4,12 @@
   "description": "A bony CSS framework without guts.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amdelamar/osseous.git"
+    "url": "https://github.com/amdelamar/osseous"
   },
   "homepage": "https://amdelamar.com/osseous/",
   "author": "Austin Delamar <amdelamar@protonmail.com> (https://amdelamar.com)",
-  "main": "docs/2.5.1/osseous.min.css",
-  "style": "docs/2.5.1/osseous.min.css",
+  "main": "docs/3.0.0/osseous.min.css",
+  "style": "docs/3.0.0/osseous.min.css",
   "license": "MIT",
   "keywords": [
     "css",
@@ -17,9 +17,7 @@
     "bony",
     "framework"
   ],
-  "bugs": {
-    "url": "https://github.com/amdelamar/osseous/issues"
-  },
+  "bugs": "https://github.com/amdelamar/osseous/issues",
   "ignore": [
     "bower.json",
     "docs/1.*",
