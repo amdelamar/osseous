@@ -44,6 +44,7 @@ pre > code{display:block;padding:1rem 1.5rem;white-space:pre;overflow-x:auto;}
 pre,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem;}
 hr{box-sizing:content-box;margin-top:4rem;margin-bottom:4rem;height:0;border-width:0;border-top:1px solid;border-color:var(--tertiary);overflow:visible;}
 blockquote,.blockquote{margin:2.5rem 0px 2.5rem 0px;padding:0.2rem 0.5rem 0.2rem 2.5rem;border-left:0.5rem solid;border-color:var(--tertiary);}
+kbd{font-weight:600;margin:0.1em;padding:0.2em 0.4em 0.01em 0.4em;border-top:0.05em;border-bottom:0.2em;border-left:0.05em;border-right:0.05em;border-color:#cccccc;border-style:solid;border-radius:0.3em;background-color:#f2f2f2;white-space:nowrap;}
 
 /* Headings */
 h1, h2, h3, h4, h5, h6{margin-top:0;margin-bottom:2rem;font-weight:300;}
