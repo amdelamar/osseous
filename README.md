@@ -10,7 +10,7 @@ Docs and Examples: https://amdelamar.com/osseous
 
 ## About
 
-A project by Austin Delamar based off of [Skeleton](https://github.com/dhg/Skeleton) and other popular libraries.
+A project based off of [Skeleton](https://github.com/dhg/Skeleton) and other popular libraries.
 
 If you'd like to contribute, feel free to fork and make changes, then open a pull request to `master` branch.
 
